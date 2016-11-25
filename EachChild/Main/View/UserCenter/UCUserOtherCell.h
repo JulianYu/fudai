@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, UCUserOtherCellType) {
+    UCUserOtherCellTypeMyFudai,
+    UCUserOtherCellTypeConfirmedFudai,
+    UCUserOtherCellTypeMyDelegation,
+    UCUserOtherCellTypeMyWallet,
+    UCUserOtherCellTypeMyAccumulatingPoints,
+    UCUserOtherCellTypeAddressManagement,
+    UCUserOtherCellTypeAccountSetting
+    
+};
+
 @interface UCUserOtherCell : UITableViewCell
+
+@property (nonatomic, assign) UCUserOtherCellType type;
 
 @end

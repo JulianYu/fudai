@@ -1,19 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="UCUserOtherCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="71" id="KGk-i7-Jjw" customClass="UCUserOtherCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="43"/>
+                <frame key="frameInset" width="287" height="59"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uc_confirm_fudai.png" translatesAutoresizingMaskIntoConstraints="NO" id="E6R-HA-lcB">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="wKf-TQ-nh5"/>
+                            <constraint firstAttribute="width" secondItem="E6R-HA-lcB" secondAttribute="height" multiplier="1:1" id="wng-eq-MnB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已确认的福袋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5IN-fY-63P">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="E6R-HA-lcB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Fb6-NV-UEa"/>
+                    <constraint firstItem="5IN-fY-63P" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="MBo-Su-51T"/>
+                    <constraint firstItem="5IN-fY-63P" firstAttribute="leading" secondItem="E6R-HA-lcB" secondAttribute="trailing" constant="8" id="OFc-C3-pz8"/>
+                    <constraint firstItem="E6R-HA-lcB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="Xyj-lQ-8Q9"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="imgView" destination="E6R-HA-lcB" id="v9z-Cg-zzs"/>
+                <outlet property="titleLabel" destination="5IN-fY-63P" id="tI2-rk-Pl3"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="82.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="uc_confirm_fudai.png" width="21" height="21"/>
+    </resources>
 </document>

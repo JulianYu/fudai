@@ -10,4 +10,13 @@
 
 @implementation BaseViewModel
 
+- (instancetype)initWithViewController:(BaseViewController *)viewController
+{
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+}
+
 @end

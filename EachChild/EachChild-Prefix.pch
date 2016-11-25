@@ -1,0 +1,19 @@
+//
+//  EachChild-Prefix.pch
+//  EachChild
+//
+//  Created by 虞军军 on 16/11/25.
+//  Copyright © 2016年 erongchuang. All rights reserved.
+//
+
+
+#import <Availability.h>
+
+#ifndef __IPHONE_8_0
+#warning "This project uses features only available in iOS SDK 8.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif

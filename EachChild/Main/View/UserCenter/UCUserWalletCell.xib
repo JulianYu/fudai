@@ -1,19 +1,100 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="UCUserWalletCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="UCUserWalletCell">
+            <rect key="frame" x="0.0" y="0.0" width="304" height="90"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="43"/>
+                <frame key="frameInset" width="304" height="90"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDr-t0-CUK">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uc_balance.png" translatesAutoresizingMaskIntoConstraints="NO" id="MZY-Tr-JDB">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="Uh1-8v-dkW"/>
+                                    <constraint firstAttribute="width" secondItem="MZY-Tr-JDB" secondAttribute="height" multiplier="1:1" id="fw1-je-BAj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="零钱" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Tr-gr-BV0">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.1282451923" green="0.1282451923" blue="0.1282451923" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥30.57" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpj-Dm-4Pp">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.5450980392" green="0.81176470590000005" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Tr-gr-BV0" firstAttribute="top" secondItem="MZY-Tr-JDB" secondAttribute="bottom" id="2RW-MB-mv6"/>
+                            <constraint firstItem="Jpj-Dm-4Pp" firstAttribute="centerX" secondItem="uDr-t0-CUK" secondAttribute="centerX" id="ADb-Me-Z7p"/>
+                            <constraint firstItem="MZY-Tr-JDB" firstAttribute="top" secondItem="uDr-t0-CUK" secondAttribute="topMargin" id="ED2-jU-T0L"/>
+                            <constraint firstAttribute="trailing" secondItem="Jpj-Dm-4Pp" secondAttribute="trailing" id="FIP-Ae-weZ"/>
+                            <constraint firstItem="MZY-Tr-JDB" firstAttribute="centerX" secondItem="uDr-t0-CUK" secondAttribute="centerX" id="eWf-RP-zcW"/>
+                            <constraint firstItem="3Tr-gr-BV0" firstAttribute="centerX" secondItem="uDr-t0-CUK" secondAttribute="centerX" id="lR8-bE-jqx"/>
+                            <constraint firstItem="Jpj-Dm-4Pp" firstAttribute="leading" secondItem="uDr-t0-CUK" secondAttribute="leading" id="ncl-3S-DE7"/>
+                            <constraint firstItem="Jpj-Dm-4Pp" firstAttribute="top" secondItem="3Tr-gr-BV0" secondAttribute="bottom" constant="8" id="uXj-er-V0d"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohY-Hi-2Pc">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uc_bankcard.png" translatesAutoresizingMaskIntoConstraints="NO" id="aRk-dP-rcI">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="5Kx-K8-wKt"/>
+                                    <constraint firstAttribute="width" secondItem="aRk-dP-rcI" secondAttribute="height" multiplier="1:1" id="87O-bI-rZv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="银行卡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dar-g5-cJI">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.1282451923" green="0.1282451923" blue="0.1282451923" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="立即绑定" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prp-v0-oBf">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="prp-v0-oBf" firstAttribute="leading" secondItem="ohY-Hi-2Pc" secondAttribute="leading" id="7De-GQ-kvr"/>
+                            <constraint firstAttribute="trailing" secondItem="prp-v0-oBf" secondAttribute="trailing" id="Hlt-Ye-l21"/>
+                            <constraint firstItem="dar-g5-cJI" firstAttribute="top" secondItem="aRk-dP-rcI" secondAttribute="bottom" id="Mg6-5d-KDf"/>
+                            <constraint firstItem="prp-v0-oBf" firstAttribute="top" secondItem="dar-g5-cJI" secondAttribute="bottom" constant="8" id="RH2-XB-mij"/>
+                            <constraint firstItem="dar-g5-cJI" firstAttribute="centerX" secondItem="ohY-Hi-2Pc" secondAttribute="centerX" id="YPu-Qn-9WC"/>
+                            <constraint firstItem="aRk-dP-rcI" firstAttribute="top" secondItem="ohY-Hi-2Pc" secondAttribute="topMargin" id="b0a-Rx-5kU"/>
+                            <constraint firstItem="aRk-dP-rcI" firstAttribute="centerX" secondItem="ohY-Hi-2Pc" secondAttribute="centerX" id="u6q-oT-7Rc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ohY-Hi-2Pc" firstAttribute="leading" secondItem="uDr-t0-CUK" secondAttribute="trailing" id="AUS-W7-a65"/>
+                    <constraint firstAttribute="bottom" secondItem="uDr-t0-CUK" secondAttribute="bottom" id="DL0-Sq-lJv"/>
+                    <constraint firstAttribute="trailing" secondItem="ohY-Hi-2Pc" secondAttribute="trailing" id="EX6-bo-jzJ"/>
+                    <constraint firstAttribute="bottom" secondItem="ohY-Hi-2Pc" secondAttribute="bottom" id="NAS-ng-xkk"/>
+                    <constraint firstItem="ohY-Hi-2Pc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QLV-bk-U7S"/>
+                    <constraint firstItem="ohY-Hi-2Pc" firstAttribute="width" secondItem="uDr-t0-CUK" secondAttribute="width" id="gZV-bf-ROl"/>
+                    <constraint firstItem="uDr-t0-CUK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iT8-in-0Mc"/>
+                    <constraint firstItem="uDr-t0-CUK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tR0-c9-tV0"/>
+                </constraints>
             </tableViewCellContentView>
+            <point key="canvasLocation" x="72" y="92"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="uc_balance.png" width="27" height="27"/>
+        <image name="uc_bankcard.png" width="27" height="27"/>
+    </resources>
 </document>

@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BaseViewController.h"
 
 @interface BaseViewModel : NSObject
+
+- (instancetype)initWithViewController:(BaseViewController *)viewController;
 
 @end

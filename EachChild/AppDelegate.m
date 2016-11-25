@@ -23,7 +23,7 @@
     BaseTabbarController *tabbarCtrl = [[BaseTabbarController alloc] init];
     self.window.rootViewController = tabbarCtrl;
     [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, -60) forBarMetrics:UIBarMetricsDefault];
-    
+//    [[UIBarButtonItem appearance] setTintColor:[UIColor whiteColor]];
     [self.window makeKeyAndVisible];
     
     return YES;

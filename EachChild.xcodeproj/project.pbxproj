@@ -52,7 +52,6 @@
 		048BCD801DE6DB4100881AF7 /* im_gallery01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCD7D1DE6DB4100881AF7 /* im_gallery01@2x.png */; };
 		048BCD811DE6DB4100881AF7 /* im_gallery02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCD7E1DE6DB4100881AF7 /* im_gallery02@2x.png */; };
 		048BCD821DE6DB4100881AF7 /* im_gallery03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCD7F1DE6DB4100881AF7 /* im_gallery03@2x.png */; };
-		048BCD871DE6E21A00881AF7 /* public.h in Sources */ = {isa = PBXBuildFile; fileRef = 048BCD861DE6E1E100881AF7 /* public.h */; };
 		048BCD8B1DE6E55600881AF7 /* FMFudaiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCD891DE6E55600881AF7 /* FMFudaiCell.m */; };
 		048BCD8C1DE6E55600881AF7 /* FMFudaiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCD8A1DE6E55600881AF7 /* FMFudaiCell.xib */; };
 		048BCD8E1DE6E5CE00881AF7 /* fm_fudai_cell@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 048BCD8D1DE6E5CE00881AF7 /* fm_fudai_cell@2x.jpg */; };
@@ -63,6 +62,37 @@
 		048BCDA11DE6F24100881AF7 /* UCUserWalletCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCD9F1DE6F24100881AF7 /* UCUserWalletCell.xib */; };
 		048BCDA51DE6F28700881AF7 /* UCUserOtherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDA31DE6F28700881AF7 /* UCUserOtherCell.m */; };
 		048BCDA61DE6F28700881AF7 /* UCUserOtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDA41DE6F28700881AF7 /* UCUserOtherCell.xib */; };
+		048BCDA81DE7CAC000881AF7 /* uc_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDA71DE7CAC000881AF7 /* uc_bg@2x.png */; };
+		048BCDAA1DE7CE7300881AF7 /* uc_default_portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDA91DE7CE7300881AF7 /* uc_default_portrait@2x.png */; };
+		048BCDAD1DE7D08600881AF7 /* uc_balance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDAB1DE7D08600881AF7 /* uc_balance@2x.png */; };
+		048BCDAE1DE7D08600881AF7 /* uc_bankcard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDAC1DE7D08600881AF7 /* uc_bankcard@2x.png */; };
+		048BCDB01DE7D36B00881AF7 /* uc_my_fudai@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDAF1DE7D36B00881AF7 /* uc_my_fudai@2x.png */; };
+		048BCDB21DE7D38B00881AF7 /* uc_confirm_fudai@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDB11DE7D38B00881AF7 /* uc_confirm_fudai@2x.png */; };
+		048BCDB41DE7D3D500881AF7 /* uc_my_delegation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDB31DE7D3D500881AF7 /* uc_my_delegation@2x.png */; };
+		048BCDB81DE7D57400881AF7 /* uc_accumulate_points@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDB51DE7D57400881AF7 /* uc_accumulate_points@2x.png */; };
+		048BCDB91DE7D57400881AF7 /* uc_address@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDB61DE7D57400881AF7 /* uc_address@2x.png */; };
+		048BCDBA1DE7D57400881AF7 /* uc_setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDB71DE7D57400881AF7 /* uc_setting@2x.png */; };
+		048BCDBD1DE7DCCA00881AF7 /* NSObject+conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDBC1DE7DCCA00881AF7 /* NSObject+conversion.m */; };
+		048BCDCC1DE7ECE600881AF7 /* UCMyFudaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDCA1DE7ECE600881AF7 /* UCMyFudaiViewController.m */; };
+		048BCDCD1DE7ECE600881AF7 /* UCMyFudaiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDCB1DE7ECE600881AF7 /* UCMyFudaiViewController.xib */; };
+		048BCDD11DE7F47200881AF7 /* UCConfirmedFudaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDCF1DE7F47200881AF7 /* UCConfirmedFudaiViewController.m */; };
+		048BCDD21DE7F47200881AF7 /* UCConfirmedFudaiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDD01DE7F47200881AF7 /* UCConfirmedFudaiViewController.xib */; };
+		048BCDD61DE7F4A700881AF7 /* UCAcumulatingPointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDD41DE7F4A700881AF7 /* UCAcumulatingPointsViewController.m */; };
+		048BCDD71DE7F4A700881AF7 /* UCAcumulatingPointsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDD51DE7F4A700881AF7 /* UCAcumulatingPointsViewController.xib */; };
+		048BCDDB1DE7F4CA00881AF7 /* UCAddressArrangemantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDD91DE7F4CA00881AF7 /* UCAddressArrangemantViewController.m */; };
+		048BCDDC1DE7F4CA00881AF7 /* UCAddressArrangemantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDDA1DE7F4CA00881AF7 /* UCAddressArrangemantViewController.xib */; };
+		048BCDE01DE7F4E400881AF7 /* UCSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDDE1DE7F4E400881AF7 /* UCSettingViewController.m */; };
+		048BCDE11DE7F4E400881AF7 /* UCSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDDF1DE7F4E400881AF7 /* UCSettingViewController.xib */; };
+		048BCDE51DE7F5D400881AF7 /* UCDelegationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDE31DE7F5D400881AF7 /* UCDelegationViewController.m */; };
+		048BCDE61DE7F5D400881AF7 /* UCDelegationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDE41DE7F5D400881AF7 /* UCDelegationViewController.xib */; };
+		048BCDE91DE8268F00881AF7 /* UIColor+extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDE81DE8268F00881AF7 /* UIColor+extention.m */; };
+		048BCDED1DE8271A00881AF7 /* UCMyFudaiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDEB1DE8271A00881AF7 /* UCMyFudaiCell.m */; };
+		048BCDEE1DE8271A00881AF7 /* UCMyFudaiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDEC1DE8271A00881AF7 /* UCMyFudaiCell.xib */; };
+		048BCDF21DE82B4500881AF7 /* uc_fudai_body@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDEF1DE82B4500881AF7 /* uc_fudai_body@2x.png */; };
+		048BCDF31DE82B4500881AF7 /* uc_fudai_footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDF01DE82B4500881AF7 /* uc_fudai_footer.png */; };
+		048BCDF41DE82B4500881AF7 /* uc_fudai_header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDF11DE82B4500881AF7 /* uc_fudai_header@2x.png */; };
+		048BCDF91DE83D5700881AF7 /* UCMyFudaiCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDF81DE83D5700881AF7 /* UCMyFudaiCellView.m */; };
+		048BCDFB1DE83D7200881AF7 /* UCMyFudaiCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDFA1DE83D7200881AF7 /* UCMyFudaiCellView.xib */; };
 		D2F51629C3E2A95C515208BD /* libPods-EachChild.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9177D1ED9AAC596E2B376C4 /* libPods-EachChild.a */; };
 /* End PBXBuildFile section */
 
@@ -142,9 +172,6 @@
 		048BCD7D1DE6DB4100881AF7 /* im_gallery01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "im_gallery01@2x.png"; sourceTree = "<group>"; };
 		048BCD7E1DE6DB4100881AF7 /* im_gallery02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "im_gallery02@2x.png"; sourceTree = "<group>"; };
 		048BCD7F1DE6DB4100881AF7 /* im_gallery03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "im_gallery03@2x.png"; sourceTree = "<group>"; };
-		048BCD831DE6DFA600881AF7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		048BCD841DE6E0CB00881AF7 /* model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
-		048BCD861DE6E1E100881AF7 /* public.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = public.h; sourceTree = "<group>"; };
 		048BCD881DE6E55600881AF7 /* FMFudaiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMFudaiCell.h; sourceTree = "<group>"; };
 		048BCD891DE6E55600881AF7 /* FMFudaiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMFudaiCell.m; sourceTree = "<group>"; };
 		048BCD8A1DE6E55600881AF7 /* FMFudaiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMFudaiCell.xib; sourceTree = "<group>"; };
@@ -160,6 +187,51 @@
 		048BCDA21DE6F28700881AF7 /* UCUserOtherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCUserOtherCell.h; sourceTree = "<group>"; };
 		048BCDA31DE6F28700881AF7 /* UCUserOtherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCUserOtherCell.m; sourceTree = "<group>"; };
 		048BCDA41DE6F28700881AF7 /* UCUserOtherCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCUserOtherCell.xib; sourceTree = "<group>"; };
+		048BCDA71DE7CAC000881AF7 /* uc_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uc_bg@2x.png"; sourceTree = "<group>"; };
+		048BCDA91DE7CE7300881AF7 /* uc_default_portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uc_default_portrait@2x.png"; sourceTree = "<group>"; };
+		048BCDAB1DE7D08600881AF7 /* uc_balance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uc_balance@2x.png"; sourceTree = "<group>"; };
+		048BCDAC1DE7D08600881AF7 /* uc_bankcard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uc_bankcard@2x.png"; sourceTree = "<group>"; };
+		048BCDAF1DE7D36B00881AF7 /* uc_my_fudai@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uc_my_fudai@2x.png"; sourceTree = "<group>"; };
+		048BCDB11DE7D38B00881AF7 /* uc_confirm_fudai@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uc_confirm_fudai@2x.png"; sourceTree = "<group>"; };
+		048BCDB31DE7D3D500881AF7 /* uc_my_delegation@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uc_my_delegation@2x.png"; sourceTree = "<group>"; };
+		048BCDB51DE7D57400881AF7 /* uc_accumulate_points@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uc_accumulate_points@2x.png"; sourceTree = "<group>"; };
+		048BCDB61DE7D57400881AF7 /* uc_address@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uc_address@2x.png"; sourceTree = "<group>"; };
+		048BCDB71DE7D57400881AF7 /* uc_setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uc_setting@2x.png"; sourceTree = "<group>"; };
+		048BCDBB1DE7DCCA00881AF7 /* NSObject+conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+conversion.h"; sourceTree = "<group>"; };
+		048BCDBC1DE7DCCA00881AF7 /* NSObject+conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+conversion.m"; sourceTree = "<group>"; };
+		048BCDC31DE7E50F00881AF7 /* EachChild-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EachChild-Prefix.pch"; sourceTree = "<group>"; };
+		048BCDC91DE7ECE600881AF7 /* UCMyFudaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCMyFudaiViewController.h; sourceTree = "<group>"; };
+		048BCDCA1DE7ECE600881AF7 /* UCMyFudaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCMyFudaiViewController.m; sourceTree = "<group>"; };
+		048BCDCB1DE7ECE600881AF7 /* UCMyFudaiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCMyFudaiViewController.xib; sourceTree = "<group>"; };
+		048BCDCE1DE7F47200881AF7 /* UCConfirmedFudaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCConfirmedFudaiViewController.h; sourceTree = "<group>"; };
+		048BCDCF1DE7F47200881AF7 /* UCConfirmedFudaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCConfirmedFudaiViewController.m; sourceTree = "<group>"; };
+		048BCDD01DE7F47200881AF7 /* UCConfirmedFudaiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCConfirmedFudaiViewController.xib; sourceTree = "<group>"; };
+		048BCDD31DE7F4A700881AF7 /* UCAcumulatingPointsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCAcumulatingPointsViewController.h; sourceTree = "<group>"; };
+		048BCDD41DE7F4A700881AF7 /* UCAcumulatingPointsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCAcumulatingPointsViewController.m; sourceTree = "<group>"; };
+		048BCDD51DE7F4A700881AF7 /* UCAcumulatingPointsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCAcumulatingPointsViewController.xib; sourceTree = "<group>"; };
+		048BCDD81DE7F4CA00881AF7 /* UCAddressArrangemantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCAddressArrangemantViewController.h; sourceTree = "<group>"; };
+		048BCDD91DE7F4CA00881AF7 /* UCAddressArrangemantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCAddressArrangemantViewController.m; sourceTree = "<group>"; };
+		048BCDDA1DE7F4CA00881AF7 /* UCAddressArrangemantViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCAddressArrangemantViewController.xib; sourceTree = "<group>"; };
+		048BCDDD1DE7F4E400881AF7 /* UCSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCSettingViewController.h; sourceTree = "<group>"; };
+		048BCDDE1DE7F4E400881AF7 /* UCSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCSettingViewController.m; sourceTree = "<group>"; };
+		048BCDDF1DE7F4E400881AF7 /* UCSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCSettingViewController.xib; sourceTree = "<group>"; };
+		048BCDE21DE7F5D400881AF7 /* UCDelegationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCDelegationViewController.h; sourceTree = "<group>"; };
+		048BCDE31DE7F5D400881AF7 /* UCDelegationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCDelegationViewController.m; sourceTree = "<group>"; };
+		048BCDE41DE7F5D400881AF7 /* UCDelegationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCDelegationViewController.xib; sourceTree = "<group>"; };
+		048BCDE71DE8268F00881AF7 /* UIColor+extention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+extention.h"; sourceTree = "<group>"; };
+		048BCDE81DE8268F00881AF7 /* UIColor+extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+extention.m"; sourceTree = "<group>"; };
+		048BCDEA1DE8271A00881AF7 /* UCMyFudaiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCMyFudaiCell.h; sourceTree = "<group>"; };
+		048BCDEB1DE8271A00881AF7 /* UCMyFudaiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCMyFudaiCell.m; sourceTree = "<group>"; };
+		048BCDEC1DE8271A00881AF7 /* UCMyFudaiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCMyFudaiCell.xib; sourceTree = "<group>"; };
+		048BCDEF1DE82B4500881AF7 /* uc_fudai_body@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uc_fudai_body@2x.png"; sourceTree = "<group>"; };
+		048BCDF01DE82B4500881AF7 /* uc_fudai_footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uc_fudai_footer.png; sourceTree = "<group>"; };
+		048BCDF11DE82B4500881AF7 /* uc_fudai_header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uc_fudai_header@2x.png"; sourceTree = "<group>"; };
+		048BCDF71DE83D5700881AF7 /* UCMyFudaiCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCMyFudaiCellView.h; sourceTree = "<group>"; };
+		048BCDF81DE83D5700881AF7 /* UCMyFudaiCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCMyFudaiCellView.m; sourceTree = "<group>"; };
+		048BCDFA1DE83D7200881AF7 /* UCMyFudaiCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCMyFudaiCellView.xib; sourceTree = "<group>"; };
+		048BCDFD1DE840FE00881AF7 /* CellHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellHeader.h; sourceTree = "<group>"; };
+		048BCDFE1DE840FE00881AF7 /* model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
+		048BCDFF1DE840FE00881AF7 /* public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = public.h; sourceTree = "<group>"; };
 		1399B3CE7BFD91AB806FD91F /* Pods-EachChild.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EachChild.release.xcconfig"; path = "Pods/Target Support Files/Pods-EachChild/Pods-EachChild.release.xcconfig"; sourceTree = "<group>"; };
 		7C47E97796E138700AC7260B /* Pods-EachChild.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EachChild.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EachChild/Pods-EachChild.debug.xcconfig"; sourceTree = "<group>"; };
 		E9177D1ED9AAC596E2B376C4 /* libPods-EachChild.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EachChild.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,6 +288,7 @@
 				048BCCC81DE5A1C700881AF7 /* Assets.xcassets */,
 				048BCCBD1DE5A1C700881AF7 /* main.m */,
 				048BCCCD1DE5A1C700881AF7 /* Info.plist */,
+				048BCDC31DE7E50F00881AF7 /* EachChild-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -242,8 +315,8 @@
 		048BCCDE1DE6C15F00881AF7 /* Expend */ = {
 			isa = PBXGroup;
 			children = (
+				048BCDFC1DE840FE00881AF7 /* Micros */,
 				048BCD621DE6D74300881AF7 /* Categories */,
-				048BCD631DE6D74300881AF7 /* Micros */,
 				048BCD641DE6D74300881AF7 /* Tools */,
 			);
 			path = Expend;
@@ -378,6 +451,24 @@
 				048BCD401DE6C9C700881AF7 /* UCUserCenterViewController.h */,
 				048BCD411DE6C9C700881AF7 /* UCUserCenterViewController.m */,
 				048BCD421DE6C9C700881AF7 /* UCUserCenterViewController.xib */,
+				048BCDC91DE7ECE600881AF7 /* UCMyFudaiViewController.h */,
+				048BCDCA1DE7ECE600881AF7 /* UCMyFudaiViewController.m */,
+				048BCDCB1DE7ECE600881AF7 /* UCMyFudaiViewController.xib */,
+				048BCDCE1DE7F47200881AF7 /* UCConfirmedFudaiViewController.h */,
+				048BCDCF1DE7F47200881AF7 /* UCConfirmedFudaiViewController.m */,
+				048BCDD01DE7F47200881AF7 /* UCConfirmedFudaiViewController.xib */,
+				048BCDE21DE7F5D400881AF7 /* UCDelegationViewController.h */,
+				048BCDE31DE7F5D400881AF7 /* UCDelegationViewController.m */,
+				048BCDE41DE7F5D400881AF7 /* UCDelegationViewController.xib */,
+				048BCDD31DE7F4A700881AF7 /* UCAcumulatingPointsViewController.h */,
+				048BCDD41DE7F4A700881AF7 /* UCAcumulatingPointsViewController.m */,
+				048BCDD51DE7F4A700881AF7 /* UCAcumulatingPointsViewController.xib */,
+				048BCDD81DE7F4CA00881AF7 /* UCAddressArrangemantViewController.h */,
+				048BCDD91DE7F4CA00881AF7 /* UCAddressArrangemantViewController.m */,
+				048BCDDA1DE7F4CA00881AF7 /* UCAddressArrangemantViewController.xib */,
+				048BCDDD1DE7F4E400881AF7 /* UCSettingViewController.h */,
+				048BCDDE1DE7F4E400881AF7 /* UCSettingViewController.m */,
+				048BCDDF1DE7F4E400881AF7 /* UCSettingViewController.xib */,
 			);
 			path = UserCenter;
 			sourceTree = "<group>";
@@ -432,6 +523,19 @@
 		048BCD611DE6D30900881AF7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				048BCDEF1DE82B4500881AF7 /* uc_fudai_body@2x.png */,
+				048BCDF01DE82B4500881AF7 /* uc_fudai_footer.png */,
+				048BCDF11DE82B4500881AF7 /* uc_fudai_header@2x.png */,
+				048BCDB51DE7D57400881AF7 /* uc_accumulate_points@2x.png */,
+				048BCDB61DE7D57400881AF7 /* uc_address@2x.png */,
+				048BCDB71DE7D57400881AF7 /* uc_setting@2x.png */,
+				048BCDB31DE7D3D500881AF7 /* uc_my_delegation@2x.png */,
+				048BCDB11DE7D38B00881AF7 /* uc_confirm_fudai@2x.png */,
+				048BCDAF1DE7D36B00881AF7 /* uc_my_fudai@2x.png */,
+				048BCDAB1DE7D08600881AF7 /* uc_balance@2x.png */,
+				048BCDAC1DE7D08600881AF7 /* uc_bankcard@2x.png */,
+				048BCDA91DE7CE7300881AF7 /* uc_default_portrait@2x.png */,
+				048BCDA71DE7CAC000881AF7 /* uc_bg@2x.png */,
 				048BCD8D1DE6E5CE00881AF7 /* fm_fudai_cell@2x.jpg */,
 				048BCD511DE6D2E700881AF7 /* tabbar_fm_selected@2x.png */,
 				048BCD521DE6D2E700881AF7 /* tabbar_fm@2x.png */,
@@ -448,18 +552,12 @@
 		048BCD621DE6D74300881AF7 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				048BCDBB1DE7DCCA00881AF7 /* NSObject+conversion.h */,
+				048BCDBC1DE7DCCA00881AF7 /* NSObject+conversion.m */,
+				048BCDE71DE8268F00881AF7 /* UIColor+extention.h */,
+				048BCDE81DE8268F00881AF7 /* UIColor+extention.m */,
 			);
 			path = Categories;
-			sourceTree = "<group>";
-		};
-		048BCD631DE6D74300881AF7 /* Micros */ = {
-			isa = PBXGroup;
-			children = (
-				048BCD831DE6DFA600881AF7 /* PrefixHeader.pch */,
-				048BCD841DE6E0CB00881AF7 /* model.h */,
-				048BCD861DE6E1E100881AF7 /* public.h */,
-			);
-			path = Micros;
 			sourceTree = "<group>";
 		};
 		048BCD641DE6D74300881AF7 /* Tools */ = {
@@ -522,8 +620,24 @@
 				048BCDA21DE6F28700881AF7 /* UCUserOtherCell.h */,
 				048BCDA31DE6F28700881AF7 /* UCUserOtherCell.m */,
 				048BCDA41DE6F28700881AF7 /* UCUserOtherCell.xib */,
+				048BCDEA1DE8271A00881AF7 /* UCMyFudaiCell.h */,
+				048BCDEB1DE8271A00881AF7 /* UCMyFudaiCell.m */,
+				048BCDEC1DE8271A00881AF7 /* UCMyFudaiCell.xib */,
+				048BCDF71DE83D5700881AF7 /* UCMyFudaiCellView.h */,
+				048BCDF81DE83D5700881AF7 /* UCMyFudaiCellView.m */,
+				048BCDFA1DE83D7200881AF7 /* UCMyFudaiCellView.xib */,
 			);
 			name = cell;
+			sourceTree = "<group>";
+		};
+		048BCDFC1DE840FE00881AF7 /* Micros */ = {
+			isa = PBXGroup;
+			children = (
+				048BCDFD1DE840FE00881AF7 /* CellHeader.h */,
+				048BCDFE1DE840FE00881AF7 /* model.h */,
+				048BCDFF1DE840FE00881AF7 /* public.h */,
+			);
+			path = Micros;
 			sourceTree = "<group>";
 		};
 		B78FC2FC6A7FF3320581D9CC /* Pods */ = {
@@ -587,8 +701,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
-				Base,
 			);
 			mainGroup = 048BCCB01DE5A1C700881AF7;
 			productRefGroup = 048BCCBA1DE5A1C700881AF7 /* Products */;
@@ -606,26 +718,47 @@
 			buildActionMask = 2147483647;
 			files = (
 				048BCD971DE6F15700881AF7 /* UCUserInfoCell.xib in Resources */,
+				048BCDF41DE82B4500881AF7 /* uc_fudai_header@2x.png in Resources */,
 				048BCDA61DE6F28700881AF7 /* UCUserOtherCell.xib in Resources */,
 				048BCD591DE6D2E700881AF7 /* tabbar_fm_selected@2x.png in Resources */,
+				048BCDB91DE7D57400881AF7 /* uc_address@2x.png in Resources */,
 				048BCD5B1DE6D2E700881AF7 /* tabbar_hp_selected@2x.png in Resources */,
 				048BCD801DE6DB4100881AF7 /* im_gallery01@2x.png in Resources */,
 				048BCD5C1DE6D2E700881AF7 /* tabbar_hp@2x.png in Resources */,
+				048BCDEE1DE8271A00881AF7 /* UCMyFudaiCell.xib in Resources */,
 				048BCDA11DE6F24100881AF7 /* UCUserWalletCell.xib in Resources */,
+				048BCDD71DE7F4A700881AF7 /* UCAcumulatingPointsViewController.xib in Resources */,
 				048BCD441DE6C9C700881AF7 /* UCUserCenterViewController.xib in Resources */,
 				048BCD351DE6C91E00881AF7 /* HPHomePageViewController.xib in Resources */,
+				048BCDBA1DE7D57400881AF7 /* uc_setting@2x.png in Resources */,
+				048BCDB21DE7D38B00881AF7 /* uc_confirm_fudai@2x.png in Resources */,
 				048BCD601DE6D2E700881AF7 /* tabbar_uc@2x.png in Resources */,
 				048BCD8E1DE6E5CE00881AF7 /* fm_fudai_cell@2x.jpg in Resources */,
+				048BCDAA1DE7CE7300881AF7 /* uc_default_portrait@2x.png in Resources */,
 				048BCD5D1DE6D2E700881AF7 /* tabbar_im_selected@2x.png in Resources */,
 				048BCD821DE6DB4100881AF7 /* im_gallery03@2x.png in Resources */,
+				048BCDB81DE7D57400881AF7 /* uc_accumulate_points@2x.png in Resources */,
+				048BCDF31DE82B4500881AF7 /* uc_fudai_footer.png in Resources */,
+				048BCDCD1DE7ECE600881AF7 /* UCMyFudaiViewController.xib in Resources */,
+				048BCDA81DE7CAC000881AF7 /* uc_bg@2x.png in Resources */,
 				048BCD3F1DE6C9B400881AF7 /* IMInstantMessagingViewController.xib in Resources */,
 				048BCCC91DE5A1C700881AF7 /* Assets.xcassets in Resources */,
 				048BCD3A1DE6C93C00881AF7 /* FMFudaiMarketViewController.xib in Resources */,
+				048BCDAE1DE7D08600881AF7 /* uc_bankcard@2x.png in Resources */,
+				048BCDE11DE7F4E400881AF7 /* UCSettingViewController.xib in Resources */,
+				048BCDB41DE7D3D500881AF7 /* uc_my_delegation@2x.png in Resources */,
 				048BCD811DE6DB4100881AF7 /* im_gallery02@2x.png in Resources */,
+				048BCDB01DE7D36B00881AF7 /* uc_my_fudai@2x.png in Resources */,
+				048BCDDC1DE7F4CA00881AF7 /* UCAddressArrangemantViewController.xib in Resources */,
+				048BCDAD1DE7D08600881AF7 /* uc_balance@2x.png in Resources */,
 				048BCD8C1DE6E55600881AF7 /* FMFudaiCell.xib in Resources */,
+				048BCDF21DE82B4500881AF7 /* uc_fudai_body@2x.png in Resources */,
 				048BCD5F1DE6D2E700881AF7 /* tabbar_uc_selected@2x.png in Resources */,
+				048BCDE61DE7F5D400881AF7 /* UCDelegationViewController.xib in Resources */,
+				048BCDFB1DE83D7200881AF7 /* UCMyFudaiCellView.xib in Resources */,
 				048BCD5A1DE6D2E700881AF7 /* tabbar_fm@2x.png in Resources */,
 				048BCD5E1DE6D2E700881AF7 /* tabbar_im@2x.png in Resources */,
+				048BCDD21DE7F47200881AF7 /* UCConfirmedFudaiViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,10 +817,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				048BCD871DE6E21A00881AF7 /* public.h in Sources */,
 				048BCD241DE6C5FE00881AF7 /* FMModel.m in Sources */,
 				048BCD751DE6DA5A00881AF7 /* TAAbstractDotView.m in Sources */,
 				048BCD301DE6C8E000881AF7 /* UCInfoModel.m in Sources */,
+				048BCDD11DE7F47200881AF7 /* UCConfirmedFudaiViewController.m in Sources */,
 				048BCD4D1DE6CAC400881AF7 /* IMInstantMessagingViewModel.m in Sources */,
 				048BCCF41DE6C37F00881AF7 /* BaseModel.m in Sources */,
 				048BCD501DE6CADC00881AF7 /* UCUserCenterViewModel.m in Sources */,
@@ -696,6 +829,8 @@
 				048BCD791DE6DA5A00881AF7 /* SDCollectionViewCell.m in Sources */,
 				048BCD761DE6DA5A00881AF7 /* TAAnimatedDotView.m in Sources */,
 				048BCCC11DE5A1C700881AF7 /* AppDelegate.m in Sources */,
+				048BCDF91DE83D5700881AF7 /* UCMyFudaiCellView.m in Sources */,
+				048BCDED1DE8271A00881AF7 /* UCMyFudaiCell.m in Sources */,
 				048BCCFA1DE6C3C400881AF7 /* BaseRequstViewModel.m in Sources */,
 				048BCD4A1DE6CAAB00881AF7 /* FMFudaiMarketViewModel.m in Sources */,
 				048BCD2A1DE6C61C00881AF7 /* UCModel.m in Sources */,
@@ -708,15 +843,22 @@
 				048BCD271DE6C60D00881AF7 /* IMModel.m in Sources */,
 				048BCD7B1DE6DA5A00881AF7 /* UIView+SDExtension.m in Sources */,
 				048BCD8B1DE6E55600881AF7 /* FMFudaiCell.m in Sources */,
+				048BCDCC1DE7ECE600881AF7 /* UCMyFudaiViewController.m in Sources */,
+				048BCDE01DE7F4E400881AF7 /* UCSettingViewController.m in Sources */,
+				048BCDD61DE7F4A700881AF7 /* UCAcumulatingPointsViewController.m in Sources */,
 				048BCD961DE6F15700881AF7 /* UCUserInfoCell.m in Sources */,
 				048BCDA01DE6F24100881AF7 /* UCUserWalletCell.m in Sources */,
 				048BCD781DE6DA5A00881AF7 /* TAPageControl.m in Sources */,
 				048BCCEB1DE6C23F00881AF7 /* BaseTabbarController.m in Sources */,
 				048BCD211DE6C5E900881AF7 /* HPModel.m in Sources */,
 				048BCCBE1DE5A1C700881AF7 /* main.m in Sources */,
+				048BCDE51DE7F5D400881AF7 /* UCDelegationViewController.m in Sources */,
+				048BCDE91DE8268F00881AF7 /* UIColor+extention.m in Sources */,
 				048BCD2D1DE6C85900881AF7 /* UCTradeModel.m in Sources */,
 				048BCD911DE6E85800881AF7 /* FlowLayout.m in Sources */,
 				048BCDA51DE6F28700881AF7 /* UCUserOtherCell.m in Sources */,
+				048BCDDB1DE7F4CA00881AF7 /* UCAddressArrangemantViewController.m in Sources */,
+				048BCDBD1DE7DCCA00881AF7 /* NSObject+conversion.m in Sources */,
 				048BCCF11DE6C28D00881AF7 /* BaseNavigationController.m in Sources */,
 				048BCD771DE6DA5A00881AF7 /* TADotView.m in Sources */,
 			);
@@ -765,7 +907,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -806,7 +948,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -818,7 +960,20 @@
 			baseConfigurationReference = 7C47E97796E138700AC7260B /* Pods-EachChild.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = UEE2H52CTA;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/EachChild/EachChild-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/EachChild/Expend/Micros",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+				);
 				INFOPLIST_FILE = EachChild/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -833,7 +988,20 @@
 			baseConfigurationReference = 1399B3CE7BFD91AB806FD91F /* Pods-EachChild.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = UEE2H52CTA;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/EachChild/EachChild-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/EachChild/Expend/Micros",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+				);
 				INFOPLIST_FILE = EachChild/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -50,9 +50,10 @@
     infomationNav.tabBarItem = [self tabBarItemWithTitle:@"消息" imageName:@"tabbar_im" selectedImageName:@"tabbar_im_selected"];
     [viewCtrls addObject:infomationNav];
     //4.我的
-    UCUserCenterViewController *userCtrl = [[UCUserCenterViewController alloc] initWithNibName:@"UCUserCenterViewController" bundle:nil];
-    userCtrl.tabBarItem = [self tabBarItemWithTitle:@"我的" imageName:@"tabbar_uc" selectedImageName:@"tabbar_uc_selected"];
-    [viewCtrls addObject:userCtrl];
+    UCUserCenterViewController *userVC = [[UCUserCenterViewController alloc] initWithNibName:@"UCUserCenterViewController" bundle:nil];
+    BaseNavigationController *userNav = [[BaseNavigationController alloc] initWithRootViewController:userVC];
+    userNav.tabBarItem = [self tabBarItemWithTitle:@"我的" imageName:@"tabbar_uc" selectedImageName:@"tabbar_uc_selected"];
+    [viewCtrls addObject:userNav];
     
     return viewCtrls;
 }
