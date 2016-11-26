@@ -7,6 +7,9 @@
 //
 
 #import "UCMyFudaiViewController.h"
+
+#import "UCInformationViewController.h"
+
 #import "UCConfirmedFudaiViewController.h"
 #import "UCDelegationViewController.h"
 #import "UCAcumulatingPointsViewController.h"
@@ -17,9 +20,9 @@
 #import "UCUserWalletCell.h"
 #import "UCUserOtherCell.h"
 
-const CGFloat UCUserInfoCellHeight = 160;
+const CGFloat UCUserInfoCellHeight = 150;
 const CGFloat UCUserWalletCellHeight = 90;
-const CGFloat UCUserOtherCellHeight = 60;
+const CGFloat UCUserOtherCellHeight = 48;
 
 #import "UCUserCenterViewModel.h"
 #import "UCUserCenterViewController.h"
@@ -44,9 +47,14 @@ const CGFloat UCUserOtherCellHeight = 60;
 
 - (void)configCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     NSInteger row = indexPath.row;
+    @weakify(self);
     if ([cell isKindOfClass:[UCUserInfoCell class]]) {
-//        UCUserInfoCell *infoCell = (UCUserInfoCell *)cell;
-        
+        UCUserInfoCell *infoCell = (UCUserInfoCell *)cell;
+        [[[infoCell.infoButton rac_signalForControlEvents:UIControlEventTouchUpInside] takeUntil:infoCell.rac_prepareForReuseSignal] subscribeNext:^(id x) {
+            @strongify(self);
+            UCInformationViewController  *vc = [[UCInformationViewController alloc] initWithNibName:@"UCInformationViewController" bundle:nil];
+            [self.viewController.navigationController pushViewController:vc animated:YES];
+        }];
     }else if ([cell isKindOfClass:[UCUserWalletCell class]]) {
 //        UCUserWalletCell *walletCell = (UCUserWalletCell *)cell;
         

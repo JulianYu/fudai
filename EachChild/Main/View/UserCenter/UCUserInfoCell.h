@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface UCUserInfoCell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UIButton *infoButton;
 
 @end

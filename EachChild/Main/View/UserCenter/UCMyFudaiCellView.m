@@ -7,21 +7,52 @@
 //
 
 #import "UCMyFudaiCellView.h"
+#import "public.h"
 
 @interface UCMyFudaiCellView ()
+
+@property (nonatomic, strong) UIImageView *background;
 
 
 @end
 
 @implementation UCMyFudaiCellView
 
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.background = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"uc_fudai_body"]];
+        
+        self.priceLabel = [[UILabel alloc] init];
+        self.priceLabel.text = @"$1200.00";
+        self.titleLabel = [[UILabel alloc] init];
+        self.titleLabel.numberOfLines = 2;
+        self.titleLabel.text = @"欧米伽手表欧米伽手表欧米伽手表欧米伽手表";
+    }
+    return self;
 }
-*/
+
+- (void)layoutSubviews {
+    [self addSubview:self.background];
+    [self addSubview:self.titleLabel];
+    [self addSubview:self.priceLabel];
+    @weakify(self);
+    [self.background mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.edges.equalTo(self);
+    }];
+    [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.top.equalTo(self).with.offset(8);
+        make.left.equalTo(self).with.offset(16);
+        make.width.mas_equalTo(200);
+    }];
+    [self.priceLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.right.mas_equalTo(self).with.offset(-16);
+        make.centerY.equalTo(self.mas_centerY);
+    }];
+}
 
 @end

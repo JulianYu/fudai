@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UCMyFudaiCellView : UIView
-@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
-@property (strong, nonatomic) IBOutlet UILabel *priceLabel;
+@property (strong, nonatomic)  UILabel *titleLabel;
+@property (strong, nonatomic)  UILabel *priceLabel;
 
 @end

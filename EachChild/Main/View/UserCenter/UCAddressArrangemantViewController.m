@@ -7,8 +7,14 @@
 //
 
 #import "UCAddressArrangemantViewController.h"
+#import "UCAddressArrangemantViewModel.h"
+#import "UCAddressListCell.h"
 
-@interface UCAddressArrangemantViewController ()
+static NSString *listCellID = @"UCAddressListCellID";
+
+@interface UCAddressArrangemantViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) UCAddressArrangemantViewModel *viewModel;
 
 @end
 
@@ -16,22 +22,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.title = @"收货地址管理";
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"uc_address_arrangemant_add"] style:UIBarButtonItemStylePlain target:self action:@selector(navigationRightButtonOnClicked)];
+    self.navigationItem.rightBarButtonItem = rightItem;
+    regNib(self.tableView, @"UCAddressListCell", listCellID);
+    self.tableView.rowHeight = 90;
+    
+}
+- (void)navigationRightButtonOnClicked {
+  
+}
+#pragma mark- UITableViewDelegate, UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 3;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UCAddressListCell *cell = [tableView dequeueReusableCellWithIdentifier:listCellID];
+    return cell;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.viewModel tableView:tableView didSelectRowAtIndexPath:indexPath];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UCAddressArrangemantViewModel *)viewModel {
+    if (!_viewModel) {
+        _viewModel = [[UCAddressArrangemantViewModel alloc] initWithViewController:self];
+    }
+    return _viewModel;
 }
-*/
+
+
 
 @end
