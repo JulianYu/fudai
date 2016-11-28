@@ -18,4 +18,7 @@
 - (CGFloat)height;
 - (CGPoint)center;
 
+- (void)roundView;
+- (void)drawBorderWithColor:(UIColor *)color width:(CGFloat)width;
+
 @end

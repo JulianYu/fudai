@@ -8,6 +8,8 @@
 
 #import "UCMyFudaiViewController.h"
 
+#import "BaseNavigationController.h"
+
 #import "UCInformationViewController.h"
 
 #import "UCConfirmedFudaiViewController.h"
@@ -15,6 +17,9 @@
 #import "UCAcumulatingPointsViewController.h"
 #import "UCAddressArrangemantViewController.h"
 #import "UCSettingViewController.h"
+
+#import "UCSettingTableViewController.h"
+
 
 #import "UCUserInfoCell.h"
 #import "UCUserWalletCell.h"
@@ -94,13 +99,24 @@ const CGFloat UCUserOtherCellHeight = 48;
         UCMyFudaiViewController *vc = [[UCMyFudaiViewController alloc] initWithNibName:@"UCMyFudaiViewController" bundle:nil];
         [self.viewController.navigationController pushViewController:vc animated:YES];
     }else if (6 == row) {
-        UCAcumulatingPointsViewController *vc = [[UCAcumulatingPointsViewController alloc] initWithNibName:@"UCAcumulatingPointsViewController" bundle:nil];
-        [self.viewController.navigationController pushViewController:vc animated:YES];
+        UIStoryboard *pointSB = [UIStoryboard storyboardWithName:@"UCPointsStoryboard" bundle:[NSBundle mainBundle]];
+//        BaseNavigationController *nav = [pointSB instantiateViewControllerWithIdentifier:@"root_nav"];
+        [pointSB.instantiateInitialViewController setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+       [self.viewController presentViewController:pointSB.instantiateInitialViewController animated:NO completion:^{
+           
+       }];
+        
+//        UCAcumulatingPointsViewController *vc = [[UCAcumulatingPointsViewController alloc] initWithNibName:@"UCAcumulatingPointsViewController" bundle:nil];
+//        [self.viewController.navigationController pushViewController:vc animated:YES];
     }else if (7 == row) {
-        UCAddressArrangemantViewController *vc = [[UCAddressArrangemantViewController alloc] initWithNibName:@"UCAddressArrangemantViewController" bundle:nil];
+        UIStoryboard *addressSB = [UIStoryboard storyboardWithName:@"UCAddressArrangementStoryboard" bundle:[NSBundle mainBundle]];
+        UCAddressArrangemantViewController *vc = [addressSB instantiateViewControllerWithIdentifier:@"first_vc"];
+//        UCAddressArrangemantViewController *vc = [[UCAddressArrangemantViewController alloc] initWithNibName:@"UCAddressArrangemantViewController" bundle:nil];
         [self.viewController.navigationController pushViewController:vc animated:YES];
     }else if (8 == row) {
-        UCSettingViewController *vc = [[UCSettingViewController alloc] initWithNibName:@"UCSettingViewController" bundle:nil];
+        UIStoryboard *settingSB = [UIStoryboard storyboardWithName:@"UCSettingStoreBoard" bundle:[NSBundle mainBundle]];
+        UCSettingTableViewController *vc = [settingSB instantiateViewControllerWithIdentifier:@"first_vc"];
+//        UCSettingViewController *vc = [[UCSettingViewController alloc] initWithNibName:@"UCSettingViewController" bundle:nil];
         [self.viewController.navigationController pushViewController:vc animated:YES];
     }
 }

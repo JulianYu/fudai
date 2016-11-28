@@ -34,5 +34,32 @@
     CGFloat y = self.y + self.height/2;
     return CGPointMake(x, y);
 }
+- (void)roundView {
+    [self layoutIfNeeded];
+    CGRect imgRect = self.bounds;
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:imgRect byRoundingCorners:UIRectCornerAllCorners cornerRadii:imgRect.size];
+    
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc]init];
+    //设置大小
+    maskLayer.frame = imgRect;
+    //设置图形样子
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+}
+- (void)drawBorderWithColor:(UIColor *)color width:(CGFloat)width {
+   
+    [self layoutIfNeeded];
+    CGRect rect = self.bounds;
+    UIBezierPath *path = [UIBezierPath bezierPathWithRect:rect];
+    CAShapeLayer *maskLayer = [CAShapeLayer layer];
+    maskLayer.fillColor = [UIColor clearColor].CGColor;
+    maskLayer.strokeColor = color.CGColor;
+    maskLayer.lineWidth = width;
+    maskLayer.frame = rect;
+    maskLayer.path = path.CGPath;
+    [self.layer addSublayer:maskLayer];
+   
+    
+}
 
 @end

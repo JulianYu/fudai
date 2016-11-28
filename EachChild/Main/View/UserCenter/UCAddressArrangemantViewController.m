@@ -10,6 +10,8 @@
 #import "UCAddressArrangemantViewModel.h"
 #import "UCAddressListCell.h"
 
+#import "UCAddAddressViewController.h"
+
 static NSString *listCellID = @"UCAddressListCellID";
 
 @interface UCAddressArrangemantViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -23,15 +25,20 @@ static NSString *listCellID = @"UCAddressListCellID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"收货地址管理";
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"uc_address_arrangemant_add"] style:UIBarButtonItemStylePlain target:self action:@selector(navigationRightButtonOnClicked)];
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"uc_address_arrangemant_add"] style:UIBarButtonItemStylePlain target:self action:@selector(rightButtonOnClicked:)];
     self.navigationItem.rightBarButtonItem = rightItem;
     regNib(self.tableView, @"UCAddressListCell", listCellID);
     self.tableView.rowHeight = 90;
     
+    
+    
 }
-- (void)navigationRightButtonOnClicked {
-  
+- (void)rightButtonOnClicked:(UIBarButtonItem *)rightItem {
+    UCAddAddressViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"add_vc"];
+    [self.navigationController pushViewController:vc animated:YES];
 }
+
+
 #pragma mark- UITableViewDelegate, UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 3;

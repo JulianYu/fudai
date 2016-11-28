@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0453727B1DEBCB2500CF0734 /* UCSettingStoreBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0453727A1DEBCB2500CF0734 /* UCSettingStoreBoard.storyboard */; };
+		0453727E1DEBCD4A00CF0734 /* UCSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453727D1DEBCD4A00CF0734 /* UCSettingTableViewController.m */; };
+		045372811DEBE12F00CF0734 /* UIPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045372801DEBE12F00CF0734 /* UIPlaceHolderTextView.m */; };
+		045372861DEBFE9200CF0734 /* UCAddressArrangementStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045372851DEBFE9200CF0734 /* UCAddressArrangementStoryboard.storyboard */; };
+		045372891DEC06C500CF0734 /* UCAddAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045372881DEC06C500CF0734 /* UCAddAddressViewController.m */; };
+		0453728F1DEC0DF200CF0734 /* UCEditAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0453728E1DEC0DF200CF0734 /* UCEditAddressViewController.m */; };
+		045372921DEC163B00CF0734 /* UCPointsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045372911DEC163B00CF0734 /* UCPointsStoryboard.storyboard */; };
+		045372941DEC17D900CF0734 /* public_nav_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 045372931DEC17D900CF0734 /* public_nav_back@2x.png */; };
+		0453729A1DEC201300CF0734 /* UCPointDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045372991DEC201300CF0734 /* UCPointDetailTableViewController.m */; };
 		048BCCBE1DE5A1C700881AF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCCBD1DE5A1C700881AF7 /* main.m */; };
 		048BCCC11DE5A1C700881AF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCCC01DE5A1C700881AF7 /* AppDelegate.m */; };
 		048BCCC91DE5A1C700881AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048BCCC81DE5A1C700881AF7 /* Assets.xcassets */; };
@@ -80,7 +89,6 @@
 		048BCDD61DE7F4A700881AF7 /* UCAcumulatingPointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDD41DE7F4A700881AF7 /* UCAcumulatingPointsViewController.m */; };
 		048BCDD71DE7F4A700881AF7 /* UCAcumulatingPointsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDD51DE7F4A700881AF7 /* UCAcumulatingPointsViewController.xib */; };
 		048BCDDB1DE7F4CA00881AF7 /* UCAddressArrangemantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDD91DE7F4CA00881AF7 /* UCAddressArrangemantViewController.m */; };
-		048BCDDC1DE7F4CA00881AF7 /* UCAddressArrangemantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDDA1DE7F4CA00881AF7 /* UCAddressArrangemantViewController.xib */; };
 		048BCDE01DE7F4E400881AF7 /* UCSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDDE1DE7F4E400881AF7 /* UCSettingViewController.m */; };
 		048BCDE11DE7F4E400881AF7 /* UCSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDDF1DE7F4E400881AF7 /* UCSettingViewController.xib */; };
 		048BCDE51DE7F5D400881AF7 /* UCDelegationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDE31DE7F5D400881AF7 /* UCDelegationViewController.m */; };
@@ -92,11 +100,49 @@
 		048BCDF31DE82B4500881AF7 /* uc_fudai_footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDF01DE82B4500881AF7 /* uc_fudai_footer.png */; };
 		048BCDF41DE82B4500881AF7 /* uc_fudai_header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDF11DE82B4500881AF7 /* uc_fudai_header@2x.png */; };
 		048BCDF91DE83D5700881AF7 /* UCMyFudaiCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDF81DE83D5700881AF7 /* UCMyFudaiCellView.m */; };
-		048BCDFB1DE83D7200881AF7 /* UCMyFudaiCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDFA1DE83D7200881AF7 /* UCMyFudaiCellView.xib */; };
+		048BCE021DE9432900881AF7 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCE011DE9432900881AF7 /* UIView+frame.m */; };
+		048BCE121DE9614B00881AF7 /* UCAddressListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCE101DE9614B00881AF7 /* UCAddressListCell.m */; };
+		048BCE131DE9614C00881AF7 /* UCAddressListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCE111DE9614B00881AF7 /* UCAddressListCell.xib */; };
+		048BCE151DE96B1E00881AF7 /* uc_address_arrangemant_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCE141DE96B1E00881AF7 /* uc_address_arrangemant_add@2x.png */; };
+		048BCE181DE96C1200881AF7 /* UCAddressArrangemantViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCE171DE96C1200881AF7 /* UCAddressArrangemantViewModel.m */; };
+		048BCE1C1DE96E7700881AF7 /* UCSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCE1A1DE96E7700881AF7 /* UCSettingCell.m */; };
+		048BCE1D1DE96E7700881AF7 /* UCSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCE1B1DE96E7700881AF7 /* UCSettingCell.xib */; };
+		048BCE211DE96E9300881AF7 /* UCVersionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCE1F1DE96E9200881AF7 /* UCVersionCell.m */; };
+		048BCE221DE96E9300881AF7 /* UCVersionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCE201DE96E9200881AF7 /* UCVersionCell.xib */; };
+		048BCE251DE9731100881AF7 /* UCSettingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCE241DE9731100881AF7 /* UCSettingViewModel.m */; };
+		048BCE2C1DE97DDA00881AF7 /* UCInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCE2A1DE97DDA00881AF7 /* UCInformationViewController.m */; };
+		048BCE2D1DE97DDA00881AF7 /* UCInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCE2B1DE97DDA00881AF7 /* UCInformationViewController.xib */; };
+		048BCE321DE9810500881AF7 /* UCInformationPortraitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCE301DE9810500881AF7 /* UCInformationPortraitCell.m */; };
+		048BCE331DE9810500881AF7 /* UCInformationPortraitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCE311DE9810500881AF7 /* UCInformationPortraitCell.xib */; };
+		048BCE371DE9815200881AF7 /* UCInformationSignCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCE351DE9815200881AF7 /* UCInformationSignCell.m */; };
+		048BCE381DE9815200881AF7 /* UCInformationSignCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCE361DE9815200881AF7 /* UCInformationSignCell.xib */; };
+		048BCE3C1DE9816B00881AF7 /* UCInformationOtherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCE3A1DE9816B00881AF7 /* UCInformationOtherCell.m */; };
+		048BCE3D1DE9816B00881AF7 /* UCInformationOtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCE3B1DE9816B00881AF7 /* UCInformationOtherCell.xib */; };
+		048BCE431DE98D5000881AF7 /* UCInformationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCE421DE98D5000881AF7 /* UCInformationViewModel.m */; };
+		048BCE4C1DE9925C00881AF7 /* UCInformationNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCE4A1DE9925C00881AF7 /* UCInformationNicknameViewController.m */; };
+		048BCE4D1DE9925C00881AF7 /* UCInformationNicknameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCE4B1DE9925C00881AF7 /* UCInformationNicknameViewController.xib */; };
+		048BCE511DE9927800881AF7 /* UCInformationGenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCE4F1DE9927800881AF7 /* UCInformationGenderViewController.m */; };
+		048BCE521DE9927800881AF7 /* UCInformationGenderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCE501DE9927800881AF7 /* UCInformationGenderViewController.xib */; };
+		048BCE561DE992AE00881AF7 /* UCInformationSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCE541DE992AE00881AF7 /* UCInformationSignatureViewController.m */; };
+		048BCE571DE992AE00881AF7 /* UCInformationSignatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCE551DE992AE00881AF7 /* UCInformationSignatureViewController.xib */; };
 		D2F51629C3E2A95C515208BD /* libPods-EachChild.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9177D1ED9AAC596E2B376C4 /* libPods-EachChild.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0453727A1DEBCB2500CF0734 /* UCSettingStoreBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UCSettingStoreBoard.storyboard; sourceTree = "<group>"; };
+		0453727C1DEBCD4A00CF0734 /* UCSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCSettingTableViewController.h; sourceTree = "<group>"; };
+		0453727D1DEBCD4A00CF0734 /* UCSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCSettingTableViewController.m; sourceTree = "<group>"; };
+		0453727F1DEBE12F00CF0734 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
+		045372801DEBE12F00CF0734 /* UIPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceHolderTextView.m; sourceTree = "<group>"; };
+		045372851DEBFE9200CF0734 /* UCAddressArrangementStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UCAddressArrangementStoryboard.storyboard; sourceTree = "<group>"; };
+		045372871DEC06C500CF0734 /* UCAddAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCAddAddressViewController.h; sourceTree = "<group>"; };
+		045372881DEC06C500CF0734 /* UCAddAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCAddAddressViewController.m; sourceTree = "<group>"; };
+		0453728D1DEC0DF200CF0734 /* UCEditAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCEditAddressViewController.h; sourceTree = "<group>"; };
+		0453728E1DEC0DF200CF0734 /* UCEditAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCEditAddressViewController.m; sourceTree = "<group>"; };
+		045372911DEC163B00CF0734 /* UCPointsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UCPointsStoryboard.storyboard; sourceTree = "<group>"; };
+		045372931DEC17D900CF0734 /* public_nav_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "public_nav_back@2x.png"; sourceTree = "<group>"; };
+		045372981DEC201300CF0734 /* UCPointDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCPointDetailTableViewController.h; sourceTree = "<group>"; };
+		045372991DEC201300CF0734 /* UCPointDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCPointDetailTableViewController.m; sourceTree = "<group>"; };
 		048BCCB91DE5A1C700881AF7 /* EachChild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EachChild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048BCCBD1DE5A1C700881AF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		048BCCBF1DE5A1C700881AF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -211,7 +257,6 @@
 		048BCDD51DE7F4A700881AF7 /* UCAcumulatingPointsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCAcumulatingPointsViewController.xib; sourceTree = "<group>"; };
 		048BCDD81DE7F4CA00881AF7 /* UCAddressArrangemantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCAddressArrangemantViewController.h; sourceTree = "<group>"; };
 		048BCDD91DE7F4CA00881AF7 /* UCAddressArrangemantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCAddressArrangemantViewController.m; sourceTree = "<group>"; };
-		048BCDDA1DE7F4CA00881AF7 /* UCAddressArrangemantViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCAddressArrangemantViewController.xib; sourceTree = "<group>"; };
 		048BCDDD1DE7F4E400881AF7 /* UCSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCSettingViewController.h; sourceTree = "<group>"; };
 		048BCDDE1DE7F4E400881AF7 /* UCSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCSettingViewController.m; sourceTree = "<group>"; };
 		048BCDDF1DE7F4E400881AF7 /* UCSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCSettingViewController.xib; sourceTree = "<group>"; };
@@ -228,10 +273,48 @@
 		048BCDF11DE82B4500881AF7 /* uc_fudai_header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uc_fudai_header@2x.png"; sourceTree = "<group>"; };
 		048BCDF71DE83D5700881AF7 /* UCMyFudaiCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCMyFudaiCellView.h; sourceTree = "<group>"; };
 		048BCDF81DE83D5700881AF7 /* UCMyFudaiCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCMyFudaiCellView.m; sourceTree = "<group>"; };
-		048BCDFA1DE83D7200881AF7 /* UCMyFudaiCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCMyFudaiCellView.xib; sourceTree = "<group>"; };
 		048BCDFD1DE840FE00881AF7 /* CellHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellHeader.h; sourceTree = "<group>"; };
 		048BCDFE1DE840FE00881AF7 /* model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
 		048BCDFF1DE840FE00881AF7 /* public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = public.h; sourceTree = "<group>"; };
+		048BCE001DE9432900881AF7 /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		048BCE011DE9432900881AF7 /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		048BCE0F1DE9614B00881AF7 /* UCAddressListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCAddressListCell.h; sourceTree = "<group>"; };
+		048BCE101DE9614B00881AF7 /* UCAddressListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCAddressListCell.m; sourceTree = "<group>"; };
+		048BCE111DE9614B00881AF7 /* UCAddressListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCAddressListCell.xib; sourceTree = "<group>"; };
+		048BCE141DE96B1E00881AF7 /* uc_address_arrangemant_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uc_address_arrangemant_add@2x.png"; sourceTree = "<group>"; };
+		048BCE161DE96C1200881AF7 /* UCAddressArrangemantViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCAddressArrangemantViewModel.h; sourceTree = "<group>"; };
+		048BCE171DE96C1200881AF7 /* UCAddressArrangemantViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCAddressArrangemantViewModel.m; sourceTree = "<group>"; };
+		048BCE191DE96E7700881AF7 /* UCSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCSettingCell.h; sourceTree = "<group>"; };
+		048BCE1A1DE96E7700881AF7 /* UCSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCSettingCell.m; sourceTree = "<group>"; };
+		048BCE1B1DE96E7700881AF7 /* UCSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCSettingCell.xib; sourceTree = "<group>"; };
+		048BCE1E1DE96E9200881AF7 /* UCVersionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCVersionCell.h; sourceTree = "<group>"; };
+		048BCE1F1DE96E9200881AF7 /* UCVersionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCVersionCell.m; sourceTree = "<group>"; };
+		048BCE201DE96E9200881AF7 /* UCVersionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCVersionCell.xib; sourceTree = "<group>"; };
+		048BCE231DE9731100881AF7 /* UCSettingViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCSettingViewModel.h; sourceTree = "<group>"; };
+		048BCE241DE9731100881AF7 /* UCSettingViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCSettingViewModel.m; sourceTree = "<group>"; };
+		048BCE291DE97DDA00881AF7 /* UCInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCInformationViewController.h; sourceTree = "<group>"; };
+		048BCE2A1DE97DDA00881AF7 /* UCInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCInformationViewController.m; sourceTree = "<group>"; };
+		048BCE2B1DE97DDA00881AF7 /* UCInformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCInformationViewController.xib; sourceTree = "<group>"; };
+		048BCE2F1DE9810500881AF7 /* UCInformationPortraitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCInformationPortraitCell.h; sourceTree = "<group>"; };
+		048BCE301DE9810500881AF7 /* UCInformationPortraitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCInformationPortraitCell.m; sourceTree = "<group>"; };
+		048BCE311DE9810500881AF7 /* UCInformationPortraitCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCInformationPortraitCell.xib; sourceTree = "<group>"; };
+		048BCE341DE9815200881AF7 /* UCInformationSignCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCInformationSignCell.h; sourceTree = "<group>"; };
+		048BCE351DE9815200881AF7 /* UCInformationSignCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCInformationSignCell.m; sourceTree = "<group>"; };
+		048BCE361DE9815200881AF7 /* UCInformationSignCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCInformationSignCell.xib; sourceTree = "<group>"; };
+		048BCE391DE9816B00881AF7 /* UCInformationOtherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCInformationOtherCell.h; sourceTree = "<group>"; };
+		048BCE3A1DE9816B00881AF7 /* UCInformationOtherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCInformationOtherCell.m; sourceTree = "<group>"; };
+		048BCE3B1DE9816B00881AF7 /* UCInformationOtherCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCInformationOtherCell.xib; sourceTree = "<group>"; };
+		048BCE411DE98D5000881AF7 /* UCInformationViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCInformationViewModel.h; sourceTree = "<group>"; };
+		048BCE421DE98D5000881AF7 /* UCInformationViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCInformationViewModel.m; sourceTree = "<group>"; };
+		048BCE491DE9925C00881AF7 /* UCInformationNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCInformationNicknameViewController.h; sourceTree = "<group>"; };
+		048BCE4A1DE9925C00881AF7 /* UCInformationNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCInformationNicknameViewController.m; sourceTree = "<group>"; };
+		048BCE4B1DE9925C00881AF7 /* UCInformationNicknameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCInformationNicknameViewController.xib; sourceTree = "<group>"; };
+		048BCE4E1DE9927800881AF7 /* UCInformationGenderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCInformationGenderViewController.h; sourceTree = "<group>"; };
+		048BCE4F1DE9927800881AF7 /* UCInformationGenderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCInformationGenderViewController.m; sourceTree = "<group>"; };
+		048BCE501DE9927800881AF7 /* UCInformationGenderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCInformationGenderViewController.xib; sourceTree = "<group>"; };
+		048BCE531DE992AE00881AF7 /* UCInformationSignatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCInformationSignatureViewController.h; sourceTree = "<group>"; };
+		048BCE541DE992AE00881AF7 /* UCInformationSignatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCInformationSignatureViewController.m; sourceTree = "<group>"; };
+		048BCE551DE992AE00881AF7 /* UCInformationSignatureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCInformationSignatureViewController.xib; sourceTree = "<group>"; };
 		1399B3CE7BFD91AB806FD91F /* Pods-EachChild.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EachChild.release.xcconfig"; path = "Pods/Target Support Files/Pods-EachChild/Pods-EachChild.release.xcconfig"; sourceTree = "<group>"; };
 		7C47E97796E138700AC7260B /* Pods-EachChild.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EachChild.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EachChild/Pods-EachChild.debug.xcconfig"; sourceTree = "<group>"; };
 		E9177D1ED9AAC596E2B376C4 /* libPods-EachChild.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EachChild.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -249,6 +332,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045372821DEBFD2400CF0734 /* deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				048BCDDD1DE7F4E400881AF7 /* UCSettingViewController.h */,
+				048BCDDE1DE7F4E400881AF7 /* UCSettingViewController.m */,
+				048BCDDF1DE7F4E400881AF7 /* UCSettingViewController.xib */,
+				048BCE191DE96E7700881AF7 /* UCSettingCell.h */,
+				048BCE1A1DE96E7700881AF7 /* UCSettingCell.m */,
+				048BCE1B1DE96E7700881AF7 /* UCSettingCell.xib */,
+				048BCE1E1DE96E9200881AF7 /* UCVersionCell.h */,
+				048BCE1F1DE96E9200881AF7 /* UCVersionCell.m */,
+				048BCE201DE96E9200881AF7 /* UCVersionCell.xib */,
+			);
+			name = deprecated;
+			sourceTree = "<group>";
+		};
+		045372901DEC15DF00CF0734 /* accumulate points */ = {
+			isa = PBXGroup;
+			children = (
+				048BCDD31DE7F4A700881AF7 /* UCAcumulatingPointsViewController.h */,
+				048BCDD41DE7F4A700881AF7 /* UCAcumulatingPointsViewController.m */,
+				048BCDD51DE7F4A700881AF7 /* UCAcumulatingPointsViewController.xib */,
+				045372911DEC163B00CF0734 /* UCPointsStoryboard.storyboard */,
+				045372981DEC201300CF0734 /* UCPointDetailTableViewController.h */,
+				045372991DEC201300CF0734 /* UCPointDetailTableViewController.m */,
+			);
+			name = "accumulate points";
+			sourceTree = "<group>";
+		};
 		048BCCB01DE5A1C700881AF7 = {
 			isa = PBXGroup;
 			children = (
@@ -451,24 +563,14 @@
 				048BCD401DE6C9C700881AF7 /* UCUserCenterViewController.h */,
 				048BCD411DE6C9C700881AF7 /* UCUserCenterViewController.m */,
 				048BCD421DE6C9C700881AF7 /* UCUserCenterViewController.xib */,
-				048BCDC91DE7ECE600881AF7 /* UCMyFudaiViewController.h */,
-				048BCDCA1DE7ECE600881AF7 /* UCMyFudaiViewController.m */,
-				048BCDCB1DE7ECE600881AF7 /* UCMyFudaiViewController.xib */,
-				048BCDCE1DE7F47200881AF7 /* UCConfirmedFudaiViewController.h */,
-				048BCDCF1DE7F47200881AF7 /* UCConfirmedFudaiViewController.m */,
-				048BCDD01DE7F47200881AF7 /* UCConfirmedFudaiViewController.xib */,
 				048BCDE21DE7F5D400881AF7 /* UCDelegationViewController.h */,
 				048BCDE31DE7F5D400881AF7 /* UCDelegationViewController.m */,
 				048BCDE41DE7F5D400881AF7 /* UCDelegationViewController.xib */,
-				048BCDD31DE7F4A700881AF7 /* UCAcumulatingPointsViewController.h */,
-				048BCDD41DE7F4A700881AF7 /* UCAcumulatingPointsViewController.m */,
-				048BCDD51DE7F4A700881AF7 /* UCAcumulatingPointsViewController.xib */,
-				048BCDD81DE7F4CA00881AF7 /* UCAddressArrangemantViewController.h */,
-				048BCDD91DE7F4CA00881AF7 /* UCAddressArrangemantViewController.m */,
-				048BCDDA1DE7F4CA00881AF7 /* UCAddressArrangemantViewController.xib */,
-				048BCDDD1DE7F4E400881AF7 /* UCSettingViewController.h */,
-				048BCDDE1DE7F4E400881AF7 /* UCSettingViewController.m */,
-				048BCDDF1DE7F4E400881AF7 /* UCSettingViewController.xib */,
+				045372901DEC15DF00CF0734 /* accumulate points */,
+				048BCE2E1DE97DE400881AF7 /* user info */,
+				048BCE281DE97B0300881AF7 /* fudai */,
+				048BCE271DE975FC00881AF7 /* address */,
+				048BCE261DE975DF00881AF7 /* settings */,
 			);
 			path = UserCenter;
 			sourceTree = "<group>";
@@ -516,6 +618,12 @@
 			children = (
 				048BCD4E1DE6CADC00881AF7 /* UCUserCenterViewModel.h */,
 				048BCD4F1DE6CADC00881AF7 /* UCUserCenterViewModel.m */,
+				048BCE161DE96C1200881AF7 /* UCAddressArrangemantViewModel.h */,
+				048BCE171DE96C1200881AF7 /* UCAddressArrangemantViewModel.m */,
+				048BCE231DE9731100881AF7 /* UCSettingViewModel.h */,
+				048BCE241DE9731100881AF7 /* UCSettingViewModel.m */,
+				048BCE411DE98D5000881AF7 /* UCInformationViewModel.h */,
+				048BCE421DE98D5000881AF7 /* UCInformationViewModel.m */,
 			);
 			path = UserCenter;
 			sourceTree = "<group>";
@@ -523,6 +631,8 @@
 		048BCD611DE6D30900881AF7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				045372931DEC17D900CF0734 /* public_nav_back@2x.png */,
+				048BCE141DE96B1E00881AF7 /* uc_address_arrangemant_add@2x.png */,
 				048BCDEF1DE82B4500881AF7 /* uc_fudai_body@2x.png */,
 				048BCDF01DE82B4500881AF7 /* uc_fudai_footer.png */,
 				048BCDF11DE82B4500881AF7 /* uc_fudai_header@2x.png */,
@@ -556,6 +666,8 @@
 				048BCDBC1DE7DCCA00881AF7 /* NSObject+conversion.m */,
 				048BCDE71DE8268F00881AF7 /* UIColor+extention.h */,
 				048BCDE81DE8268F00881AF7 /* UIColor+extention.m */,
+				048BCE001DE9432900881AF7 /* UIView+frame.h */,
+				048BCE011DE9432900881AF7 /* UIView+frame.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -565,6 +677,8 @@
 			children = (
 				048BCD8F1DE6E85800881AF7 /* FlowLayout.h */,
 				048BCD901DE6E85800881AF7 /* FlowLayout.m */,
+				0453727F1DEBE12F00CF0734 /* UIPlaceHolderTextView.h */,
+				045372801DEBE12F00CF0734 /* UIPlaceHolderTextView.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -620,12 +734,6 @@
 				048BCDA21DE6F28700881AF7 /* UCUserOtherCell.h */,
 				048BCDA31DE6F28700881AF7 /* UCUserOtherCell.m */,
 				048BCDA41DE6F28700881AF7 /* UCUserOtherCell.xib */,
-				048BCDEA1DE8271A00881AF7 /* UCMyFudaiCell.h */,
-				048BCDEB1DE8271A00881AF7 /* UCMyFudaiCell.m */,
-				048BCDEC1DE8271A00881AF7 /* UCMyFudaiCell.xib */,
-				048BCDF71DE83D5700881AF7 /* UCMyFudaiCellView.h */,
-				048BCDF81DE83D5700881AF7 /* UCMyFudaiCellView.m */,
-				048BCDFA1DE83D7200881AF7 /* UCMyFudaiCellView.xib */,
 			);
 			name = cell;
 			sourceTree = "<group>";
@@ -638,6 +746,80 @@
 				048BCDFF1DE840FE00881AF7 /* public.h */,
 			);
 			path = Micros;
+			sourceTree = "<group>";
+		};
+		048BCE261DE975DF00881AF7 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				045372821DEBFD2400CF0734 /* deprecated */,
+				0453727A1DEBCB2500CF0734 /* UCSettingStoreBoard.storyboard */,
+				0453727C1DEBCD4A00CF0734 /* UCSettingTableViewController.h */,
+				0453727D1DEBCD4A00CF0734 /* UCSettingTableViewController.m */,
+			);
+			name = settings;
+			sourceTree = "<group>";
+		};
+		048BCE271DE975FC00881AF7 /* address */ = {
+			isa = PBXGroup;
+			children = (
+				048BCE0F1DE9614B00881AF7 /* UCAddressListCell.h */,
+				048BCE101DE9614B00881AF7 /* UCAddressListCell.m */,
+				048BCE111DE9614B00881AF7 /* UCAddressListCell.xib */,
+				048BCDD81DE7F4CA00881AF7 /* UCAddressArrangemantViewController.h */,
+				048BCDD91DE7F4CA00881AF7 /* UCAddressArrangemantViewController.m */,
+				045372851DEBFE9200CF0734 /* UCAddressArrangementStoryboard.storyboard */,
+				045372871DEC06C500CF0734 /* UCAddAddressViewController.h */,
+				045372881DEC06C500CF0734 /* UCAddAddressViewController.m */,
+				0453728D1DEC0DF200CF0734 /* UCEditAddressViewController.h */,
+				0453728E1DEC0DF200CF0734 /* UCEditAddressViewController.m */,
+			);
+			name = address;
+			sourceTree = "<group>";
+		};
+		048BCE281DE97B0300881AF7 /* fudai */ = {
+			isa = PBXGroup;
+			children = (
+				048BCDEA1DE8271A00881AF7 /* UCMyFudaiCell.h */,
+				048BCDEB1DE8271A00881AF7 /* UCMyFudaiCell.m */,
+				048BCDEC1DE8271A00881AF7 /* UCMyFudaiCell.xib */,
+				048BCDF71DE83D5700881AF7 /* UCMyFudaiCellView.h */,
+				048BCDF81DE83D5700881AF7 /* UCMyFudaiCellView.m */,
+				048BCDC91DE7ECE600881AF7 /* UCMyFudaiViewController.h */,
+				048BCDCA1DE7ECE600881AF7 /* UCMyFudaiViewController.m */,
+				048BCDCB1DE7ECE600881AF7 /* UCMyFudaiViewController.xib */,
+				048BCDCE1DE7F47200881AF7 /* UCConfirmedFudaiViewController.h */,
+				048BCDCF1DE7F47200881AF7 /* UCConfirmedFudaiViewController.m */,
+				048BCDD01DE7F47200881AF7 /* UCConfirmedFudaiViewController.xib */,
+			);
+			name = fudai;
+			sourceTree = "<group>";
+		};
+		048BCE2E1DE97DE400881AF7 /* user info */ = {
+			isa = PBXGroup;
+			children = (
+				048BCE291DE97DDA00881AF7 /* UCInformationViewController.h */,
+				048BCE2A1DE97DDA00881AF7 /* UCInformationViewController.m */,
+				048BCE2B1DE97DDA00881AF7 /* UCInformationViewController.xib */,
+				048BCE2F1DE9810500881AF7 /* UCInformationPortraitCell.h */,
+				048BCE301DE9810500881AF7 /* UCInformationPortraitCell.m */,
+				048BCE311DE9810500881AF7 /* UCInformationPortraitCell.xib */,
+				048BCE341DE9815200881AF7 /* UCInformationSignCell.h */,
+				048BCE351DE9815200881AF7 /* UCInformationSignCell.m */,
+				048BCE361DE9815200881AF7 /* UCInformationSignCell.xib */,
+				048BCE391DE9816B00881AF7 /* UCInformationOtherCell.h */,
+				048BCE3A1DE9816B00881AF7 /* UCInformationOtherCell.m */,
+				048BCE3B1DE9816B00881AF7 /* UCInformationOtherCell.xib */,
+				048BCE491DE9925C00881AF7 /* UCInformationNicknameViewController.h */,
+				048BCE4A1DE9925C00881AF7 /* UCInformationNicknameViewController.m */,
+				048BCE4B1DE9925C00881AF7 /* UCInformationNicknameViewController.xib */,
+				048BCE4E1DE9927800881AF7 /* UCInformationGenderViewController.h */,
+				048BCE4F1DE9927800881AF7 /* UCInformationGenderViewController.m */,
+				048BCE501DE9927800881AF7 /* UCInformationGenderViewController.xib */,
+				048BCE531DE992AE00881AF7 /* UCInformationSignatureViewController.h */,
+				048BCE541DE992AE00881AF7 /* UCInformationSignatureViewController.m */,
+				048BCE551DE992AE00881AF7 /* UCInformationSignatureViewController.xib */,
+			);
+			name = "user info";
 			sourceTree = "<group>";
 		};
 		B78FC2FC6A7FF3320581D9CC /* Pods */ = {
@@ -700,8 +882,6 @@
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
-			knownRegions = (
-			);
 			mainGroup = 048BCCB01DE5A1C700881AF7;
 			productRefGroup = 048BCCBA1DE5A1C700881AF7 /* Products */;
 			projectDirPath = "";
@@ -721,6 +901,7 @@
 				048BCDF41DE82B4500881AF7 /* uc_fudai_header@2x.png in Resources */,
 				048BCDA61DE6F28700881AF7 /* UCUserOtherCell.xib in Resources */,
 				048BCD591DE6D2E700881AF7 /* tabbar_fm_selected@2x.png in Resources */,
+				048BCE571DE992AE00881AF7 /* UCInformationSignatureViewController.xib in Resources */,
 				048BCDB91DE7D57400881AF7 /* uc_address@2x.png in Resources */,
 				048BCD5B1DE6D2E700881AF7 /* tabbar_hp_selected@2x.png in Resources */,
 				048BCD801DE6DB4100881AF7 /* im_gallery01@2x.png in Resources */,
@@ -728,35 +909,47 @@
 				048BCDEE1DE8271A00881AF7 /* UCMyFudaiCell.xib in Resources */,
 				048BCDA11DE6F24100881AF7 /* UCUserWalletCell.xib in Resources */,
 				048BCDD71DE7F4A700881AF7 /* UCAcumulatingPointsViewController.xib in Resources */,
+				045372921DEC163B00CF0734 /* UCPointsStoryboard.storyboard in Resources */,
 				048BCD441DE6C9C700881AF7 /* UCUserCenterViewController.xib in Resources */,
 				048BCD351DE6C91E00881AF7 /* HPHomePageViewController.xib in Resources */,
 				048BCDBA1DE7D57400881AF7 /* uc_setting@2x.png in Resources */,
 				048BCDB21DE7D38B00881AF7 /* uc_confirm_fudai@2x.png in Resources */,
+				048BCE2D1DE97DDA00881AF7 /* UCInformationViewController.xib in Resources */,
 				048BCD601DE6D2E700881AF7 /* tabbar_uc@2x.png in Resources */,
 				048BCD8E1DE6E5CE00881AF7 /* fm_fudai_cell@2x.jpg in Resources */,
 				048BCDAA1DE7CE7300881AF7 /* uc_default_portrait@2x.png in Resources */,
 				048BCD5D1DE6D2E700881AF7 /* tabbar_im_selected@2x.png in Resources */,
 				048BCD821DE6DB4100881AF7 /* im_gallery03@2x.png in Resources */,
 				048BCDB81DE7D57400881AF7 /* uc_accumulate_points@2x.png in Resources */,
+				048BCE521DE9927800881AF7 /* UCInformationGenderViewController.xib in Resources */,
 				048BCDF31DE82B4500881AF7 /* uc_fudai_footer.png in Resources */,
 				048BCDCD1DE7ECE600881AF7 /* UCMyFudaiViewController.xib in Resources */,
 				048BCDA81DE7CAC000881AF7 /* uc_bg@2x.png in Resources */,
+				048BCE381DE9815200881AF7 /* UCInformationSignCell.xib in Resources */,
 				048BCD3F1DE6C9B400881AF7 /* IMInstantMessagingViewController.xib in Resources */,
+				045372941DEC17D900CF0734 /* public_nav_back@2x.png in Resources */,
 				048BCCC91DE5A1C700881AF7 /* Assets.xcassets in Resources */,
 				048BCD3A1DE6C93C00881AF7 /* FMFudaiMarketViewController.xib in Resources */,
+				0453727B1DEBCB2500CF0734 /* UCSettingStoreBoard.storyboard in Resources */,
 				048BCDAE1DE7D08600881AF7 /* uc_bankcard@2x.png in Resources */,
 				048BCDE11DE7F4E400881AF7 /* UCSettingViewController.xib in Resources */,
 				048BCDB41DE7D3D500881AF7 /* uc_my_delegation@2x.png in Resources */,
 				048BCD811DE6DB4100881AF7 /* im_gallery02@2x.png in Resources */,
 				048BCDB01DE7D36B00881AF7 /* uc_my_fudai@2x.png in Resources */,
-				048BCDDC1DE7F4CA00881AF7 /* UCAddressArrangemantViewController.xib in Resources */,
 				048BCDAD1DE7D08600881AF7 /* uc_balance@2x.png in Resources */,
 				048BCD8C1DE6E55600881AF7 /* FMFudaiCell.xib in Resources */,
 				048BCDF21DE82B4500881AF7 /* uc_fudai_body@2x.png in Resources */,
+				048BCE331DE9810500881AF7 /* UCInformationPortraitCell.xib in Resources */,
+				048BCE1D1DE96E7700881AF7 /* UCSettingCell.xib in Resources */,
+				048BCE131DE9614C00881AF7 /* UCAddressListCell.xib in Resources */,
+				048BCE221DE96E9300881AF7 /* UCVersionCell.xib in Resources */,
+				045372861DEBFE9200CF0734 /* UCAddressArrangementStoryboard.storyboard in Resources */,
 				048BCD5F1DE6D2E700881AF7 /* tabbar_uc_selected@2x.png in Resources */,
 				048BCDE61DE7F5D400881AF7 /* UCDelegationViewController.xib in Resources */,
-				048BCDFB1DE83D7200881AF7 /* UCMyFudaiCellView.xib in Resources */,
+				048BCE151DE96B1E00881AF7 /* uc_address_arrangemant_add@2x.png in Resources */,
+				048BCE3D1DE9816B00881AF7 /* UCInformationOtherCell.xib in Resources */,
 				048BCD5A1DE6D2E700881AF7 /* tabbar_fm@2x.png in Resources */,
+				048BCE4D1DE9925C00881AF7 /* UCInformationNicknameViewController.xib in Resources */,
 				048BCD5E1DE6D2E700881AF7 /* tabbar_im@2x.png in Resources */,
 				048BCDD21DE7F47200881AF7 /* UCConfirmedFudaiViewController.xib in Resources */,
 			);
@@ -817,9 +1010,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048BCE1C1DE96E7700881AF7 /* UCSettingCell.m in Sources */,
 				048BCD241DE6C5FE00881AF7 /* FMModel.m in Sources */,
+				0453727E1DEBCD4A00CF0734 /* UCSettingTableViewController.m in Sources */,
+				045372811DEBE12F00CF0734 /* UIPlaceHolderTextView.m in Sources */,
+				048BCE371DE9815200881AF7 /* UCInformationSignCell.m in Sources */,
 				048BCD751DE6DA5A00881AF7 /* TAAbstractDotView.m in Sources */,
 				048BCD301DE6C8E000881AF7 /* UCInfoModel.m in Sources */,
+				048BCE021DE9432900881AF7 /* UIView+frame.m in Sources */,
 				048BCDD11DE7F47200881AF7 /* UCConfirmedFudaiViewController.m in Sources */,
 				048BCD4D1DE6CAC400881AF7 /* IMInstantMessagingViewModel.m in Sources */,
 				048BCCF41DE6C37F00881AF7 /* BaseModel.m in Sources */,
@@ -827,12 +1025,15 @@
 				048BCCF71DE6C38D00881AF7 /* BaseViewModel.m in Sources */,
 				048BCD431DE6C9C700881AF7 /* UCUserCenterViewController.m in Sources */,
 				048BCD791DE6DA5A00881AF7 /* SDCollectionViewCell.m in Sources */,
+				048BCE2C1DE97DDA00881AF7 /* UCInformationViewController.m in Sources */,
 				048BCD761DE6DA5A00881AF7 /* TAAnimatedDotView.m in Sources */,
 				048BCCC11DE5A1C700881AF7 /* AppDelegate.m in Sources */,
 				048BCDF91DE83D5700881AF7 /* UCMyFudaiCellView.m in Sources */,
 				048BCDED1DE8271A00881AF7 /* UCMyFudaiCell.m in Sources */,
 				048BCCFA1DE6C3C400881AF7 /* BaseRequstViewModel.m in Sources */,
+				048BCE121DE9614B00881AF7 /* UCAddressListCell.m in Sources */,
 				048BCD4A1DE6CAAB00881AF7 /* FMFudaiMarketViewModel.m in Sources */,
+				045372891DEC06C500CF0734 /* UCAddAddressViewController.m in Sources */,
 				048BCD2A1DE6C61C00881AF7 /* UCModel.m in Sources */,
 				048BCD391DE6C93C00881AF7 /* FMFudaiMarketViewController.m in Sources */,
 				048BCD7A1DE6DA5A00881AF7 /* SDCycleScrollView.m in Sources */,
@@ -841,24 +1042,35 @@
 				048BCD471DE6CA8A00881AF7 /* HPHomePageViewModel.m in Sources */,
 				048BCD341DE6C91E00881AF7 /* HPHomePageViewController.m in Sources */,
 				048BCD271DE6C60D00881AF7 /* IMModel.m in Sources */,
+				048BCE561DE992AE00881AF7 /* UCInformationSignatureViewController.m in Sources */,
+				0453728F1DEC0DF200CF0734 /* UCEditAddressViewController.m in Sources */,
+				048BCE431DE98D5000881AF7 /* UCInformationViewModel.m in Sources */,
 				048BCD7B1DE6DA5A00881AF7 /* UIView+SDExtension.m in Sources */,
 				048BCD8B1DE6E55600881AF7 /* FMFudaiCell.m in Sources */,
+				048BCE3C1DE9816B00881AF7 /* UCInformationOtherCell.m in Sources */,
 				048BCDCC1DE7ECE600881AF7 /* UCMyFudaiViewController.m in Sources */,
 				048BCDE01DE7F4E400881AF7 /* UCSettingViewController.m in Sources */,
 				048BCDD61DE7F4A700881AF7 /* UCAcumulatingPointsViewController.m in Sources */,
 				048BCD961DE6F15700881AF7 /* UCUserInfoCell.m in Sources */,
+				048BCE4C1DE9925C00881AF7 /* UCInformationNicknameViewController.m in Sources */,
 				048BCDA01DE6F24100881AF7 /* UCUserWalletCell.m in Sources */,
 				048BCD781DE6DA5A00881AF7 /* TAPageControl.m in Sources */,
+				048BCE251DE9731100881AF7 /* UCSettingViewModel.m in Sources */,
 				048BCCEB1DE6C23F00881AF7 /* BaseTabbarController.m in Sources */,
 				048BCD211DE6C5E900881AF7 /* HPModel.m in Sources */,
 				048BCCBE1DE5A1C700881AF7 /* main.m in Sources */,
 				048BCDE51DE7F5D400881AF7 /* UCDelegationViewController.m in Sources */,
 				048BCDE91DE8268F00881AF7 /* UIColor+extention.m in Sources */,
 				048BCD2D1DE6C85900881AF7 /* UCTradeModel.m in Sources */,
+				048BCE211DE96E9300881AF7 /* UCVersionCell.m in Sources */,
 				048BCD911DE6E85800881AF7 /* FlowLayout.m in Sources */,
+				048BCE511DE9927800881AF7 /* UCInformationGenderViewController.m in Sources */,
+				048BCE321DE9810500881AF7 /* UCInformationPortraitCell.m in Sources */,
 				048BCDA51DE6F28700881AF7 /* UCUserOtherCell.m in Sources */,
 				048BCDDB1DE7F4CA00881AF7 /* UCAddressArrangemantViewController.m in Sources */,
 				048BCDBD1DE7DCCA00881AF7 /* NSObject+conversion.m in Sources */,
+				048BCE181DE96C1200881AF7 /* UCAddressArrangemantViewModel.m in Sources */,
+				0453729A1DEC201300CF0734 /* UCPointDetailTableViewController.m in Sources */,
 				048BCCF11DE6C28D00881AF7 /* BaseNavigationController.m in Sources */,
 				048BCD771DE6DA5A00881AF7 /* TADotView.m in Sources */,
 			);

@@ -7,7 +7,7 @@
 //
 
 #import "UCInformationPortraitCell.h"
-#import "UIImageView+frame.h"
+#import "public.h"
 
 @interface UCInformationPortraitCell ()
 @property (strong, nonatomic) IBOutlet UIImageView *imgView;

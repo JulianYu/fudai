@@ -7,8 +7,11 @@
 //
 
 #import "UCAcumulatingPointsViewController.h"
+#include "public.h"
 
 @interface UCAcumulatingPointsViewController ()
+@property (strong, nonatomic) IBOutlet UIView *pointBgView;
+@property (strong, nonatomic) IBOutlet UIButton *withdrawBtn;
 
 @end
 
@@ -17,6 +20,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [self.pointBgView roundView];
+    [self.withdrawBtn drawBorderWithColor:colorWithRGB(233, 47, 68) width:1];
+    
+}
+
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    
+}
+
+
+- (IBAction)cancelAction:(UIBarButtonItem *)sender {
+    [self.navigationController dismissViewControllerAnimated:NO completion:^{
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
