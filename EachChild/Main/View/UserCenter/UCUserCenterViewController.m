@@ -33,6 +33,7 @@ static NSString *otherCellID = @"UCUserOtherCell";
     regNib(self.tableView, @"UCUserInfoCell", infoCellID)
     regNib(self.tableView, @"UCUserWalletCell", walletCellID)
     regNib(self.tableView, @"UCUserOtherCell", otherCellID)
+    
 }
 - (void)viewWillAppear:(BOOL)animated {
     self.navigationController.navigationBarHidden = YES;

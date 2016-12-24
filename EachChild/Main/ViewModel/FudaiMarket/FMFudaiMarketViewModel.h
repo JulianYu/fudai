@@ -6,8 +6,13 @@
 //  Copyright © 2016年 erongchuang. All rights reserved.
 //
 
-#import "BaseViewModel.h"
+#import "BaseRequestViewModel.h"
+#import "FMModel.h"
 
-@interface FMFudaiMarketViewModel : BaseViewModel
+@interface FMFudaiMarketViewModel : BaseRequestViewModel
+
+
+- (void)requestForSlidesShowWithCompletion:(void(^)(NSArray<SlidesShow *> *slideShowArray, NSInteger status))completion;
+- (void)requestForFudaiListWithCompletion:(void(^)(NSArray<FMFudai *> *fudaiArray, NSInteger status))completion;
 
 @end

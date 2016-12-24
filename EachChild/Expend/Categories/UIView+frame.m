@@ -34,6 +34,19 @@
     CGFloat y = self.y + self.height/2;
     return CGPointMake(x, y);
 }
+- (CGFloat)maxX {
+    return self.x+self.width;
+}
+- (CGFloat)maxY {
+    return self.y+self.height;
+}
+- (CGFloat)centerX {
+    return (self.x + self.width /2.0);
+}
+- (CGFloat)centerY {
+    return (self.y + self.height / 2.0);
+}
+
 - (void)roundView {
     [self layoutIfNeeded];
     CGRect imgRect = self.bounds;

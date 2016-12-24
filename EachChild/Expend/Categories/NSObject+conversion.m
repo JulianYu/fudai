@@ -24,7 +24,7 @@
     }
     else if ( [self isKindOfClass:[NSString class]] )
     {
-        return [NSNumber numberWithInteger:[(NSString *)self integerValue]];
+        return [NSNumber numberWithInteger:[(NSString *)self doubleValue]];
     }
     else if ( [self isKindOfClass:[NSDate class]] )
     {

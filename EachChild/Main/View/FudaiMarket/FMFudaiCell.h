@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FMModel.h"
 
 @interface FMFudaiCell : UICollectionViewCell
+
+@property (nonatomic, strong) FMFudai *fudai;
 
 @end

@@ -16,15 +16,31 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fm_fudai_cell.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JhJ-8i-gTB"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pU-Pl-XQw">
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.88627450980392153" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="XsJ-JE-joJ"/>
+                            <constraint firstAttribute="height" constant="30" id="pBb-yx-XUh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.91372549020000005" green="0.1843137255" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="JhJ-8i-gTB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9cD-cX-gC3"/>
                 <constraint firstItem="JhJ-8i-gTB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Tai-vY-yQy"/>
                 <constraint firstAttribute="bottom" secondItem="JhJ-8i-gTB" secondAttribute="bottom" id="lrY-YH-prN"/>
+                <constraint firstItem="4pU-Pl-XQw" firstAttribute="centerX" secondItem="JhJ-8i-gTB" secondAttribute="centerX" id="sE0-A7-5es"/>
+                <constraint firstAttribute="bottom" secondItem="4pU-Pl-XQw" secondAttribute="bottom" constant="16" id="tSB-na-1Pq"/>
                 <constraint firstAttribute="trailing" secondItem="JhJ-8i-gTB" secondAttribute="trailing" id="vzO-So-a69"/>
             </constraints>
             <size key="customSize" width="167" height="147"/>
+            <connections>
+                <outlet property="imgView" destination="JhJ-8i-gTB" id="sR5-g2-ncK"/>
+                <outlet property="priceLabel" destination="4pU-Pl-XQw" id="37a-AS-qZU"/>
+            </connections>
             <point key="canvasLocation" x="117.5" y="117.5"/>
         </collectionViewCell>
     </objects>

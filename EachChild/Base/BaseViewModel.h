@@ -6,8 +6,8 @@
 //  Copyright © 2016年 erongchuang. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "BaseViewController.h"
+#import "public.h"
 
 @interface BaseViewModel : NSObject
 

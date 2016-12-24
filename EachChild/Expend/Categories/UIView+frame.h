@@ -17,6 +17,10 @@
 - (CGFloat)width;
 - (CGFloat)height;
 - (CGPoint)center;
+- (CGFloat)maxX;
+- (CGFloat)maxY;
+- (CGFloat)centerX;
+- (CGFloat)centerY;
 
 - (void)roundView;
 - (void)drawBorderWithColor:(UIColor *)color width:(CGFloat)width;

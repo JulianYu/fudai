@@ -54,7 +54,8 @@ static NSString *listCellID = @"UCAddressListCellID";
 
 - (UCAddressArrangemantViewModel *)viewModel {
     if (!_viewModel) {
-        _viewModel = [[UCAddressArrangemantViewModel alloc] initWithViewController:self];
+        __weak typeof(self) weakself = self;
+        _viewModel = [[UCAddressArrangemantViewModel alloc] initWithViewController:weakself];
     }
     return _viewModel;
 }

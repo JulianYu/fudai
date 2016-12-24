@@ -14,7 +14,7 @@
             <rect key="frame" x="0.0" y="0.0" width="304" height="90"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="304" height="90"/>
+                <frame key="frameInset" width="304" height="89"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDr-t0-CUK">
@@ -35,13 +35,22 @@
                                 <color key="textColor" red="0.5450980392" green="0.81176470590000005" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNQ-uA-nUd">
+                                <connections>
+                                    <action selector="balancePopAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="20C-Qy-is4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3Tr-gr-BV0" firstAttribute="top" secondItem="MZY-Tr-JDB" secondAttribute="bottom" id="2RW-MB-mv6"/>
                             <constraint firstItem="Jpj-Dm-4Pp" firstAttribute="centerX" secondItem="uDr-t0-CUK" secondAttribute="centerX" id="ADb-Me-Z7p"/>
+                            <constraint firstAttribute="trailing" secondItem="vNQ-uA-nUd" secondAttribute="trailing" id="CqH-80-XZ0"/>
                             <constraint firstItem="MZY-Tr-JDB" firstAttribute="top" secondItem="uDr-t0-CUK" secondAttribute="topMargin" id="ED2-jU-T0L"/>
                             <constraint firstAttribute="trailing" secondItem="Jpj-Dm-4Pp" secondAttribute="trailing" id="FIP-Ae-weZ"/>
+                            <constraint firstItem="vNQ-uA-nUd" firstAttribute="top" secondItem="uDr-t0-CUK" secondAttribute="top" id="FQI-hu-QUI"/>
+                            <constraint firstItem="vNQ-uA-nUd" firstAttribute="leading" secondItem="uDr-t0-CUK" secondAttribute="leading" id="MiD-Wz-9tT"/>
+                            <constraint firstAttribute="bottom" secondItem="vNQ-uA-nUd" secondAttribute="bottom" id="QJm-fC-Qnd"/>
                             <constraint firstItem="MZY-Tr-JDB" firstAttribute="centerX" secondItem="uDr-t0-CUK" secondAttribute="centerX" id="eWf-RP-zcW"/>
                             <constraint firstItem="3Tr-gr-BV0" firstAttribute="centerX" secondItem="uDr-t0-CUK" secondAttribute="centerX" id="lR8-bE-jqx"/>
                             <constraint firstItem="Jpj-Dm-4Pp" firstAttribute="leading" secondItem="uDr-t0-CUK" secondAttribute="leading" id="ncl-3S-DE7"/>
@@ -66,15 +75,24 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfJ-Va-mu6">
+                                <connections>
+                                    <action selector="bankcardPopAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BAE-CQ-rAx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="prp-v0-oBf" firstAttribute="leading" secondItem="ohY-Hi-2Pc" secondAttribute="leading" id="7De-GQ-kvr"/>
+                            <constraint firstItem="nfJ-Va-mu6" firstAttribute="leading" secondItem="ohY-Hi-2Pc" secondAttribute="leading" id="DsU-QW-CUF"/>
                             <constraint firstAttribute="trailing" secondItem="prp-v0-oBf" secondAttribute="trailing" id="Hlt-Ye-l21"/>
                             <constraint firstItem="dar-g5-cJI" firstAttribute="top" secondItem="aRk-dP-rcI" secondAttribute="bottom" id="Mg6-5d-KDf"/>
                             <constraint firstItem="prp-v0-oBf" firstAttribute="top" secondItem="dar-g5-cJI" secondAttribute="bottom" constant="8" id="RH2-XB-mij"/>
                             <constraint firstItem="dar-g5-cJI" firstAttribute="centerX" secondItem="ohY-Hi-2Pc" secondAttribute="centerX" id="YPu-Qn-9WC"/>
                             <constraint firstItem="aRk-dP-rcI" firstAttribute="top" secondItem="ohY-Hi-2Pc" secondAttribute="topMargin" id="b0a-Rx-5kU"/>
+                            <constraint firstAttribute="bottom" secondItem="nfJ-Va-mu6" secondAttribute="bottom" id="mZi-ad-TOq"/>
+                            <constraint firstItem="nfJ-Va-mu6" firstAttribute="top" secondItem="ohY-Hi-2Pc" secondAttribute="top" id="nvH-Q8-eJT"/>
+                            <constraint firstAttribute="trailing" secondItem="nfJ-Va-mu6" secondAttribute="trailing" id="qVm-qZ-BjN"/>
                             <constraint firstItem="aRk-dP-rcI" firstAttribute="centerX" secondItem="ohY-Hi-2Pc" secondAttribute="centerX" id="u6q-oT-7Rc"/>
                         </constraints>
                     </view>

@@ -14,4 +14,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
 
++ (void)pushToViewViewController:(UIViewController *)vc animated:(BOOL)animated;
+
 @end

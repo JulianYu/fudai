@@ -7,6 +7,9 @@
 //
 
 #import "UCUserWalletCell.h"
+#import "UCUserCenterViewModel.h"
+
+
 
 @implementation UCUserWalletCell
 
@@ -19,6 +22,13 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+- (IBAction)balancePopAction:(id)sender {
+   
+}
+
+- (IBAction)bankcardPopAction:(UIButton *)sender {
+    
 }
 
 @end

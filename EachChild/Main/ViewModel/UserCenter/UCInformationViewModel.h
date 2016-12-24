@@ -6,9 +6,9 @@
 //  Copyright © 2016年 erongchuang. All rights reserved.
 //
 
-#import "BaseRequstViewModel.h"
+#import "BaseRequestViewModel.h"
 
-@interface UCInformationViewModel : BaseRequstViewModel
+@interface UCInformationViewModel : BaseRequestViewModel
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;

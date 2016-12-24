@@ -11,5 +11,5 @@ target 'EachChild' do
   pod 'AFNetworking', '~> 3.0'
   pod 'MJRefresh', '~> 3.1.12'
   pod 'Masonry', '~> 1.0.2'
-
+  pod 'MBProgressHUD', '~> 0.9.1'
 end

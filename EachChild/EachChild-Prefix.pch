@@ -16,4 +16,12 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+
+#define DEBUGMODE 1
+#if DEBUGMODE
+#define ECLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define ECLog(...)
+#endif
+
 #endif

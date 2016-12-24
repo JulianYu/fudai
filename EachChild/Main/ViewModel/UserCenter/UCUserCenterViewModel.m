@@ -20,6 +20,8 @@
 
 #import "UCSettingTableViewController.h"
 
+#import "NSObject+extention.h"
+
 
 #import "UCUserInfoCell.h"
 #import "UCUserWalletCell.h"
@@ -128,6 +130,13 @@ const CGFloat UCUserOtherCellHeight = 48;
         return UCUserWalletCellHeight;
     }else
         return UCUserOtherCellHeight;
+}
+
++ (void)pushToViewViewController:(UIViewController *)vc animated:(BOOL)animated {
+    UIViewController *currentVCtrl = [NSObject currentViewCtrl];
+    if (currentVCtrl.navigationController) {
+        [currentVCtrl.navigationController pushViewController:vc animated:animated];
+    }
 }
 
 @end

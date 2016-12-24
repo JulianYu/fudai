@@ -7,8 +7,12 @@
 //
 
 #import "HPHomePageViewController.h"
+#import "HPAreaViewController.h"
 
 @interface HPHomePageViewController ()
+{
+    UIBarButtonItem *leftTitleItem;
+}
 
 @end
 
@@ -16,8 +20,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"首页";
+    self.navigationItem.title = @"首页";
+    leftTitleItem = [[UIBarButtonItem alloc] initWithTitle:@"深圳" style:UIBarButtonItemStylePlain target:self action:@selector(pushToViewController)];
+    UIBarButtonItem *leftImageItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"hp_location_selection"] style:UIBarButtonItemStylePlain target:self action:@selector(pushToViewController)];
+    self.navigationItem.leftBarButtonItems = @[leftTitleItem, leftImageItem];
+    UIBarButtonItem *testItem = [[UIBarButtonItem alloc] initWithTitle:@"TEST" style:UIBarButtonItemStyleDone target:self action:@selector(apiTestStoryboard)];
+    self.navigationItem.rightBarButtonItem = testItem;
     
+}
+- (void)pushToViewController {
+    HPAreaViewController *areaVCtrl = [[HPAreaViewController alloc] initWithNibName:@"HPAreaViewController" bundle:nil];
+    [self.navigationController pushViewController:areaVCtrl animated:YES];
+}
+- (void)apiTestStoryboard {
+    UIViewController *vc = [UIStoryboard storyboardWithName:@"APITestStoryboard" bundle:nil].instantiateInitialViewController;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,6 +8,9 @@
 
 #import "FMModel.h"
 
-@implementation FMModel
+@implementation SlidesShow
+
+@end
+@implementation FMFudai
 
 @end

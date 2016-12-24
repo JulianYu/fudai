@@ -72,7 +72,8 @@ static NSString *otherCellID = @"UCInformationOtherCellID";
 
 - (UCInformationViewModel *)viewModel {
     if (!_viewModel) {
-        _viewModel = [[UCInformationViewModel alloc] initWithViewController:self];
+        __weak typeof(self) weakself = self;
+        _viewModel = [[UCInformationViewModel alloc] initWithViewController:weakself];
     }
     return _viewModel;
 }

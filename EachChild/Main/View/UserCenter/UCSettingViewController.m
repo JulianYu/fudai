@@ -64,7 +64,8 @@ static NSString *versionCellID = @"UCVersionCellID";
 
 - (UCSettingViewModel *)viewModel {
     if (!_viewModel) {
-        _viewModel = [[UCSettingViewModel alloc] initWithViewController:self];
+        __weak typeof(self) weakself = self;
+        _viewModel = [[UCSettingViewModel alloc] initWithViewController:weakself];
     }
     return _viewModel;
 }
