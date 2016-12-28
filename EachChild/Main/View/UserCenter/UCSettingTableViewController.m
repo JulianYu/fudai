@@ -7,9 +7,12 @@
 //
 
 #import "UCSettingTableViewController.h"
+#import "UCSettingViewModel.h"
+#import "AppDelegate.h"
 
 @interface UCSettingTableViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *versionLabel;
+@property (nonatomic, strong) UCSettingViewModel *viewModel;
 
 @end
 
@@ -45,10 +48,32 @@
     }
     return 3;
 }
+- (IBAction)logoutAction:(UIButton *)sender {
+    @weakify(self);
+    [self.viewModel requestForLogoutWithCompletion:^(NSInteger status) {
+        @strongify(self);
+        if (1 == status) {
+            [self appResetAction];
+        }
+    }];
+}
+-(void)appResetAction {
+    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    if ([delegate respondsToSelector:@selector(reset)]) {
+        [delegate reset];
+    }
+}
+
+- (UCSettingViewModel *)viewModel {
+    if (!_viewModel) {
+        _viewModel = [[UCSettingViewModel alloc] init];
+    }
+    return _viewModel;
+}
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
     
     // Configure the cell...
     

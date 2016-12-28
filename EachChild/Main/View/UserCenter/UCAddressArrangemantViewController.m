@@ -9,7 +9,7 @@
 #import "UCAddressArrangemantViewController.h"
 #import "UCAddressArrangemantViewModel.h"
 #import "UCAddressListCell.h"
-
+#import "UCEditAddressViewController.h"
 #import "UCAddAddressViewController.h"
 
 static NSString *listCellID = @"UCAddressListCellID";
@@ -22,6 +22,10 @@ static NSString *listCellID = @"UCAddressListCellID";
 
 @implementation UCAddressArrangemantViewController
 
+- (void)rightButtonOnClicked:(UIBarButtonItem *)rightItem {
+    UCAddAddressViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"add_vc"];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"收货地址管理";
@@ -30,32 +34,38 @@ static NSString *listCellID = @"UCAddressListCellID";
     regNib(self.tableView, @"UCAddressListCell", listCellID);
     self.tableView.rowHeight = 90;
     
-    
-    
 }
-- (void)rightButtonOnClicked:(UIBarButtonItem *)rightItem {
-    UCAddAddressViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"add_vc"];
-    [self.navigationController pushViewController:vc animated:YES];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.viewModel requestForAddressList:^(NSInteger status) {
+        if (1 == status) {
+            [self.tableView reloadData];
+        }
+    }];
 }
 
 
 #pragma mark- UITableViewDelegate, UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return self.viewModel.dataArray.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UCAddressListCell *cell = [tableView dequeueReusableCellWithIdentifier:listCellID];
+    cell.address = self.viewModel.dataArray[indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self.viewModel tableView:tableView didSelectRowAtIndexPath:indexPath];
+    UCEditAddressViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"edit_vc"];
+    vc.address = self.viewModel.dataArray[indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 - (UCAddressArrangemantViewModel *)viewModel {
     if (!_viewModel) {
-        __weak typeof(self) weakself = self;
-        _viewModel = [[UCAddressArrangemantViewModel alloc] initWithViewController:weakself];
+        
+        _viewModel = [[UCAddressArrangemantViewModel alloc] init];
     }
     return _viewModel;
 }

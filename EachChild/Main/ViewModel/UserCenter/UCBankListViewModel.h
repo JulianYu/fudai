@@ -14,5 +14,8 @@
 
 @interface UCBankListViewModel : BaseRequestViewModel
 
+@property (nonatomic, strong) NSArray *dataArray;
+
+- (void)requestForBankList:(void(^)(NSInteger status))completion;
 
 @end

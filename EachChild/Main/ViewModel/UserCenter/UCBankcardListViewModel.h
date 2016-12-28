@@ -10,5 +10,9 @@
 
 @interface UCBankcardListViewModel : BaseRequestViewModel
 
+@property (nonatomic, strong) NSMutableArray *dataArray;
+
+- (void)requestForBankcardListWithCompeltion:(void(^)(NSInteger status))completion;
+- (void)requestForDeletingBankcard:(NSDictionary *)params withithCompletion:(void(^)(NSInteger status))completion;
 
 @end

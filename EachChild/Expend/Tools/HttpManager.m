@@ -44,19 +44,19 @@
         NSString *msg = [responseDict valueForKey:@"msg"];
         NSLog(@"\n请求成功：%@\nmsg: %@", jsonString, msg);
         NSInteger status = [[responseDict valueForKey:@"status"]?:@0 integerValue];
-//        if (2 == status) {
-//            UIAlertController *alertCtrl = [UIAlertController alertControllerWithTitle:@"请重新登录" message:msg preferredStyle:UIAlertControllerStyleAlert];
-//            UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-//                AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-//                [delegate reset];
-//            }];
-//            [alertCtrl addAction:action];
-//            UIViewController *currentVCtrl = [NSObject currentViewCtrl];
-//            [currentVCtrl presentViewController:alertCtrl animated:YES completion:^{
-//                
-//            }];
-//            return ;
-//        }
+        if (403 == status) {
+            UIAlertController *alertCtrl = [UIAlertController alertControllerWithTitle:@"请重新登录" message:msg preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+                [delegate reset];
+            }];
+            [alertCtrl addAction:action];
+            UIViewController *currentVCtrl = [NSObject currentViewCtrl];
+            [currentVCtrl presentViewController:alertCtrl animated:YES completion:^{
+                
+            }];
+            return ;
+        }
         
         success(task, responseDict, status, msg);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

@@ -56,6 +56,11 @@ NSString * const ID = @"cycleCell";
 
 @implementation SDCycleScrollView
 
+- (instancetype)init
+{
+    return [self initWithFrame:CGRectZero];
+}
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {

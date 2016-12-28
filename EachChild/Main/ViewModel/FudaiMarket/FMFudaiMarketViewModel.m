@@ -44,5 +44,8 @@
         completion(nil, -1);
     }];
 }
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
 
 @end

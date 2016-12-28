@@ -16,6 +16,6 @@
 @property (nonatomic, retain) NSString *password;
 
 - (void)onRegister;
-- (void)login;
+- (void)loginWithCompletion:(void(^)(NSInteger status))completion;
 
 @end

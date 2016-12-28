@@ -10,10 +10,5 @@
 
 @interface UCUserCenterViewModel : BaseViewModel
 
-- (void)configCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
-
-+ (void)pushToViewViewController:(UIViewController *)vc animated:(BOOL)animated;
 
 @end

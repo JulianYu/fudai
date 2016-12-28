@@ -14,3 +14,6 @@
 @implementation FMFudai
 
 @end
+@implementation FMPayType
+
+@end

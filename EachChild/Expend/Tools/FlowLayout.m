@@ -35,7 +35,7 @@ static CGFloat const minimumInteritemSpacing = 16;
     self.minimumInteritemSpacing = minimumInteritemSpacing;
     self.sectionInset = UIEdgeInsetsMake(topPadding, leftPadding, bottomPadding, rightPadding);
     UIView *view = [UIApplication sharedApplication].keyWindow;
-    CGFloat sideLength = (view.width -leftPadding-rightPadding-minimumInteritemSpacing)/2;
+    CGFloat sideLength = (view.width -48)/2;
     self.itemSize = CGSizeMake(sideLength, sideLength);
     
 }

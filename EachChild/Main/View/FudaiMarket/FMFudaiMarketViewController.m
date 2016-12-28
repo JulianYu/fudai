@@ -11,15 +11,23 @@
 #import "SDCycleScrollView.h"
 #import "FMFudaiCell.h"
 #import "FlowLayout.h"
+#import "FMPayTypeViewController.h"
+#import "ConfigModel.h"
+
 
 static CGFloat const kGalleryHeight = 180;
 
 static NSString *cellID = @"FMFudaiCellID";
+static CGFloat const leftPadding = 8;
+static CGFloat const rightPadding = 8;
+static CGFloat const itemSpacing = 16;
+
 
 @interface FMFudaiMarketViewController ()<SDCycleScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 {
     CGFloat _latestOffsetY;
     SDCycleScrollView *galleryView;
+    
 }
 
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -50,8 +58,8 @@ static NSString *cellID = @"FMFudaiCellID";
     }];
     [self.collectionView registerNib:[UINib nibWithNibName:@"FMFudaiCell" bundle:nil] forCellWithReuseIdentifier:cellID];
     
-    FlowLayout *flowLayout = [[FlowLayout alloc] init];
-    self.collectionView.collectionViewLayout = flowLayout;
+//    FlowLayout *flowLayout = [[FlowLayout alloc] init];
+//    self.collectionView.collectionViewLayout = flowLayout;
     
     [self requestForSlidesShow];
     [self requestForFudaiList];
@@ -61,8 +69,7 @@ static NSString *cellID = @"FMFudaiCellID";
         
         __block NSMutableArray *imgsArray = [[NSMutableArray alloc] init];
         [slideShowArray enumerateObjectsUsingBlock:^(SlidesShow * slidesShow, NSUInteger idx, BOOL *  stop) {
-#warning 替换图片根地址
-            NSString *imgUri = [NSString stringWithFormat:@"http://192.168.1.230/fudai/%@", slidesShow.img];
+            NSString *imgUri = [NSString stringWithFormat:@"%@%@",[ConfigModel config].imageUri, slidesShow.img];
             [imgsArray addObject:imgUri];
         }];
         galleryView.imageURLStringsGroup = [imgsArray copy];
@@ -95,6 +102,13 @@ static NSString *cellID = @"FMFudaiCellID";
     
     return cell;
 }
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    [collectionView deselectItemAtIndexPath:indexPath animated:YES];
+    FMPayTypeViewController *paytypeVCtrl = [[FMPayTypeViewController alloc] initWithNibName:@"FMPayTypeViewController" bundle:nil];
+    paytypeVCtrl.fudai = self.fudaiArray[indexPath.row];
+    [self.navigationController pushViewController:paytypeVCtrl animated:YES];
+    
+}
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     CGFloat offsetY =  scrollView.contentOffset.y - 180;
@@ -108,31 +122,27 @@ static NSString *cellID = @"FMFudaiCellID";
 
 #pragma mark- layout
 
-//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    NSLog(@"frame: %@", [NSValue valueWithCGRect:self.view.frame]);
-//    return CGSizeMake(self.view.frame.size.width*0.5-24, self.view.frame.size.width *0.5-24);
-//    
-//}
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    CGFloat sideLength = (self.view.width - (leftPadding + rightPadding + itemSpacing)) / 2;
+    return CGSizeMake(sideLength, sideLength);
+    
+}
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
-    if (0 == section) {
-        return UIEdgeInsetsMake(16+kGalleryHeight, 16, 8, 16);
-    }else {
-        
-        return UIEdgeInsetsMake(8, 16, 8, 16);
-    }
-//    UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)collectionViewLayout;
-//    return flowLayout.sectionInset;
+    return UIEdgeInsetsMake(16+ kGalleryHeight, leftPadding, 0, rightPadding);
+    
+
 }
-//- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
-//{
-//    return 16;
-//}
-//- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
-//{
-//    return CGFLOAT_MIN;
-//}
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
+{
+    return 16;
+}
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
+{
+    return itemSpacing;
+}
 
 
 - (FMFudaiMarketViewModel *)viewModel {

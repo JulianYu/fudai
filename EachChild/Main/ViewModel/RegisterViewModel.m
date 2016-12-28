@@ -47,8 +47,8 @@
 }
 - (void)sendSMSWithPhomeNumber:(NSString *)number completion:(void (^)(NSInteger))completion
 {
-    
-    [self.httpManager POST:PublicApi(index_bannersMethod) parameters:nil success:^(NSURLSessionDataTask *task, id data, NSUInteger status, NSString *msg) {
+    NSDictionary *params = @{@"mobile":number};
+    [self.httpManager POST:OauthApi(sendMobileCodeMethod) parameters:params success:^(NSURLSessionDataTask *task, id data, NSUInteger status, NSString *msg) {
         [NSObject showHudTipStr:msg];
         completion(status);
         

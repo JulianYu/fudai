@@ -11,23 +11,36 @@
 
 @implementation UCSettingViewModel
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
+- (void)requestForLogoutWithCompletion:(void (^)(NSInteger))completion
+{
+    [self.httpManager POST:UcenterApi(logoutMethod) parameters:nil success:^(NSURLSessionDataTask *task, NSDictionary *response, NSUInteger status, NSString *msg) {
+        [NSObject showHudTipStr:msg];
+        completion(status);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        [NSObject showHudTipError:error];
+        completion(-1);
+    }];
 }
-
-- (void)configureCell:(UCSettingCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-    NSInteger section = indexPath.section;
-    NSInteger row = indexPath.row;
-    if (0 == section) {
-        cell.titleLabel.text = @"修改密码";
-    }else {
-        if (0 == row) {
-            cell.titleLabel.text = @"建议反馈";
-        }else if (1 == row) {
-            cell.titleLabel.text = @"关于我们";
-        }
-    }
+- (void)requestForChangePasswordWithParams:(NSDictionary *)params completion:(void (^)(NSInteger))completion
+{
+    [self.httpManager POST:UcenterApi(password_editMethod) parameters:params success:^(NSURLSessionDataTask *task, NSDictionary *response, NSUInteger status, NSString *msg) {
+        
+        [NSObject showHudTipStr:msg];
+        completion(status);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        completion(-1);
+        [NSObject showHudTipError:error];
+    }];
+}
+- (void)requestForFeedbackWithParams:(NSDictionary *)params completion:(void (^)(NSInteger))completion
+{
+    [self.httpManager POST:UcenterApi(complain_sendMethod) parameters:params success:^(NSURLSessionDataTask *task, NSDictionary *response, NSUInteger status, NSString *msg) {
+        [NSObject showHudTipStr:msg];
+        completion(status);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        [NSObject showHudTipError:error];
+        completion(-1);
+    }];
 }
 
 @end

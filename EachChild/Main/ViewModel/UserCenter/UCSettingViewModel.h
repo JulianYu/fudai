@@ -6,12 +6,13 @@
 //  Copyright © 2016年 erongchuang. All rights reserved.
 //
 
-#import "BaseViewModel.h"
-#import "UCSettingCell.h"
+#import "BaseRequestViewModel.h"
 
-@interface UCSettingViewModel : BaseViewModel
+@interface UCSettingViewModel : BaseRequestViewModel
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
-- (void)configureCell:(UCSettingCell *)cell atIndexPath:(NSIndexPath *)indexPath;
+- (void)requestForLogoutWithCompletion:(void(^)(NSInteger status))completion;
+
+- (void)requestForChangePasswordWithParams:(NSDictionary *)params completion:(void(^)(NSInteger status))completion;
+- (void)requestForFeedbackWithParams:(NSDictionary *)params completion:(void(^)(NSInteger status))completion;
 
 @end

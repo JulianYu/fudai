@@ -51,6 +51,12 @@
                     <constraint firstItem="gsL-V8-SBo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="z05-7l-ZM4"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="acceptNameLabel" destination="apj-bj-KU6" id="ND5-Jt-rlc"/>
+                <outlet property="addressLabel" destination="gsL-V8-SBo" id="Vz7-Zg-14V"/>
+                <outlet property="areaLabel" destination="tyH-TR-wDk" id="ACe-jo-bkt"/>
+                <outlet property="mobileLabel" destination="JFQ-3y-OGF" id="asM-G6-p69"/>
+            </connections>
             <point key="canvasLocation" x="78" y="140.5"/>
         </tableViewCell>
     </objects>

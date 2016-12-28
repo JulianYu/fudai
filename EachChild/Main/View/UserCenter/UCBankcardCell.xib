@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="94" id="KGk-i7-Jjw" customClass="UCBankcardCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="93"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OCg-dD-pwF">
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中国银行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlM-st-Ear">
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8up-uG-LuB">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234 1234 1234 1234 123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c71-q1-luN">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c71-q1-luN" firstAttribute="leading" secondItem="OCg-dD-pwF" secondAttribute="leading" constant="8" id="13y-gA-tiq"/>
+                            <constraint firstItem="c71-q1-luN" firstAttribute="top" secondItem="8up-uG-LuB" secondAttribute="bottom" constant="8" id="8oA-Ls-PXG"/>
+                            <constraint firstItem="8up-uG-LuB" firstAttribute="top" secondItem="nlM-st-Ear" secondAttribute="bottom" constant="8" id="COj-bL-hyV"/>
+                            <constraint firstItem="nlM-st-Ear" firstAttribute="top" secondItem="OCg-dD-pwF" secondAttribute="top" constant="8" id="U5z-Bb-2qb"/>
+                            <constraint firstItem="8up-uG-LuB" firstAttribute="leading" secondItem="OCg-dD-pwF" secondAttribute="leading" constant="8" id="dru-wO-yA6"/>
+                            <constraint firstAttribute="trailing" secondItem="c71-q1-luN" secondAttribute="trailing" constant="8" id="hTO-5s-n60"/>
+                            <constraint firstItem="nlM-st-Ear" firstAttribute="leading" secondItem="OCg-dD-pwF" secondAttribute="leading" constant="8" id="shR-WT-6U9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="OCg-dD-pwF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0NR-UM-wvS"/>
+                    <constraint firstAttribute="bottom" secondItem="OCg-dD-pwF" secondAttribute="bottom" constant="1" id="4Jc-06-BP3"/>
+                    <constraint firstItem="OCg-dD-pwF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="7rO-kq-1sH"/>
+                    <constraint firstAttribute="trailing" secondItem="OCg-dD-pwF" secondAttribute="trailing" constant="16" id="uSl-BM-5WK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="banknameLabel" destination="nlM-st-Ear" id="f34-T2-Uqj"/>
+                <outlet property="cardNumLabel" destination="c71-q1-luN" id="3OK-Mv-3BP"/>
+                <outlet property="realnameLabel" destination="8up-uG-LuB" id="f1X-1x-GH5"/>
+            </connections>
+            <point key="canvasLocation" x="42" y="79"/>
+        </tableViewCell>
+    </objects>
+</document>

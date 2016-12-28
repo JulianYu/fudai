@@ -10,8 +10,6 @@
 #import "LoginViewController.h"
 #import "RegisterViewController.h"
 
-#import "AppDelegate.h"
-
 
 @interface LoginViewModel ()
 
@@ -37,7 +35,7 @@
     [self.viewController.navigationController pushViewController:regVC animated:YES];
     
 }
-- (void)login {
+- (void)loginWithCompletion:(void (^)(NSInteger))completion {
     
     // 配置网络请求参数
     NSDictionary *parameters = @{@"login_info": self.username,@"password":self.password};
@@ -54,20 +52,19 @@
             [UserModel shareInstance].oauth_secret = data[@"oauth_secret"];
             [UserModel shareInstance].uid = data[@"uid"];
             [UserModel shareInstance].pay_password_stat = data[@"pay_password_stat"];
-            [self loginSuccess];
+            
         }else {
             
         }
-        
+        [NSObject showHudTipStr:msg];
+        completion(status);
     } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
-        
+        completion(-1);
+        [NSObject showHudTipError:error];
     }];
     
 }
-- (void)loginSuccess {
-    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    [delegate loginSuccess];
-}
+
 
 
 @end

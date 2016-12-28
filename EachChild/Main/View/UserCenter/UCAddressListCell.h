@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "public.h"
 
 @interface UCAddressListCell : UITableViewCell
+@property (nonatomic, strong, setter=setAddress:) ADDRESS *address;
 
 @end

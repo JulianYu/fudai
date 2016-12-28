@@ -10,7 +10,13 @@
 
 
 
-@implementation USER
+@implementation UserInfo
+
+@end
+@implementation Area
+
+@end
+@implementation ADDRESS
 
 @end
 @implementation BANKCARD

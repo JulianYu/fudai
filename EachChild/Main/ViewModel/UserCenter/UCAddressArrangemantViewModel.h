@@ -10,6 +10,11 @@
 
 @interface UCAddressArrangemantViewModel : BaseRequestViewModel
 
+@property (nonatomic, strong) NSMutableArray *dataArray;
+
+- (void)requestForAddressList:(void(^)(NSInteger status))completion;
+
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 
 @end

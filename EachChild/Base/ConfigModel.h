@@ -2,18 +2,16 @@
 //  ConfigModel.h
 //  EachChild
 //
-//  Created by 虞军军 on 16/11/29.
+//  Created by 虞军军 on 16/12/26.
 //  Copyright © 2016年 erongchuang. All rights reserved.
 //
 
-#undef DEBUG
-#define DEBUG
-#import <Foundation/Foundation.h>
+#import "BaseModel.h"
 
-@interface ConfigModel : NSObject
+@interface ConfigModel : BaseModel
 
-+ (instancetype)shareConfig;
++ (instancetype)config;
 
-
+@property (nonatomic, copy, readonly, getter=getImageUrl) NSString *imageUri;
 
 @end

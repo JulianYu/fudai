@@ -12,7 +12,7 @@
 #import "HPHomePageViewController.h"
 #import "FMFudaiMarketViewController.h"
 #import "IMInstantMessagingViewController.h"
-#import "UCUserCenterViewController.h"
+
 
 @interface BaseTabbarController ()
 
@@ -35,8 +35,9 @@
 - (NSArray *)addControllers {
     NSMutableArray *viewCtrls = [NSMutableArray arrayWithCapacity:4];
     //1.首页
-    HPHomePageViewController *homeVC = [[HPHomePageViewController alloc] initWithNibName:@"HPHomePageViewController" bundle:nil];
-    BaseNavigationController *homeNav = [[BaseNavigationController alloc] initWithRootViewController:homeVC];
+//    HPHomePageViewController *homeVC = [[HPHomePageViewController alloc] initWithNibName:@"HPHomePageViewController" bundle:nil];
+//    BaseNavigationController *homeNav = [[BaseNavigationController alloc] initWithRootViewController:homeVC];
+    BaseNavigationController *homeNav = [UIStoryboard storyboardWithName:@"HPHomePageStoryboard" bundle:nil].instantiateInitialViewController;
     homeNav.tabBarItem = [self tabBarItemWithTitle:@"首页" imageName:@"tabbar_hp" selectedImageName:@"tabbar_hp_selected"];
     [viewCtrls addObject:homeNav];
     //2.交易
@@ -50,8 +51,8 @@
     infomationNav.tabBarItem = [self tabBarItemWithTitle:@"消息" imageName:@"tabbar_im" selectedImageName:@"tabbar_im_selected"];
     [viewCtrls addObject:infomationNav];
     //4.我的
-    UCUserCenterViewController *userVC = [[UCUserCenterViewController alloc] initWithNibName:@"UCUserCenterViewController" bundle:nil];
-    BaseNavigationController *userNav = [[BaseNavigationController alloc] initWithRootViewController:userVC]; //(BaseNavigationController *)[UIStoryboard storyboardWithName:@"UserCenterStoryboard" bundle:nil].instantiateInitialViewController;//
+//    UCUserCenterViewController *userVC = [[UCUserCenterViewController alloc] initWithNibName:@"UCUserCenterViewController" bundle:nil];
+    BaseNavigationController *userNav = /*[[BaseNavigationController alloc] initWithRootViewController:userVC]; /*/(BaseNavigationController *)[UIStoryboard storyboardWithName:@"UserCenterStoryboard" bundle:nil].instantiateInitialViewController;//
     userNav.tabBarItem = [self tabBarItemWithTitle:@"我的" imageName:@"tabbar_uc" selectedImageName:@"tabbar_uc_selected"];
     [viewCtrls addObject:userNav];
     

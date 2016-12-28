@@ -10,6 +10,7 @@
 #import "BaseTabbarController.h"
 #import "BaseNavigationController.h"
 #import "LoginViewController.h"
+#import "ConfigModel.h"
 
 @interface AppDelegate ()
 
@@ -24,10 +25,15 @@
     //    [[UIBarButtonItem appearance] setTintColor:[UIColor whiteColor]];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
+    [self setup];
     [self reset];
     
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)setup {
+    [ConfigModel config];
 }
 
 - (void)loginSuccess {

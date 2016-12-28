@@ -7,31 +7,32 @@
 //
 
 #import "UCAddressArrangemantViewModel.h"
-#import "UCAddressArrangemantViewController.h"
-#import "UCEditAddressViewController.h"
+
 
 @interface UCAddressArrangemantViewModel ()
 
-@property (nonatomic, strong) UCAddressArrangemantViewController *viewController;
+
 
 @end
 
 @implementation UCAddressArrangemantViewModel
-- (instancetype)initWithViewController:(BaseViewController *)viewController
+
+
+- (void)requestForAddressList:(void (^)(NSInteger))completion
 {
-    self = [super initWithViewController:viewController];
-    if (self) {
-        if ([viewController isKindOfClass:[UCAddressArrangemantViewController class]]) {
-            self.viewController = (UCAddressArrangemantViewController *)viewController;
+    [self.httpManager POST:UcenterApi(addressMethod) parameters:nil success:^(NSURLSessionDataTask *task, NSDictionary *response, NSUInteger status, NSString *msg) {
+        if (1 == status) {
+            self.dataArray = [ADDRESS mj_objectArrayWithKeyValuesArray:response[@"data"]];
         }
-    }
-    return self;
+        completion(status);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        completion(-1);
+    }];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    UCEditAddressViewController *vc = [self.viewController.storyboard instantiateViewControllerWithIdentifier:@"edit_vc"];
-    [self.viewController.navigationController pushViewController:vc animated:YES];
+    
 }
 
 @end

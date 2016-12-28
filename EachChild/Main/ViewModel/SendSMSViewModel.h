@@ -10,5 +10,6 @@
 
 @interface SendSMSViewModel : BaseRequestViewModel
 - (void)sendSMSWithPhomeNumber:(NSString *)number completion:(void(^)(NSInteger status))completion;
+- (void)sendPayPasswordSMSWithPhoneNumber:(NSString *)mobile completion:(void(^)(NSInteger status))completion;
 
 @end

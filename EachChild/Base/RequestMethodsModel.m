@@ -36,8 +36,35 @@ NSString *const getCategoryListTopMethod = @"getCategoryListTop";
 /** 市场 福袋列表接口 **/
 NSString *const fd_listMethod = @"fd_list";
 
-#pragma mark- 私有API
+NSString *const getWebHostMethod = @"getWebHost";
 
-NSString *const bankcardListMethod = @"";
-NSString *const deleteBankcard = @"";
-NSString *const bankList = @"";
+#pragma mark- 私有API
+/** 注销 **/
+NSString *const logoutMethod = @"logout";
+/** 我-系统设置-修改密码 **/
+NSString *const password_editMethod = @"password_edit";
+/** 我-系统设置-建议反馈 **/
+NSString *const complain_sendMethod = @"complain_send";
+NSString *const paymentlistMethod = @"paymentlist";
+NSString *const fdOrderRedoActionMethod = @"fdOrderRedoAction";
+
+NSString *const PayMethod = @"Pay";
+
+NSString *const bank_card_listMethod = @"bank_card_list";
+NSString *const bank_card_delMethod = @"bank_card_del";
+NSString *const bank_listMethod = @"bank_list";
+NSString *const bank_card_addMethod = @"bank_card_add";
+/** 我-地址管理-地址列表 **/
+NSString *const addressMethod = @"address";
+/** 我-地址管理-添加地址 **/
+NSString *const address_editMethod = @"address_edit";
+/** 我-地址管理-删除地址 **/
+NSString *const address_delMethod = @"address_del";
+/** 我-地址管理-默认地址 **/
+NSString *const set_default_addressMethod = @"set_default_address";
+/** 我-修改支付密码 **/
+NSString *const payPwdModifysendCodeMethod = @"payPwdModifysendCode";
+/** 我-修改支付密码**/
+NSString *const Paypassword_editMethod = @"Paypassword_edit";
+
+

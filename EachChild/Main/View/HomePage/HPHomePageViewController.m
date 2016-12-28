@@ -21,9 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"首页";
-    leftTitleItem = [[UIBarButtonItem alloc] initWithTitle:@"深圳" style:UIBarButtonItemStylePlain target:self action:@selector(pushToViewController)];
-    UIBarButtonItem *leftImageItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"hp_location_selection"] style:UIBarButtonItemStylePlain target:self action:@selector(pushToViewController)];
-    self.navigationItem.leftBarButtonItems = @[leftTitleItem, leftImageItem];
+//    leftTitleItem = [[UIBarButtonItem alloc] initWithTitle:@"深圳" style:UIBarButtonItemStylePlain target:self action:@selector(pushToViewController)];
+//    UIBarButtonItem *leftImageItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"hp_location_selection"] style:UIBarButtonItemStylePlain target:self action:@selector(pushToViewController)];
+//    self.navigationItem.leftBarButtonItems = @[leftTitleItem, leftImageItem];
     UIBarButtonItem *testItem = [[UIBarButtonItem alloc] initWithTitle:@"TEST" style:UIBarButtonItemStyleDone target:self action:@selector(apiTestStoryboard)];
     self.navigationItem.rightBarButtonItem = testItem;
     

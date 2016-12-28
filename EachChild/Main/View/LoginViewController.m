@@ -8,7 +8,9 @@
 
 #import "LoginViewController.h"
 #import "ForgetPasswordViewController.h"
+#import "PayPasswordViewController.h"
 #import "LoginViewModel.h"
+#import "AppDelegate.h"
 
 @interface LoginViewController ()
 @property (strong, nonatomic) IBOutlet UITextField *usernameTextField;
@@ -69,7 +71,20 @@
 }
 
 - (IBAction)loginAction:(UIButton *)sender {
-    [self.viewModel login];
+    @weakify(self);
+    [NSObject startActivityIndicatorInView:self.view withMessage:@"正在登录..."];
+    [self.viewModel loginWithCompletion:^(NSInteger status) {
+        @strongify(self);
+        [NSObject stopActivityIndicatorInView:self.view];
+        if (1 ==status) {
+            if (![[UserModel shareInstance].pay_password_stat isEqualToNumber:@1]) {
+                PayPasswordViewController *vc = [[PayPasswordViewController alloc] initWithNibName:@"PayPasswordViewController" bundle:nil];
+                [self.navigationController pushViewController:vc animated:YES];
+            }else {
+                [self loginSuccess];
+            }
+        }
+    }];
 }
 - (BOOL)validateLogin {
     return YES;
@@ -83,16 +98,9 @@
     return _viewModel;
 }
 
-- (BOOL)shouldAutorotate {
-    
-    return NO;
-}
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
-    
-    return UIInterfaceOrientationMaskPortrait;
-}
-- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
-    return UIInterfaceOrientationPortrait;
+- (void)loginSuccess {
+    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    [delegate loginSuccess];
 }
 
 @end

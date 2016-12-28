@@ -15,4 +15,6 @@
 - (void)requestForSlidesShowWithCompletion:(void(^)(NSArray<SlidesShow *> *slideShowArray, NSInteger status))completion;
 - (void)requestForFudaiListWithCompletion:(void(^)(NSArray<FMFudai *> *fudaiArray, NSInteger status))completion;
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath;
+
 @end

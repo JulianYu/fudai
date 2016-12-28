@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PublicModel.h"
 
 @interface UCEditAddressViewController : UITableViewController
+
+@property (nonatomic, strong) ADDRESS *address;
 
 @end

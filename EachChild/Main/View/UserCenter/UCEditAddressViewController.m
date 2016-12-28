@@ -7,8 +7,19 @@
 //
 
 #import "UCEditAddressViewController.h"
+#import "UCEditAddressViewModel.h"
 
 @interface UCEditAddressViewController ()
+@property (strong, nonatomic) IBOutlet UITextField *acceptNameField;
+@property (strong, nonatomic) IBOutlet UITextField *mobileField;
+@property (strong, nonatomic) IBOutlet UITextField *telField;
+@property (strong, nonatomic) IBOutlet UITextField *zipCodeField;
+@property (strong, nonatomic) IBOutlet UITextField *addressField;
+@property (strong, nonatomic) IBOutlet UILabel *areaLabel;
+
+
+@property (nonatomic, strong) UCEditAddressViewModel *viewModel;
+@property (nonatomic, strong) NSMutableDictionary *params;
 
 @end
 
@@ -21,7 +32,28 @@
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonItemStylePlain target:self action:@selector(rightItemOnClicked)];
+    self.navigationItem.rightBarButtonItem = rightItem;
+    self.acceptNameField.text = self.address.accept_name;
+    self.mobileField.text = self.address.mobile;
+    self.telField.text = self.address.telphone;
+    self.zipCodeField.text = self.address.zip;
+    self.addressField.text = self.address.address;
+    self.areaLabel.text = [NSString stringWithFormat:@"%@ %@ %@",self.address.province,self.address.city,self.address.area];
+    
+    
+}
+- (void)rightItemOnClicked {
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    NSDictionary *addressDic = @{@"accept_name":self.acceptNameField.text,@"province_id":self.address.province_id,@"city_id":self.address.city_id,@"area_id":self.address.area_id,@"address":self.addressField.text,@"mobile":self.mobileField.text};
+    [params setValue:self.address.id forKey:@"address_id"];
+    [params setValue:addressDic forKey:@"address"];
+    
+    [self.viewModel requestForEdittingAddressWithParams:params completion:^(NSInteger status) {
+        if (1 == status) {
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,15 +72,42 @@
     return 6;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
+#pragma mark- Private methods
+- (IBAction)defaultAddressAction:(UIButton *)sender {
+    @weakify(self);
+    [self.viewModel requestForDefaultAddressWithParams:self.params completion:^(NSInteger status) {
+        @strongify(self);
+        if (1 == status) {
+            [self popOver];
+        }
+    }];
 }
-*/
+- (IBAction)deleteAddressAction:(UIButton *)sender {
+    @weakify(self);
+    [self.viewModel requestForDeletingAddressWithParams:self.params completion:^(NSInteger status) {
+        @strongify(self);
+        if (1 == status) {
+            [self popOver];
+        }
+    }];
+}
+- (void)popOver {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (UCEditAddressViewModel *)viewModel {
+    if (!_viewModel) {
+        _viewModel = [[UCEditAddressViewModel alloc] init];
+        
+    }
+    return _viewModel;
+}
+- (NSMutableDictionary *)params {
+    if (!_params) {
+        _params = [[NSMutableDictionary alloc] initWithDictionary:@{@"address_id":self.address.id}];
+    }
+    return _params;
+}
 
 /*
 // Override to support conditional editing of the table view.
