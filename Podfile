@@ -12,4 +12,5 @@ target 'EachChild' do
   pod 'MJRefresh', '~> 3.1.12'
   pod 'Masonry', '~> 1.0.2'
   pod 'MBProgressHUD', '~> 0.9.1'
+  pod "RongCloudIMKit"
 end

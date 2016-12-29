@@ -12,7 +12,9 @@
 #import "LoginViewController.h"
 #import "ConfigModel.h"
 
-@interface AppDelegate ()
+#import <RongIMKit/RongIMKit.h>
+
+@interface AppDelegate ()<UIAlertViewDelegate>
 
 @end
 
@@ -34,7 +36,34 @@
 
 - (void)setup {
     [ConfigModel config];
+    [[RCIM sharedRCIM] initWithAppKey:[ConfigModel config].kRongCloudAppKey];
 }
+
+/**
+ *  网络状态变化。
+ *
+ *  @param status 网络状态。
+ */
+- (void)onRCIMConnectionStatusChanged:(RCConnectionStatus)status {
+    if (status == ConnectionStatus_KICKED_OFFLINE_BY_OTHER_CLIENT) {
+        UIAlertView *alertView = [[UIAlertView alloc]
+                             initWithTitle:@"提示"
+                             message:@"您"
+                             @"的帐号在别的设备上登录，您被迫下线！"
+                             delegate:nil
+                             cancelButtonTitle:@"知道了"
+                             otherButtonTitles:nil, nil];
+        alertView.delegate = self;
+        [alertView show];
+        
+    }
+}
+#pragma mark alert delegate
+- (void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    [self reset];
+}
+
 
 - (void)loginSuccess {
     BaseTabbarController *tabbarCtrl = [[BaseTabbarController alloc] init];

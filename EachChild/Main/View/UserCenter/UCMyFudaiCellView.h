@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UCFudaiModel.h"
 
 @interface UCMyFudaiCellView : UIView
+
+@property (nonatomic, strong) UCFudaiGood *good;
+
 @property (strong, nonatomic)  UILabel *titleLabel;
 @property (strong, nonatomic)  UILabel *priceLabel;
 

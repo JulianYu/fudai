@@ -66,5 +66,19 @@ NSString *const set_default_addressMethod = @"set_default_address";
 NSString *const payPwdModifysendCodeMethod = @"payPwdModifysendCode";
 /** 我-修改支付密码**/
 NSString *const Paypassword_editMethod = @"Paypassword_edit";
+/** 我-我的福袋 **/
+NSString *const myFudaiOrderMethod = @"myFudaiOrder";
+/** 我-我的福袋-确认购买 **/
+NSString *const fdOrderConfirmBuyActionMethod = @"fdOrderConfirmBuyAction";
+/** 我-已确认福袋 **/
+NSString *const myConfirmFudaiOrderMethod = @"myConfirmFudaiOrder";
+/** 我-我的挂单列表 **/
+NSString *const myHoldFudaiOrderMethod = @"myHoldFudaiOrder";
+
+
+
+
+
+
 
 

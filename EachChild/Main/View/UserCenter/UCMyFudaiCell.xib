@@ -13,7 +13,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="440"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="440"/>
+                <frame key="frameInset" width="320" height="439"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uc_fudai_header.png" translatesAutoresizingMaskIntoConstraints="NO" id="zda-qR-5FT" userLabel="header">
@@ -78,6 +78,9 @@
                                 <state key="normal" title="查看物流">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="viewingTransportaionAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GXw-Pa-MHz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fy5-7c-cTi">
                                 <color key="backgroundColor" red="0.91372549020000005" green="0.1843137255" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
@@ -89,6 +92,9 @@
                                 <state key="normal" title="确认收货">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="confirmAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rpm-ne-v9H"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -143,7 +149,13 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="bribeMoneyLabel" destination="Mgx-Bo-Fzr" id="pdF-EQ-AP6"/>
                 <outlet property="itemsView" destination="Yiq-yg-pGW" id="kbp-27-3X3"/>
+                <outlet property="orderNoLabel" destination="fK5-QX-2S5" id="gct-Kl-RaW"/>
+                <outlet property="scoreLabel" destination="2HZ-RF-cO3" id="HiX-dP-Prn"/>
+                <outlet property="timeLabel" destination="a0k-ir-KCz" id="GKq-eS-ECt"/>
+                <outlet property="totalMoneyLabel" destination="YMh-Z4-Bit" id="Ztt-r2-dga"/>
+                <outlet property="transportationFeeLabel" destination="jAg-JR-PIC" id="qRK-eR-E9K"/>
             </connections>
             <point key="canvasLocation" x="39" y="299"/>
         </tableViewCell>

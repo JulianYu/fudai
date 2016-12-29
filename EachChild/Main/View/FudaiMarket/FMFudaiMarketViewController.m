@@ -62,6 +62,10 @@ static CGFloat const itemSpacing = 16;
 //    self.collectionView.collectionViewLayout = flowLayout;
     
     [self requestForSlidesShow];
+    
+}
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self requestForFudaiList];
 }
 - (void)requestForSlidesShow {

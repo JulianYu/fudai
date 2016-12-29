@@ -14,4 +14,7 @@
 
 @property (nonatomic, copy, readonly, getter=getImageUrl) NSString *imageUri;
 
+@property (nonatomic, copy, readonly) NSString *kRongCloudAppKey;
+@property (nonatomic, copy, readonly) NSString *kRongCloudSecret;
+
 @end

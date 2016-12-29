@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UCFudaiModel.h"
 
 @interface UCMyFudaiCell : UITableViewCell
 
 @property (nonatomic, strong) NSArray *dataArray;
+@property (nonatomic, strong, setter=setOrder:) UCFudaiOrder *order;
 
 @end

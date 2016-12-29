@@ -52,6 +52,7 @@
             [UserModel shareInstance].oauth_secret = data[@"oauth_secret"];
             [UserModel shareInstance].uid = data[@"uid"];
             [UserModel shareInstance].pay_password_stat = data[@"pay_password_stat"];
+            [UserModel shareInstance].userInfo = [UserInfo mj_objectWithKeyValues:[data valueForKey:@"userInfo"]];
             
         }else {
             

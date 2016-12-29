@@ -33,6 +33,8 @@
     self = [super init];
     if (self) {
         [self requestForUrl];
+        _kRongCloudAppKey = @"pwe86ga5e63b6";
+        _kRongCloudSecret = @"qirwdpmKUN";
     }
     return self;
 }

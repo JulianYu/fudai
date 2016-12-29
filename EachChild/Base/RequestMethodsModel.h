@@ -14,7 +14,7 @@
 
 #ifndef kBaseUrl
 #if local
-#define kBaseUrl @"http://192.168.1.111/fudai"
+#define kBaseUrl @"http://192.168.1.102/fudai"
 //#define kBaseUrl @"http://192.168.1.230/fudai/index.php"
 #else
 #define kBaseUrl @""
@@ -96,6 +96,30 @@ extern NSString *const set_default_addressMethod;
 extern NSString *const payPwdModifysendCodeMethod;
 /** 我-修改支付密码**/
 extern NSString *const Paypassword_editMethod;
+/** 我-我的福袋 **/
+extern NSString *const myFudaiOrderMethod;
+/** 我-我的福袋-确认购买 **/
+extern NSString *const fdOrderConfirmBuyActionMethod;
+/** 我-已确认福袋 **/
+extern NSString *const myConfirmFudaiOrderMethod;
+/** 我-我的挂单列表 **/
+extern NSString *const myHoldFudaiOrderMethod;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -27,6 +27,13 @@
 		047900631E1396E700F7CF29 /* UCFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047900621E1396E700F7CF29 /* UCFeedbackViewController.m */; };
 		047900661E13CBDC00F7CF29 /* HPHomePageTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047900651E13CBDC00F7CF29 /* HPHomePageTableController.m */; };
 		047900681E13CECF00F7CF29 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 047900671E13CECF00F7CF29 /* placeholder@2x.png */; };
+		0479006B1E1497BF00F7CF29 /* HPListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479006A1E1497BF00F7CF29 /* HPListCell.m */; };
+		047900791E14A6D800F7CF29 /* HPListCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 047900781E14A6D800F7CF29 /* HPListCollectionView.m */; };
+		0479007C1E14A78900F7CF29 /* HPListContainerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479007B1E14A78900F7CF29 /* HPListContainerCell.m */; };
+		0479007F1E14BAE700F7CF29 /* IMConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479007E1E14BAE700F7CF29 /* IMConversationViewController.m */; };
+		047900821E14BB2C00F7CF29 /* IMConversationListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047900811E14BB2C00F7CF29 /* IMConversationListViewController.m */; };
+		047900861E14EBE300F7CF29 /* UCMyFudaiViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 047900851E14EBE300F7CF29 /* UCMyFudaiViewModel.m */; };
+		047900891E14F63200F7CF29 /* UCFudaiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 047900881E14F63200F7CF29 /* UCFudaiModel.m */; };
 		0479FEDE1E0A702600F7CF29 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479FECE1E0A702500F7CF29 /* LoginViewController.m */; };
 		0479FEDF1E0A702600F7CF29 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0479FECF1E0A702500F7CF29 /* LoginViewController.xib */; };
 		0479FEE01E0A702600F7CF29 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479FED11E0A702500F7CF29 /* RegisterViewController.m */; };
@@ -171,7 +178,6 @@
 		048BCDBA1DE7D57400881AF7 /* uc_setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDB71DE7D57400881AF7 /* uc_setting@2x.png */; };
 		048BCDBD1DE7DCCA00881AF7 /* NSObject+conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDBC1DE7DCCA00881AF7 /* NSObject+conversion.m */; };
 		048BCDCC1DE7ECE600881AF7 /* UCMyFudaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDCA1DE7ECE600881AF7 /* UCMyFudaiViewController.m */; };
-		048BCDCD1DE7ECE600881AF7 /* UCMyFudaiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDCB1DE7ECE600881AF7 /* UCMyFudaiViewController.xib */; };
 		048BCDD11DE7F47200881AF7 /* UCConfirmedFudaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDCF1DE7F47200881AF7 /* UCConfirmedFudaiViewController.m */; };
 		048BCDD21DE7F47200881AF7 /* UCConfirmedFudaiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDD01DE7F47200881AF7 /* UCConfirmedFudaiViewController.xib */; };
 		048BCDD61DE7F4A700881AF7 /* UCAcumulatingPointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDD41DE7F4A700881AF7 /* UCAcumulatingPointsViewController.m */; };
@@ -246,6 +252,20 @@
 		047900641E13CBDC00F7CF29 /* HPHomePageTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPHomePageTableController.h; sourceTree = "<group>"; };
 		047900651E13CBDC00F7CF29 /* HPHomePageTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPHomePageTableController.m; sourceTree = "<group>"; };
 		047900671E13CECF00F7CF29 /* placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder@2x.png"; sourceTree = "<group>"; };
+		047900691E1497BF00F7CF29 /* HPListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPListCell.h; sourceTree = "<group>"; };
+		0479006A1E1497BF00F7CF29 /* HPListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPListCell.m; sourceTree = "<group>"; };
+		047900771E14A6D800F7CF29 /* HPListCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPListCollectionView.h; sourceTree = "<group>"; };
+		047900781E14A6D800F7CF29 /* HPListCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPListCollectionView.m; sourceTree = "<group>"; };
+		0479007A1E14A78900F7CF29 /* HPListContainerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPListContainerCell.h; sourceTree = "<group>"; };
+		0479007B1E14A78900F7CF29 /* HPListContainerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPListContainerCell.m; sourceTree = "<group>"; };
+		0479007D1E14BAE700F7CF29 /* IMConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMConversationViewController.h; sourceTree = "<group>"; };
+		0479007E1E14BAE700F7CF29 /* IMConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMConversationViewController.m; sourceTree = "<group>"; };
+		047900801E14BB2C00F7CF29 /* IMConversationListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMConversationListViewController.h; sourceTree = "<group>"; };
+		047900811E14BB2C00F7CF29 /* IMConversationListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMConversationListViewController.m; sourceTree = "<group>"; };
+		047900841E14EBE300F7CF29 /* UCMyFudaiViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCMyFudaiViewModel.h; sourceTree = "<group>"; };
+		047900851E14EBE300F7CF29 /* UCMyFudaiViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCMyFudaiViewModel.m; sourceTree = "<group>"; };
+		047900871E14F63200F7CF29 /* UCFudaiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCFudaiModel.h; sourceTree = "<group>"; };
+		047900881E14F63200F7CF29 /* UCFudaiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCFudaiModel.m; sourceTree = "<group>"; };
 		0479FECD1E0A702500F7CF29 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		0479FECE1E0A702500F7CF29 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		0479FECF1E0A702500F7CF29 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -487,7 +507,6 @@
 		048BCDC31DE7E50F00881AF7 /* EachChild-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EachChild-Prefix.pch"; sourceTree = "<group>"; };
 		048BCDC91DE7ECE600881AF7 /* UCMyFudaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCMyFudaiViewController.h; sourceTree = "<group>"; };
 		048BCDCA1DE7ECE600881AF7 /* UCMyFudaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCMyFudaiViewController.m; sourceTree = "<group>"; };
-		048BCDCB1DE7ECE600881AF7 /* UCMyFudaiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCMyFudaiViewController.xib; sourceTree = "<group>"; };
 		048BCDCE1DE7F47200881AF7 /* UCConfirmedFudaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCConfirmedFudaiViewController.h; sourceTree = "<group>"; };
 		048BCDCF1DE7F47200881AF7 /* UCConfirmedFudaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCConfirmedFudaiViewController.m; sourceTree = "<group>"; };
 		048BCDD01DE7F47200881AF7 /* UCConfirmedFudaiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCConfirmedFudaiViewController.xib; sourceTree = "<group>"; };
@@ -593,6 +612,15 @@
 				0479004C1E1249F700F7CF29 /* ZCTradeView.m */,
 			);
 			path = ZCTradeView;
+			sourceTree = "<group>";
+		};
+		047900831E14EBC000F7CF29 /* fudai */ = {
+			isa = PBXGroup;
+			children = (
+				047900841E14EBE300F7CF29 /* UCMyFudaiViewModel.h */,
+				047900851E14EBE300F7CF29 /* UCMyFudaiViewModel.m */,
+			);
+			name = fudai;
 			sourceTree = "<group>";
 		};
 		0479FECC1E0A6FC600F7CF29 /* LoginLogout */ = {
@@ -858,6 +886,8 @@
 				048BCD2C1DE6C85900881AF7 /* UCTradeModel.m */,
 				048BCD2E1DE6C8E000881AF7 /* UCInfoModel.h */,
 				048BCD2F1DE6C8E000881AF7 /* UCInfoModel.m */,
+				047900871E14F63200F7CF29 /* UCFudaiModel.h */,
+				047900881E14F63200F7CF29 /* UCFudaiModel.m */,
 			);
 			path = UserCenter;
 			sourceTree = "<group>";
@@ -917,6 +947,12 @@
 				0479FFA91E10DAFC00F7CF29 /* HPHomePageStoryboard.storyboard */,
 				047900641E13CBDC00F7CF29 /* HPHomePageTableController.h */,
 				047900651E13CBDC00F7CF29 /* HPHomePageTableController.m */,
+				047900691E1497BF00F7CF29 /* HPListCell.h */,
+				0479006A1E1497BF00F7CF29 /* HPListCell.m */,
+				047900771E14A6D800F7CF29 /* HPListCollectionView.h */,
+				047900781E14A6D800F7CF29 /* HPListCollectionView.m */,
+				0479007A1E14A78900F7CF29 /* HPListContainerCell.h */,
+				0479007B1E14A78900F7CF29 /* HPListContainerCell.m */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -927,6 +963,10 @@
 				048BCD3B1DE6C9B400881AF7 /* IMInstantMessagingViewController.h */,
 				048BCD3C1DE6C9B400881AF7 /* IMInstantMessagingViewController.m */,
 				048BCD3D1DE6C9B400881AF7 /* IMInstantMessagingViewController.xib */,
+				0479007D1E14BAE700F7CF29 /* IMConversationViewController.h */,
+				0479007E1E14BAE700F7CF29 /* IMConversationViewController.m */,
+				047900801E14BB2C00F7CF29 /* IMConversationListViewController.h */,
+				047900811E14BB2C00F7CF29 /* IMConversationListViewController.m */,
 			);
 			path = InstantMessaging;
 			sourceTree = "<group>";
@@ -996,6 +1036,7 @@
 		048BCD1E1DE6C57500881AF7 /* UserCenter */ = {
 			isa = PBXGroup;
 			children = (
+				047900831E14EBC000F7CF29 /* fudai */,
 				048BCD4E1DE6CADC00881AF7 /* UCUserCenterViewModel.h */,
 				048BCD4F1DE6CADC00881AF7 /* UCUserCenterViewModel.m */,
 				048BCE161DE96C1200881AF7 /* UCAddressArrangemantViewModel.h */,
@@ -1201,7 +1242,6 @@
 				048BCDF81DE83D5700881AF7 /* UCMyFudaiCellView.m */,
 				048BCDC91DE7ECE600881AF7 /* UCMyFudaiViewController.h */,
 				048BCDCA1DE7ECE600881AF7 /* UCMyFudaiViewController.m */,
-				048BCDCB1DE7ECE600881AF7 /* UCMyFudaiViewController.xib */,
 				048BCDCE1DE7F47200881AF7 /* UCConfirmedFudaiViewController.h */,
 				048BCDCF1DE7F47200881AF7 /* UCConfirmedFudaiViewController.m */,
 				048BCDD01DE7F47200881AF7 /* UCConfirmedFudaiViewController.xib */,
@@ -1350,7 +1390,6 @@
 				0479004E1E1249F700F7CF29 /* trade.bundle in Resources */,
 				048BCE521DE9927800881AF7 /* UCInformationGenderViewController.xib in Resources */,
 				048BCDF31DE82B4500881AF7 /* uc_fudai_footer.png in Resources */,
-				048BCDCD1DE7ECE600881AF7 /* UCMyFudaiViewController.xib in Resources */,
 				048BCDA81DE7CAC000881AF7 /* uc_bg@2x.png in Resources */,
 				0479FF671E0CD19600F7CF29 /* register_disagree@2x.png in Resources */,
 				048BCE381DE9815200881AF7 /* UCInformationSignCell.xib in Resources */,
@@ -1457,6 +1496,7 @@
 				0479FF2D1E0BA14700F7CF29 /* RequestMethodsModel.m in Sources */,
 				0479FFC91E11FD4300F7CF29 /* BaseNavigationBar.m in Sources */,
 				048BCD4D1DE6CAC400881AF7 /* IMInstantMessagingViewModel.m in Sources */,
+				0479007F1E14BAE700F7CF29 /* IMConversationViewController.m in Sources */,
 				048BCCF41DE6C37F00881AF7 /* BaseModel.m in Sources */,
 				048BCD501DE6CADC00881AF7 /* UCUserCenterViewModel.m in Sources */,
 				048BCCF71DE6C38D00881AF7 /* BaseViewModel.m in Sources */,
@@ -1465,6 +1505,7 @@
 				0479FFA51E10C70500F7CF29 /* UCBankCell.m in Sources */,
 				0479FF4E1E0BB92000F7CF29 /* BankcardListEmptyCell.m in Sources */,
 				0479FF861E0E031A00F7CF29 /* HPAreaViewModel.m in Sources */,
+				047900861E14EBE300F7CF29 /* UCMyFudaiViewModel.m in Sources */,
 				048BCE2C1DE97DDA00881AF7 /* UCInformationViewController.m in Sources */,
 				0479FFC31E1108BD00F7CF29 /* InitialRequestViewModel.m in Sources */,
 				0479FEF81E0A706400F7CF29 /* SendSMSViewModel.m in Sources */,
@@ -1490,6 +1531,7 @@
 				0479FF241E0A876800F7CF29 /* NSObject+MJCoding.m in Sources */,
 				0479FF8F1E0E0A5400F7CF29 /* HPAreaCell.m in Sources */,
 				048BCD391DE6C93C00881AF7 /* FMFudaiMarketViewController.m in Sources */,
+				0479007C1E14A78900F7CF29 /* HPListContainerCell.m in Sources */,
 				0479FF1F1E0A876800F7CF29 /* MJFoundation.m in Sources */,
 				0479FF071E0A84DB00F7CF29 /* NSDictionary+conponent.m in Sources */,
 				0479FF221E0A876800F7CF29 /* MJPropertyType.m in Sources */,
@@ -1502,6 +1544,7 @@
 				048BCD3E1DE6C9B400881AF7 /* IMInstantMessagingViewController.m in Sources */,
 				048BCD471DE6CA8A00881AF7 /* HPHomePageViewModel.m in Sources */,
 				048BCD341DE6C91E00881AF7 /* HPHomePageViewController.m in Sources */,
+				047900891E14F63200F7CF29 /* UCFudaiModel.m in Sources */,
 				0479FF741E0CE47500F7CF29 /* APITESTViewModel.m in Sources */,
 				048BCD271DE6C60D00881AF7 /* IMModel.m in Sources */,
 				0479FFC01E10FF5500F7CF29 /* FMPayTypeViewModel.m in Sources */,
@@ -1512,6 +1555,7 @@
 				048BCE431DE98D5000881AF7 /* UCInformationViewModel.m in Sources */,
 				0479FEE01E0A702600F7CF29 /* RegisterViewController.m in Sources */,
 				0479004F1E1249F700F7CF29 /* UIAlertView+Quick.m in Sources */,
+				047900821E14BB2C00F7CF29 /* IMConversationListViewController.m in Sources */,
 				0479FF521E0BBA9A00F7CF29 /* UCBankcardListViewModel.m in Sources */,
 				0479FEF71E0A706400F7CF29 /* AgreementViewModel.m in Sources */,
 				0479FF821E0D2DFA00F7CF29 /* HPAreaViewController.m in Sources */,
@@ -1526,6 +1570,7 @@
 				048BCDD61DE7F4A700881AF7 /* UCAcumulatingPointsViewController.m in Sources */,
 				048BCD961DE6F15700881AF7 /* UCUserInfoCell.m in Sources */,
 				048BCE4C1DE9925C00881AF7 /* UCInformationNicknameViewController.m in Sources */,
+				047900791E14A6D800F7CF29 /* HPListCollectionView.m in Sources */,
 				0479FFCC1E12101D00F7CF29 /* UCAddAddressViewController.m in Sources */,
 				0479FF1E1E0A876800F7CF29 /* MJExtensionConst.m in Sources */,
 				0479FEFE1E0A79BA00F7CF29 /* UserModel.m in Sources */,
@@ -1563,6 +1608,7 @@
 				0479FF041E0A825B00F7CF29 /* NSString+regularExpression.m in Sources */,
 				048BCDBD1DE7DCCA00881AF7 /* NSObject+conversion.m in Sources */,
 				0479005A1E1354A000F7CF29 /* PayPasswordViewModel.m in Sources */,
+				0479006B1E1497BF00F7CF29 /* HPListCell.m in Sources */,
 				0479FF711E0CE32C00F7CF29 /* APITESTViewController.m in Sources */,
 				048BCE181DE96C1200881AF7 /* UCAddressArrangemantViewModel.m in Sources */,
 				0453729A1DEC201300CF0734 /* UCPointDetailTableViewController.m in Sources */,

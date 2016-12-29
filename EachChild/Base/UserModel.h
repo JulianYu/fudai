@@ -17,7 +17,8 @@
 
 @property (nonatomic, copy) NSString *oauth_secret;
 @property (nonatomic, copy) NSString *uid;
-@property (nonatomic, strong) NSNumber *pay_password_stat; //
+@property (nonatomic, strong) NSNumber *pay_password_stat;
+@property (nonatomic, strong) UserInfo *userInfo;
 //@property (nonatomic, strong) USER *user;
 //@property (nonatomic, strong) UIImage *portrait;
 

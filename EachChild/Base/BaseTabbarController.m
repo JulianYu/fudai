@@ -12,6 +12,7 @@
 #import "HPHomePageViewController.h"
 #import "FMFudaiMarketViewController.h"
 #import "IMInstantMessagingViewController.h"
+#import "IMConversationListViewController.h"
 
 
 @interface BaseTabbarController ()
@@ -30,14 +31,16 @@
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor]} forState:UIControlStateSelected];
     [[UITabBar appearance] setTranslucent:YES];
     [[UITabBar appearance] setAlpha:0.8];
+    
+    
 }
 
 - (NSArray *)addControllers {
     NSMutableArray *viewCtrls = [NSMutableArray arrayWithCapacity:4];
     //1.首页
-//    HPHomePageViewController *homeVC = [[HPHomePageViewController alloc] initWithNibName:@"HPHomePageViewController" bundle:nil];
-//    BaseNavigationController *homeNav = [[BaseNavigationController alloc] initWithRootViewController:homeVC];
-    BaseNavigationController *homeNav = [UIStoryboard storyboardWithName:@"HPHomePageStoryboard" bundle:nil].instantiateInitialViewController;
+    HPHomePageViewController *homeVC = [[HPHomePageViewController alloc] initWithNibName:@"HPHomePageViewController" bundle:nil];
+    BaseNavigationController *homeNav = [[BaseNavigationController alloc] initWithRootViewController:homeVC];
+//    BaseNavigationController *homeNav = [UIStoryboard storyboardWithName:@"HPHomePageStoryboard" bundle:nil].instantiateInitialViewController;
     homeNav.tabBarItem = [self tabBarItemWithTitle:@"首页" imageName:@"tabbar_hp" selectedImageName:@"tabbar_hp_selected"];
     [viewCtrls addObject:homeNav];
     //2.交易
@@ -46,7 +49,8 @@
     stockNav.tabBarItem = [self tabBarItemWithTitle:@"市场" imageName:@"tabbar_fm" selectedImageName:@"tabbar_fm_selected"];
     [viewCtrls addObject:stockNav];
     //3.资讯
-    IMInstantMessagingViewController *informationVC = [[IMInstantMessagingViewController alloc] initWithNibName:@"IMInstantMessagingViewController" bundle:nil];
+//    IMInstantMessagingViewController *informationVC = [[IMInstantMessagingViewController alloc] initWithNibName:@"IMInstantMessagingViewController" bundle:nil];
+    IMConversationListViewController *informationVC = [[IMConversationListViewController alloc] init];
     BaseNavigationController *infomationNav = [[BaseNavigationController alloc] initWithRootViewController:informationVC];
     infomationNav.tabBarItem = [self tabBarItemWithTitle:@"消息" imageName:@"tabbar_im" selectedImageName:@"tabbar_im_selected"];
     [viewCtrls addObject:infomationNav];
