@@ -74,6 +74,10 @@ NSString *const fdOrderConfirmBuyActionMethod = @"fdOrderConfirmBuyAction";
 NSString *const myConfirmFudaiOrderMethod = @"myConfirmFudaiOrder";
 /** 我-我的挂单列表 **/
 NSString *const myHoldFudaiOrderMethod = @"myHoldFudaiOrder";
+/** 融云-刷新用户信息 **/
+NSString *const rongcloudUserRefreshMethod = @"rongcloudUserRefresh";
+/** 融云-获取token **/
+NSString *const getRongcloudTokenMethod = @"getRongcloudToken";
 
 
 

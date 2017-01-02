@@ -8,7 +8,10 @@
 
 #import "PublicModel.h"
 
+/** 融云token **/
+@implementation RCTOKEN
 
+@end
 
 @implementation UserInfo
 

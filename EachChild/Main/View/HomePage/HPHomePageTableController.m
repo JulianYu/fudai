@@ -11,9 +11,9 @@
 #import "SDCycleScrollView.h"
 #import "ConfigModel.h"
 
-@interface HPHomePageTableController ()<SDCycleScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+@interface HPHomePageTableController ()<SDCycleScrollViewDelegate/*,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout*/>
 @property (strong, nonatomic) IBOutlet SDCycleScrollView *slideView;
-@property (strong, nonatomic) IBOutlet UICollectionView *listView;
+//@property (strong, nonatomic) IBOutlet UICollectionView *listView;
 
 @property (nonatomic, strong) HPHomePageViewModel *viewModel;
 
@@ -44,17 +44,20 @@
         _slideView.imageURLStringsGroup = [imgsArray copy];
     }];
 }
+#pragma mark- UITableViewDelegate, UITableViewDataSource
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 2;
-}
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 10;
-}
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"listCellID" forIndexPath:indexPath];
-    return cell;
-}
+
+
+//- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+//    return 2;
+//}
+//- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+//    return 10;
+//}
+//- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+//    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"listCellID" forIndexPath:indexPath];
+//    return cell;
+//}
 
 
 - (HPHomePageViewModel *)viewModel {

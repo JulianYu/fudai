@@ -7,8 +7,11 @@
 //
 
 #import "IMConversationListViewController.h"
+#import "IMNavigationController.h"
 
-@interface IMConversationListViewController ()
+@interface IMConversationListViewController ()<SlideNavigationControllerDelegate>
+
+@property (nonatomic, strong) SlideNavigationController *navigationCtrl;
 
 @end
 
@@ -23,6 +26,26 @@
                                         @(ConversationType_SYSTEM)]];
     //设置需要将哪些类型的会话在会话列表中聚合显示
     [self setCollectionConversationType:@[@(ConversationType_SYSTEM)]];
+    if ([self.navigationController isKindOfClass:[SlideNavigationController class]]) {
+        self.navigationCtrl = (IMNavigationController *)self.navigationController;
+    }
+}
+
+- (void)slideNavigationControllerDidChangedLocation:(CGFloat)newLocation withProgress:(CGFloat)progress {
+    NSLog(@"new location %f", newLocation);
+//    __block IMNavigationController *nav = (IMNavigationController *)self.navigationController;
+//    self.tabBarController.view.transform = CGAffineTransformMakeTranslation(newLocation, 0);
+//    CGRect frame = self.tabBarController.tabBar.frame;
+//    frame.origin.x = newLocation;//[UIScreen mainScreen].bounds.size.width - nav.portraitSlideOffset;
+//    self.tabBarController.tabBar.frame = frame;
+//    [UIView animateWithDuration:nav.menuRevealAnimationDuration animations:^{
+//    }];
+}
+- (BOOL)slideNavigationControllerShouldDisplayLeftMenu {
+    
+    
+    
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning {

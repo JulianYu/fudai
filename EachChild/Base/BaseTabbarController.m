@@ -8,11 +8,13 @@
 
 #import "BaseTabbarController.h"
 #import "BaseNavigationController.h"
+#import "IMNavigationController.h"
 
 #import "HPHomePageViewController.h"
 #import "FMFudaiMarketViewController.h"
-#import "IMInstantMessagingViewController.h"
+//#import "IMInstantMessagingViewController.h"
 #import "IMConversationListViewController.h"
+#import "IMLeftMenuViewController.h"
 
 
 @interface BaseTabbarController ()
@@ -50,10 +52,37 @@
     [viewCtrls addObject:stockNav];
     //3.资讯
 //    IMInstantMessagingViewController *informationVC = [[IMInstantMessagingViewController alloc] initWithNibName:@"IMInstantMessagingViewController" bundle:nil];
-    IMConversationListViewController *informationVC = [[IMConversationListViewController alloc] init];
-    BaseNavigationController *infomationNav = [[BaseNavigationController alloc] initWithRootViewController:informationVC];
-    infomationNav.tabBarItem = [self tabBarItemWithTitle:@"消息" imageName:@"tabbar_im" selectedImageName:@"tabbar_im_selected"];
-    [viewCtrls addObject:infomationNav];
+//    BaseNavigationController *infomationNav = [[BaseNavigationController alloc] initWithRootViewController:informationVC];
+    IMConversationListViewController *imVCtrl = [[IMConversationListViewController alloc] init];
+    IMLeftMenuViewController *leftMenu = [[IMLeftMenuViewController alloc] initWithNibName:@"IMLeftMenuViewController" bundle:nil];
+    leftMenu.homeViewController = imVCtrl;
+    IMNavigationController *imNav = [[IMNavigationController alloc] initWithRootViewController:imVCtrl];
+    imNav.leftMenu = leftMenu;
+    imNav.menuRevealAnimationDuration = .18f;
+    // Creating a custom bar button for right menu
+    UIButton *button  = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [button setImage:[UIImage imageNamed:@"menu-button"] forState:UIControlStateNormal];
+    [button addTarget:imNav action:@selector(toggleLeftMenu) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    
+    imNav.rightBarButtonItem = leftBarButtonItem;
+    
+    imNav.tabBarItem = [self tabBarItemWithTitle:@"消息" imageName:@"tabbar_im" selectedImageName:@"tabbar_im_selected"];
+    [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidClose object:nil queue:nil usingBlock:^(NSNotification *note) {
+        NSString *menu = note.userInfo[@"menu"];
+        NSLog(@"Closed %@", menu);
+    }];
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidOpen object:nil queue:nil usingBlock:^(NSNotification *note) {
+        NSString *menu = note.userInfo[@"menu"];
+        NSLog(@"Opened %@", menu);
+    }];
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidReveal object:nil queue:nil usingBlock:^(NSNotification *note) {
+        NSString *menu = note.userInfo[@"menu"];
+        NSLog(@"Revealed %@", menu);
+    }];
+    [viewCtrls addObject:imNav];
     //4.我的
 //    UCUserCenterViewController *userVC = [[UCUserCenterViewController alloc] initWithNibName:@"UCUserCenterViewController" bundle:nil];
     BaseNavigationController *userNav = /*[[BaseNavigationController alloc] initWithRootViewController:userVC]; /*/(BaseNavigationController *)[UIStoryboard storyboardWithName:@"UserCenterStoryboard" bundle:nil].instantiateInitialViewController;//

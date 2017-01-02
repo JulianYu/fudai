@@ -14,8 +14,8 @@
 
 #ifndef kBaseUrl
 #if local
-#define kBaseUrl @"http://192.168.1.102/fudai"
-//#define kBaseUrl @"http://192.168.1.230/fudai/index.php"
+//#define kBaseUrl @"http://192.168.1.111/fudai"
+#define kBaseUrl @"http://192.168.1.230/fudai/index.php"
 #else
 #define kBaseUrl @""
 #endif
@@ -104,6 +104,10 @@ extern NSString *const fdOrderConfirmBuyActionMethod;
 extern NSString *const myConfirmFudaiOrderMethod;
 /** 我-我的挂单列表 **/
 extern NSString *const myHoldFudaiOrderMethod;
+/** 融云-刷新用户信息 **/
+extern NSString *const rongcloudUserRefreshMethod;
+/** 融云-获取token **/
+extern NSString *const getRongcloudTokenMethod;
 
 
 

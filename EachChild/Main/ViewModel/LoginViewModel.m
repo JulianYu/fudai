@@ -9,6 +9,7 @@
 #import "LoginViewModel.h"
 #import "LoginViewController.h"
 #import "RegisterViewController.h"
+#import <RongIMKit/RongIMKit.h>
 
 
 @interface LoginViewModel ()
@@ -64,6 +65,17 @@
         [NSObject showHudTipError:error];
     }];
     
+}
+- (void)requestForRongCloudTokenWithCompletion:(void (^)(NSInteger))completion {
+    
+    [self.httpManager POST:UcenterApi(getRongcloudTokenMethod) parameters:@{@"nickname":[UserModel shareInstance].userInfo.true_name} success:^(NSURLSessionDataTask *task, NSDictionary *response, NSUInteger status, NSString *msg) {
+        RCTOKEN *token = [RCTOKEN mj_objectWithKeyValues:[response valueForKey:@"data"]];
+        [UserModel shareInstance].token = token;
+        completion(status);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        completion(-1);
+        [NSObject showHudTipError:error];
+    }];
 }
 
 

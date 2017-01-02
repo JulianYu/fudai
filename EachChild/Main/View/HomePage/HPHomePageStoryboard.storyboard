@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <sections>
                             <tableViewSection id="Vyo-7i-aBI">
                                 <cells>
@@ -38,44 +38,31 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="175" id="vVm-x1-RYT" customClass="HPListContainerCell">
-                                        <rect key="frame" x="0.0" y="244" width="375" height="175"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="196" id="vVm-x1-RYT" customClass="SlideMenuListCell">
+                                        <rect key="frame" x="0.0" y="244" width="375" height="196"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vVm-x1-RYT" id="Awm-ug-9NY">
-                                            <frame key="frameInset" width="375" height="174"/>
+                                            <frame key="frameInset" width="375" height="195"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Csw-5f-C2o">
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="htU-qx-ahM">
-                                                        <size key="itemSize" width="50" height="50"/>
-                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    </collectionViewFlowLayout>
-                                                    <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8Cd-fY-1RQ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                            </view>
-                                                            <color key="backgroundColor" red="0.91372549020000005" green="0.1843137255" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </collectionViewCell>
-                                                    </cells>
-                                                </collectionView>
+                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ru-KD-x31" customClass="SlideMenuListView">
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </scrollView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Csw-5f-C2o" firstAttribute="leading" secondItem="Awm-ug-9NY" secondAttribute="leading" id="Llf-1x-9Pu"/>
-                                                <constraint firstAttribute="trailing" secondItem="Csw-5f-C2o" secondAttribute="trailing" id="M3h-fn-ZFy"/>
-                                                <constraint firstAttribute="bottom" secondItem="Csw-5f-C2o" secondAttribute="bottom" id="OMG-Nq-WCp"/>
-                                                <constraint firstItem="Csw-5f-C2o" firstAttribute="top" secondItem="Awm-ug-9NY" secondAttribute="top" id="Vue-8t-dE7"/>
+                                                <constraint firstItem="3Ru-KD-x31" firstAttribute="leading" secondItem="Awm-ug-9NY" secondAttribute="leading" id="KIh-eg-SWG"/>
+                                                <constraint firstAttribute="trailing" secondItem="3Ru-KD-x31" secondAttribute="trailing" id="VTj-B7-klQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="3Ru-KD-x31" secondAttribute="bottom" constant="8" id="Ve4-8g-cN0"/>
+                                                <constraint firstItem="3Ru-KD-x31" firstAttribute="top" secondItem="Awm-ug-9NY" secondAttribute="top" constant="8" id="WfO-zi-IlV"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <connections>
+                                            <outlet property="menuListView" destination="3Ru-KD-x31" id="DjG-nM-kUm"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="215" id="kti-Pc-leS">
-                                        <rect key="frame" x="0.0" y="419" width="375" height="215"/>
+                                        <rect key="frame" x="0.0" y="440" width="375" height="215"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kti-Pc-leS" id="xOZ-o1-ZNg">
                                             <frame key="frameInset" width="375" height="214"/>
@@ -109,6 +96,7 @@
                             </barButtonItem>
                         </leftBarButtonItems>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
                         <outlet property="slideView" destination="ATK-pQ-qr4" id="dFQ-lJ-RN4"/>
                     </connections>

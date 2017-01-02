@@ -6,8 +6,8 @@
 //  Copyright © 2016年 erongchuang. All rights reserved.
 //
 
-#import "BaseCell.h"
 
-@interface HPListContainerCell : BaseCell
+
+@interface HPListContainerCell : UITableViewCell
 
 @end

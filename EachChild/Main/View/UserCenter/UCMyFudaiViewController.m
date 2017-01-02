@@ -16,7 +16,7 @@ static NSString *cellID = @"UCMyFudaiCellID";
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @property (nonatomic, strong) UCMyFudaiViewModel *viewModel;
-@property (nonatomic, strong) NSMutableArray *dataArray;
+
 
 @end
 
@@ -49,13 +49,6 @@ static NSString *cellID = @"UCMyFudaiCellID";
     NSInteger row = indexPath.row;
     UCMyFudaiCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
     cell.order = self.viewModel.dataArray[row];
-//    if (0 == row) {
-//        cell.dataArray = @[@1,@2,@3];
-//    }else if (1 == row) {
-//        cell.dataArray = @[@1,@2];
-//    }else {
-//        cell.dataArray = @[@1];
-//    }
     
     return cell;
 }
@@ -71,11 +64,5 @@ static NSString *cellID = @"UCMyFudaiCellID";
     return _viewModel;
 }
 
-- (NSMutableArray *)dataArray {
-    if (!_dataArray) {
-        _dataArray = [NSMutableArray arrayWithObjects:@[@1,@2,@3],@[@1,@2],@[@1],@[@1],@[@1], nil];
-    }
-    return _dataArray;
-}
 
 @end

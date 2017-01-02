@@ -8,6 +8,7 @@
 
 #import "BaseRequestViewModel.h"
 
+
 @interface UCMyFudaiViewModel : BaseRequestViewModel
 
 @property (nonatomic, strong) NSArray *dataArray;

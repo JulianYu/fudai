@@ -9,6 +9,7 @@
 #import "BaseViewController.h"
 #import "public.h"
 
+
 @interface BaseViewModel : NSObject
 
 - (instancetype)initWithViewController:(BaseViewController *)viewController;

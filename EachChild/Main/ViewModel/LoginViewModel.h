@@ -18,4 +18,7 @@
 - (void)onRegister;
 - (void)loginWithCompletion:(void(^)(NSInteger status))completion;
 
+- (void)requestForRongCloudTokenWithCompletion:(void(^)(NSInteger status))completion;
+
+
 @end

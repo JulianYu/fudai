@@ -8,9 +8,15 @@
 
 #import "BaseModel.h"
 
+/** 融云token **/
+@interface RCTOKEN : BaseModel
+@property (nonatomic, strong) NSNumber *code;
+@property (nonatomic, copy) NSString *userId;
+@property (nonatomic, copy) NSString *token;
 
+@end
 
-
+/** 用户信息 **/
 @interface UserInfo : BaseModel
 @property (nonatomic, copy) NSString *time;
 @property (nonatomic, strong) NSNumber *status;

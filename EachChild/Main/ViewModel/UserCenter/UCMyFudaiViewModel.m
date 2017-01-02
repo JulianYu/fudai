@@ -7,6 +7,7 @@
 //
 
 #import "UCMyFudaiViewModel.h"
+#import "UCFudaiModel.h"
 
 @implementation UCMyFudaiViewModel
 
@@ -14,7 +15,7 @@
 {
     [self.httpManager POST:UcenterApi(myFudaiOrderMethod) parameters:nil success:^(NSURLSessionDataTask *task, NSDictionary *response, NSUInteger status, NSString *msg) {
         if (1 == status) {
-            
+            self.dataArray = [UCFudaiOrder mj_objectArrayWithKeyValuesArray:[response objectForKey:@"data"]];
         }else {
             [NSObject showHudTipStr:msg];
         }
