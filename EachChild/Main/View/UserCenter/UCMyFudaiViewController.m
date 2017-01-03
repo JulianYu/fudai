@@ -10,7 +10,7 @@
 #import "UCMyFudaiCell.h"
 #import "UCMyFudaiViewModel.h"
 
-static NSString *cellID = @"UCMyFudaiCellID";
+//static NSString *cellID = @"UCMyFudaiCellID";
 
 @interface UCMyFudaiViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
@@ -27,15 +27,17 @@ static NSString *cellID = @"UCMyFudaiCellID";
     // Do any additional setup after loading the view from its nib.
     self.title = @"我的福袋";
     
-    regNib(self.tableView, @"UCMyFudaiCell", cellID);
+//    regNib(self.tableView, @"UCMyFudaiCell", cellID);
     
 }
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     @weakify(self);
+    [NSObject startActivityIndicatorInView:self.view withMessage:@"正在获取我的福袋列表..."];
     [self.viewModel requestForMyFudaiListWithCompletion:^(NSInteger status) {
+        @strongify(self);
+        [NSObject stopActivityIndicatorInView:self.view];
         if (1 == status) {
-            @strongify(self);
             [self.tableView reloadData];
         }
     }];
@@ -47,7 +49,7 @@ static NSString *cellID = @"UCMyFudaiCellID";
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSInteger row = indexPath.row;
-    UCMyFudaiCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
+    UCMyFudaiCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UCMyFudaiCellID" forIndexPath:indexPath];
     cell.order = self.viewModel.dataArray[row];
     
     return cell;

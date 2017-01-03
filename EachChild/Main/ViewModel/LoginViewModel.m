@@ -68,7 +68,7 @@
 }
 - (void)requestForRongCloudTokenWithCompletion:(void (^)(NSInteger))completion {
     
-    [self.httpManager POST:UcenterApi(getRongcloudTokenMethod) parameters:@{@"nickname":[UserModel shareInstance].userInfo.true_name} success:^(NSURLSessionDataTask *task, NSDictionary *response, NSUInteger status, NSString *msg) {
+    [self.httpManager POST:UcenterApi( getRongcloudTokenMethod ) parameters:@{@"nickname":[UserModel shareInstance].userInfo.true_name,@"head_ico":[UserModel shareInstance].userInfo.head_ico} success:^(NSURLSessionDataTask *task, NSDictionary *response, NSUInteger status, NSString *msg) {
         RCTOKEN *token = [RCTOKEN mj_objectWithKeyValues:[response valueForKey:@"data"]];
         [UserModel shareInstance].token = token;
         completion(status);

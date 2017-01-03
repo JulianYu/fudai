@@ -25,13 +25,19 @@
         self.background = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"uc_fudai_body"]];
         
         self.priceLabel = [[UILabel alloc] init];
-        self.priceLabel.text = @"$1200.00";
+        
         self.titleLabel = [[UILabel alloc] init];
         self.titleLabel.numberOfLines = 2;
-        self.titleLabel.text = @"欧米伽手表欧米伽手表欧米伽手表欧米伽手表";
+        
     }
     return self;
 }
+- (void)setGood:(UCFudaiGood *)good {
+    _good = good;
+    _priceLabel.text = good.cost_price;
+    _titleLabel.text = good.name;
+}
+
 
 - (void)layoutSubviews {
     [self addSubview:self.background];

@@ -16,12 +16,14 @@
 @property (strong, nonatomic) IBOutlet UITextField *param3Field;
 @property (strong, nonatomic) IBOutlet UITextField *param4Field;
 @property (strong, nonatomic) IBOutlet UITextField *param5Field;
+@property (strong, nonatomic) IBOutlet UITextField *param6Field;
 
 @property (strong, nonatomic) IBOutlet UITextField *v1Field;
 @property (strong, nonatomic) IBOutlet UITextField *v2Field;
 @property (strong, nonatomic) IBOutlet UITextField *v3Field;
 @property (strong, nonatomic) IBOutlet UITextField *v4Field;
 @property (strong, nonatomic) IBOutlet UITextField *v5Field;
+@property (strong, nonatomic) IBOutlet UITextField *v6Field;
 
 
 @end
@@ -48,6 +50,9 @@
     }
     if (_param5Field.text.length > 0 && _v5Field.text.length > 0) {
         [params setValue:_v5Field.text forKey:_param5Field.text];
+    }
+    if (_param6Field.text.length > 0 && _v6Field.text.length > 0) {
+        [params setValue:_v6Field.text forKey:_param6Field.text];
     }
     [APITESTViewModel uCenterRequestWithMethod:_methodField.text params:params];
 }

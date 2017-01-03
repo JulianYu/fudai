@@ -15,6 +15,9 @@
 {
     [self.httpManager POST:UcenterApi(myFudaiOrderMethod) parameters:nil success:^(NSURLSessionDataTask *task, NSDictionary *response, NSUInteger status, NSString *msg) {
         if (1 == status) {
+            [UCFudai mj_setupObjectClassInArray:^NSDictionary *{
+                return @{@"goodsList":@"UCFudaiGood"};
+            }];
             self.dataArray = [UCFudaiOrder mj_objectArrayWithKeyValuesArray:[response objectForKey:@"data"]];
         }else {
             [NSObject showHudTipStr:msg];

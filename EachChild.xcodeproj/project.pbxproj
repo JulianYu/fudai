@@ -71,6 +71,8 @@
 		047901071E1A306800F7CF29 /* IMFriendListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047901051E1A306800F7CF29 /* IMFriendListViewController.xib */; };
 		0479010E1E1A3ADC00F7CF29 /* IMLeftMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479010C1E1A3ADC00F7CF29 /* IMLeftMenuCell.m */; };
 		0479010F1E1A3ADC00F7CF29 /* IMLeftMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0479010D1E1A3ADC00F7CF29 /* IMLeftMenuCell.xib */; };
+		047901131E1B3C2D00F7CF29 /* IMAddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047901111E1B3C2D00F7CF29 /* IMAddFriendViewController.m */; };
+		047901141E1B3C2D00F7CF29 /* IMAddFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047901121E1B3C2D00F7CF29 /* IMAddFriendViewController.xib */; };
 		0479FEDE1E0A702600F7CF29 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479FECE1E0A702500F7CF29 /* LoginViewController.m */; };
 		0479FEDF1E0A702600F7CF29 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0479FECF1E0A702500F7CF29 /* LoginViewController.xib */; };
 		0479FEE01E0A702600F7CF29 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479FED11E0A702500F7CF29 /* RegisterViewController.m */; };
@@ -150,6 +152,12 @@
 		0479FFCF1E12127100F7CF29 /* UCAreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479FFCE1E12127100F7CF29 /* UCAreaViewController.m */; };
 		0479FFD21E12149500F7CF29 /* UCAddAddressViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479FFD11E12149500F7CF29 /* UCAddAddressViewModel.m */; };
 		0479FFD51E121BB400F7CF29 /* UCAreaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479FFD41E121BB400F7CF29 /* UCAreaCell.m */; };
+		04800BF51E1B542000799DFB /* user_default@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04800BF41E1B542000799DFB /* user_default@2x.jpg */; };
+		04800BF91E1B659800799DFB /* UCChangeNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04800BF81E1B659800799DFB /* UCChangeNicknameViewController.m */; };
+		04800BFC1E1B6C7F00799DFB /* TipsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04800BFB1E1B6C7F00799DFB /* TipsModel.m */; };
+		04800BFF1E1BA5E700799DFB /* uc_fudai_guadan_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04800BFD1E1BA5E700799DFB /* uc_fudai_guadan_add@2x.png */; };
+		04800C001E1BA5E700799DFB /* uc_fudai_guadan_minus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04800BFE1E1BA5E700799DFB /* uc_fudai_guadan_minus@2x.png */; };
+		04800C031E1BB0A200799DFB /* UCGuadanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04800C021E1BB0A200799DFB /* UCGuadanViewController.m */; };
 		048BCCBE1DE5A1C700881AF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCCBD1DE5A1C700881AF7 /* main.m */; };
 		048BCCC11DE5A1C700881AF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCCC01DE5A1C700881AF7 /* AppDelegate.m */; };
 		048BCCC91DE5A1C700881AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048BCCC81DE5A1C700881AF7 /* Assets.xcassets */; };
@@ -216,13 +224,11 @@
 		048BCDBD1DE7DCCA00881AF7 /* NSObject+conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDBC1DE7DCCA00881AF7 /* NSObject+conversion.m */; };
 		048BCDCC1DE7ECE600881AF7 /* UCMyFudaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDCA1DE7ECE600881AF7 /* UCMyFudaiViewController.m */; };
 		048BCDD11DE7F47200881AF7 /* UCConfirmedFudaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDCF1DE7F47200881AF7 /* UCConfirmedFudaiViewController.m */; };
-		048BCDD21DE7F47200881AF7 /* UCConfirmedFudaiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDD01DE7F47200881AF7 /* UCConfirmedFudaiViewController.xib */; };
 		048BCDD61DE7F4A700881AF7 /* UCAcumulatingPointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDD41DE7F4A700881AF7 /* UCAcumulatingPointsViewController.m */; };
 		048BCDD71DE7F4A700881AF7 /* UCAcumulatingPointsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDD51DE7F4A700881AF7 /* UCAcumulatingPointsViewController.xib */; };
 		048BCDDB1DE7F4CA00881AF7 /* UCAddressArrangemantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDD91DE7F4CA00881AF7 /* UCAddressArrangemantViewController.m */; };
 		048BCDE91DE8268F00881AF7 /* UIColor+extention.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDE81DE8268F00881AF7 /* UIColor+extention.m */; };
 		048BCDED1DE8271A00881AF7 /* UCMyFudaiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCDEB1DE8271A00881AF7 /* UCMyFudaiCell.m */; };
-		048BCDEE1DE8271A00881AF7 /* UCMyFudaiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDEC1DE8271A00881AF7 /* UCMyFudaiCell.xib */; };
 		048BCDF21DE82B4500881AF7 /* uc_fudai_body@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDEF1DE82B4500881AF7 /* uc_fudai_body@2x.png */; };
 		048BCDF31DE82B4500881AF7 /* uc_fudai_footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDF01DE82B4500881AF7 /* uc_fudai_footer.png */; };
 		048BCDF41DE82B4500881AF7 /* uc_fudai_header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 048BCDF11DE82B4500881AF7 /* uc_fudai_header@2x.png */; };
@@ -354,6 +360,9 @@
 		0479010B1E1A3ADC00F7CF29 /* IMLeftMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMLeftMenuCell.h; sourceTree = "<group>"; };
 		0479010C1E1A3ADC00F7CF29 /* IMLeftMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMLeftMenuCell.m; sourceTree = "<group>"; };
 		0479010D1E1A3ADC00F7CF29 /* IMLeftMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMLeftMenuCell.xib; sourceTree = "<group>"; };
+		047901101E1B3C2D00F7CF29 /* IMAddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAddFriendViewController.h; sourceTree = "<group>"; };
+		047901111E1B3C2D00F7CF29 /* IMAddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMAddFriendViewController.m; sourceTree = "<group>"; };
+		047901121E1B3C2D00F7CF29 /* IMAddFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMAddFriendViewController.xib; sourceTree = "<group>"; };
 		0479FECD1E0A702500F7CF29 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		0479FECE1E0A702500F7CF29 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		0479FECF1E0A702500F7CF29 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -493,6 +502,15 @@
 		0479FFD11E12149500F7CF29 /* UCAddAddressViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCAddAddressViewModel.m; sourceTree = "<group>"; };
 		0479FFD31E121BB400F7CF29 /* UCAreaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCAreaCell.h; sourceTree = "<group>"; };
 		0479FFD41E121BB400F7CF29 /* UCAreaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCAreaCell.m; sourceTree = "<group>"; };
+		04800BF41E1B542000799DFB /* user_default@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "user_default@2x.jpg"; sourceTree = "<group>"; };
+		04800BF71E1B659700799DFB /* UCChangeNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCChangeNicknameViewController.h; sourceTree = "<group>"; };
+		04800BF81E1B659800799DFB /* UCChangeNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCChangeNicknameViewController.m; sourceTree = "<group>"; };
+		04800BFA1E1B6C7F00799DFB /* TipsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipsModel.h; sourceTree = "<group>"; };
+		04800BFB1E1B6C7F00799DFB /* TipsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipsModel.m; sourceTree = "<group>"; };
+		04800BFD1E1BA5E700799DFB /* uc_fudai_guadan_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uc_fudai_guadan_add@2x.png"; sourceTree = "<group>"; };
+		04800BFE1E1BA5E700799DFB /* uc_fudai_guadan_minus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uc_fudai_guadan_minus@2x.png"; sourceTree = "<group>"; };
+		04800C011E1BB0A200799DFB /* UCGuadanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCGuadanViewController.h; sourceTree = "<group>"; };
+		04800C021E1BB0A200799DFB /* UCGuadanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCGuadanViewController.m; sourceTree = "<group>"; };
 		048BCCB91DE5A1C700881AF7 /* EachChild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EachChild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048BCCBD1DE5A1C700881AF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		048BCCBF1DE5A1C700881AF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -597,7 +615,6 @@
 		048BCDCA1DE7ECE600881AF7 /* UCMyFudaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCMyFudaiViewController.m; sourceTree = "<group>"; };
 		048BCDCE1DE7F47200881AF7 /* UCConfirmedFudaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCConfirmedFudaiViewController.h; sourceTree = "<group>"; };
 		048BCDCF1DE7F47200881AF7 /* UCConfirmedFudaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCConfirmedFudaiViewController.m; sourceTree = "<group>"; };
-		048BCDD01DE7F47200881AF7 /* UCConfirmedFudaiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCConfirmedFudaiViewController.xib; sourceTree = "<group>"; };
 		048BCDD31DE7F4A700881AF7 /* UCAcumulatingPointsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCAcumulatingPointsViewController.h; sourceTree = "<group>"; };
 		048BCDD41DE7F4A700881AF7 /* UCAcumulatingPointsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCAcumulatingPointsViewController.m; sourceTree = "<group>"; };
 		048BCDD51DE7F4A700881AF7 /* UCAcumulatingPointsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCAcumulatingPointsViewController.xib; sourceTree = "<group>"; };
@@ -607,7 +624,6 @@
 		048BCDE81DE8268F00881AF7 /* UIColor+extention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+extention.m"; sourceTree = "<group>"; };
 		048BCDEA1DE8271A00881AF7 /* UCMyFudaiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCMyFudaiCell.h; sourceTree = "<group>"; };
 		048BCDEB1DE8271A00881AF7 /* UCMyFudaiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCMyFudaiCell.m; sourceTree = "<group>"; };
-		048BCDEC1DE8271A00881AF7 /* UCMyFudaiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UCMyFudaiCell.xib; sourceTree = "<group>"; };
 		048BCDEF1DE82B4500881AF7 /* uc_fudai_body@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uc_fudai_body@2x.png"; sourceTree = "<group>"; };
 		048BCDF01DE82B4500881AF7 /* uc_fudai_footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uc_fudai_footer.png; sourceTree = "<group>"; };
 		048BCDF11DE82B4500881AF7 /* uc_fudai_header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uc_fudai_header@2x.png"; sourceTree = "<group>"; };
@@ -877,6 +893,34 @@
 			name = HUDTool;
 			sourceTree = "<group>";
 		};
+		04800BF61E1B656A00799DFB /* deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				048BCE291DE97DDA00881AF7 /* UCInformationViewController.h */,
+				048BCE2A1DE97DDA00881AF7 /* UCInformationViewController.m */,
+				048BCE2B1DE97DDA00881AF7 /* UCInformationViewController.xib */,
+				048BCE2F1DE9810500881AF7 /* UCInformationPortraitCell.h */,
+				048BCE301DE9810500881AF7 /* UCInformationPortraitCell.m */,
+				048BCE311DE9810500881AF7 /* UCInformationPortraitCell.xib */,
+				048BCE341DE9815200881AF7 /* UCInformationSignCell.h */,
+				048BCE351DE9815200881AF7 /* UCInformationSignCell.m */,
+				048BCE361DE9815200881AF7 /* UCInformationSignCell.xib */,
+				048BCE391DE9816B00881AF7 /* UCInformationOtherCell.h */,
+				048BCE3A1DE9816B00881AF7 /* UCInformationOtherCell.m */,
+				048BCE3B1DE9816B00881AF7 /* UCInformationOtherCell.xib */,
+				048BCE491DE9925C00881AF7 /* UCInformationNicknameViewController.h */,
+				048BCE4A1DE9925C00881AF7 /* UCInformationNicknameViewController.m */,
+				048BCE4B1DE9925C00881AF7 /* UCInformationNicknameViewController.xib */,
+				048BCE4E1DE9927800881AF7 /* UCInformationGenderViewController.h */,
+				048BCE4F1DE9927800881AF7 /* UCInformationGenderViewController.m */,
+				048BCE501DE9927800881AF7 /* UCInformationGenderViewController.xib */,
+				048BCE531DE992AE00881AF7 /* UCInformationSignatureViewController.h */,
+				048BCE541DE992AE00881AF7 /* UCInformationSignatureViewController.m */,
+				048BCE551DE992AE00881AF7 /* UCInformationSignatureViewController.xib */,
+			);
+			name = deprecated;
+			sourceTree = "<group>";
+		};
 		048BCCB01DE5A1C700881AF7 = {
 			isa = PBXGroup;
 			children = (
@@ -902,6 +946,8 @@
 				048BCCC01DE5A1C700881AF7 /* AppDelegate.m */,
 				0479FF2B1E0BA14700F7CF29 /* RequestMethodsModel.h */,
 				0479FF2C1E0BA14700F7CF29 /* RequestMethodsModel.m */,
+				04800BFA1E1B6C7F00799DFB /* TipsModel.h */,
+				04800BFB1E1B6C7F00799DFB /* TipsModel.m */,
 				047900951E16044000F7CF29 /* menuData.plist */,
 				048BCCDD1DE6C15F00881AF7 /* Base */,
 				048BCCDF1DE6C15F00881AF7 /* Main */,
@@ -1126,6 +1172,9 @@
 				047901031E1A306800F7CF29 /* IMFriendListViewController.h */,
 				047901041E1A306800F7CF29 /* IMFriendListViewController.m */,
 				047901051E1A306800F7CF29 /* IMFriendListViewController.xib */,
+				047901101E1B3C2D00F7CF29 /* IMAddFriendViewController.h */,
+				047901111E1B3C2D00F7CF29 /* IMAddFriendViewController.m */,
+				047901121E1B3C2D00F7CF29 /* IMAddFriendViewController.xib */,
 				0479010B1E1A3ADC00F7CF29 /* IMLeftMenuCell.h */,
 				0479010C1E1A3ADC00F7CF29 /* IMLeftMenuCell.m */,
 				0479010D1E1A3ADC00F7CF29 /* IMLeftMenuCell.xib */,
@@ -1224,6 +1273,9 @@
 		048BCD611DE6D30900881AF7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				04800BFD1E1BA5E700799DFB /* uc_fudai_guadan_add@2x.png */,
+				04800BFE1E1BA5E700799DFB /* uc_fudai_guadan_minus@2x.png */,
+				04800BF41E1B542000799DFB /* user_default@2x.jpg */,
 				047900671E13CECF00F7CF29 /* placeholder@2x.png */,
 				0479FFBA1E10F64500F7CF29 /* state_selected@2x.png */,
 				0479FFBB1E10F64500F7CF29 /* state_normal@2x.png */,
@@ -1417,14 +1469,14 @@
 			children = (
 				048BCDEA1DE8271A00881AF7 /* UCMyFudaiCell.h */,
 				048BCDEB1DE8271A00881AF7 /* UCMyFudaiCell.m */,
-				048BCDEC1DE8271A00881AF7 /* UCMyFudaiCell.xib */,
 				048BCDF71DE83D5700881AF7 /* UCMyFudaiCellView.h */,
 				048BCDF81DE83D5700881AF7 /* UCMyFudaiCellView.m */,
 				048BCDC91DE7ECE600881AF7 /* UCMyFudaiViewController.h */,
 				048BCDCA1DE7ECE600881AF7 /* UCMyFudaiViewController.m */,
 				048BCDCE1DE7F47200881AF7 /* UCConfirmedFudaiViewController.h */,
 				048BCDCF1DE7F47200881AF7 /* UCConfirmedFudaiViewController.m */,
-				048BCDD01DE7F47200881AF7 /* UCConfirmedFudaiViewController.xib */,
+				04800C011E1BB0A200799DFB /* UCGuadanViewController.h */,
+				04800C021E1BB0A200799DFB /* UCGuadanViewController.m */,
 			);
 			name = fudai;
 			sourceTree = "<group>";
@@ -1432,27 +1484,9 @@
 		048BCE2E1DE97DE400881AF7 /* user info */ = {
 			isa = PBXGroup;
 			children = (
-				048BCE291DE97DDA00881AF7 /* UCInformationViewController.h */,
-				048BCE2A1DE97DDA00881AF7 /* UCInformationViewController.m */,
-				048BCE2B1DE97DDA00881AF7 /* UCInformationViewController.xib */,
-				048BCE2F1DE9810500881AF7 /* UCInformationPortraitCell.h */,
-				048BCE301DE9810500881AF7 /* UCInformationPortraitCell.m */,
-				048BCE311DE9810500881AF7 /* UCInformationPortraitCell.xib */,
-				048BCE341DE9815200881AF7 /* UCInformationSignCell.h */,
-				048BCE351DE9815200881AF7 /* UCInformationSignCell.m */,
-				048BCE361DE9815200881AF7 /* UCInformationSignCell.xib */,
-				048BCE391DE9816B00881AF7 /* UCInformationOtherCell.h */,
-				048BCE3A1DE9816B00881AF7 /* UCInformationOtherCell.m */,
-				048BCE3B1DE9816B00881AF7 /* UCInformationOtherCell.xib */,
-				048BCE491DE9925C00881AF7 /* UCInformationNicknameViewController.h */,
-				048BCE4A1DE9925C00881AF7 /* UCInformationNicknameViewController.m */,
-				048BCE4B1DE9925C00881AF7 /* UCInformationNicknameViewController.xib */,
-				048BCE4E1DE9927800881AF7 /* UCInformationGenderViewController.h */,
-				048BCE4F1DE9927800881AF7 /* UCInformationGenderViewController.m */,
-				048BCE501DE9927800881AF7 /* UCInformationGenderViewController.xib */,
-				048BCE531DE992AE00881AF7 /* UCInformationSignatureViewController.h */,
-				048BCE541DE992AE00881AF7 /* UCInformationSignatureViewController.m */,
-				048BCE551DE992AE00881AF7 /* UCInformationSignatureViewController.xib */,
+				04800BF61E1B656A00799DFB /* deprecated */,
+				04800BF71E1B659700799DFB /* UCChangeNicknameViewController.h */,
+				04800BF81E1B659800799DFB /* UCChangeNicknameViewController.m */,
 			);
 			name = "user info";
 			sourceTree = "<group>";
@@ -1540,6 +1574,7 @@
 				047900B41E160CAD00F7CF29 /* icon_homepage_downArrow@2x.png in Resources */,
 				047900B61E160CAD00F7CF29 /* icon_homepage_map_selected_old.png in Resources */,
 				0479FFAA1E10DAFC00F7CF29 /* HPHomePageStoryboard.storyboard in Resources */,
+				04800BF51E1B542000799DFB /* user_default@2x.jpg in Resources */,
 				048BCDF41DE82B4500881AF7 /* uc_fudai_header@2x.png in Resources */,
 				047900B11E160CAD00F7CF29 /* icon_homepage_movieCategory.png in Resources */,
 				048BCDA61DE6F28700881AF7 /* UCUserOtherCell.xib in Resources */,
@@ -1556,7 +1591,6 @@
 				047900AF1E160CAD00F7CF29 /* icon_homepage_KTVCategory.png in Resources */,
 				048BCD5C1DE6D2E700881AF7 /* tabbar_hp@2x.png in Resources */,
 				047900B31E160CAD00F7CF29 /* icon_homepage_takeoutCategory.png in Resources */,
-				048BCDEE1DE8271A00881AF7 /* UCMyFudaiCell.xib in Resources */,
 				048BCDA11DE6F24100881AF7 /* UCUserWalletCell.xib in Resources */,
 				047900B91E160CAD00F7CF29 /* icon_homepage_search.png in Resources */,
 				048BCDD71DE7F4A700881AF7 /* UCAcumulatingPointsViewController.xib in Resources */,
@@ -1584,6 +1618,7 @@
 				048BCDF31DE82B4500881AF7 /* uc_fudai_footer.png in Resources */,
 				048BCDA81DE7CAC000881AF7 /* uc_bg@2x.png in Resources */,
 				047900BA1E160CAD00F7CF29 /* icon_homepage_upArrow@2x.png in Resources */,
+				04800C001E1BA5E700799DFB /* uc_fudai_guadan_minus@2x.png in Resources */,
 				047900B21E160CAD00F7CF29 /* icon_homepage_shoppingCategory.png in Resources */,
 				047900B71E160CAD00F7CF29 /* icon_homepage_map_selected.png in Resources */,
 				047900A91E160CAD00F7CF29 /* icon_homepage_beautyCategory.png in Resources */,
@@ -1592,6 +1627,7 @@
 				048BCE381DE9815200881AF7 /* UCInformationSignCell.xib in Resources */,
 				048BCD3F1DE6C9B400881AF7 /* IMInstantMessagingViewController.xib in Resources */,
 				047900F91E16567C00F7CF29 /* menu-button@2x.png in Resources */,
+				047901141E1B3C2D00F7CF29 /* IMAddFriendViewController.xib in Resources */,
 				045372941DEC17D900CF0734 /* public_nav_back@2x.png in Resources */,
 				048BCCC91DE5A1C700881AF7 /* Assets.xcassets in Resources */,
 				047900F81E16567C00F7CF29 /* menu-button.png in Resources */,
@@ -1602,6 +1638,7 @@
 				048BCDAE1DE7D08600881AF7 /* uc_bankcard@2x.png in Resources */,
 				0479FEE11E0A702600F7CF29 /* RegisterViewController.xib in Resources */,
 				048BCDB41DE7D3D500881AF7 /* uc_my_delegation@2x.png in Resources */,
+				04800BFF1E1BA5E700799DFB /* uc_fudai_guadan_add@2x.png in Resources */,
 				048BCD811DE6DB4100881AF7 /* im_gallery02@2x.png in Resources */,
 				048BCDB01DE7D36B00881AF7 /* uc_my_fudai@2x.png in Resources */,
 				048BCDAD1DE7D08600881AF7 /* uc_balance@2x.png in Resources */,
@@ -1622,7 +1659,6 @@
 				048BCE4D1DE9925C00881AF7 /* UCInformationNicknameViewController.xib in Resources */,
 				0479FFB41E10F4C900F7CF29 /* FMPayTypeCell.xib in Resources */,
 				048BCD5E1DE6D2E700881AF7 /* tabbar_im@2x.png in Resources */,
-				048BCDD21DE7F47200881AF7 /* UCConfirmedFudaiViewController.xib in Resources */,
 				047900AC1E160CAD00F7CF29 /* icon_homepage_foodCategory.png in Resources */,
 				0479FF5D1E0BCEEA00F7CF29 /* UserCenterStoryboard.storyboard in Resources */,
 				0479FF941E10AD8E00F7CF29 /* uc_bankcard_empty@2x.png in Resources */,
@@ -1722,12 +1758,14 @@
 				047900631E1396E700F7CF29 /* UCFeedbackViewController.m in Sources */,
 				0479FEF41E0A706400F7CF29 /* LoginViewModel.m in Sources */,
 				048BCDF91DE83D5700881AF7 /* UCMyFudaiCellView.m in Sources */,
+				047901131E1B3C2D00F7CF29 /* IMAddFriendViewController.m in Sources */,
 				048BCDED1DE8271A00881AF7 /* UCMyFudaiCell.m in Sources */,
 				0479FF231E0A876800F7CF29 /* NSObject+MJClass.m in Sources */,
 				0479FEE21E0A702600F7CF29 /* ForgetPasswordViewController.m in Sources */,
 				0479FF251E0A876800F7CF29 /* NSObject+MJKeyValue.m in Sources */,
 				0479FF781E0CF4AC00F7CF29 /* PayPasswordViewController.m in Sources */,
 				0479FF8C1E0E0A2C00F7CF29 /* BaseCell.m in Sources */,
+				04800C031E1BB0A200799DFB /* UCGuadanViewController.m in Sources */,
 				0479FFAE1E10F23100F7CF29 /* FMPayTypeViewController.m in Sources */,
 				048BCCFA1DE6C3C400881AF7 /* BaseRequestViewModel.m in Sources */,
 				0479FF9F1E10BD9900F7CF29 /* UCAddBankcardViewController.m in Sources */,
@@ -1754,6 +1792,7 @@
 				0479FFD21E12149500F7CF29 /* UCAddAddressViewModel.m in Sources */,
 				048BCD3E1DE6C9B400881AF7 /* IMInstantMessagingViewController.m in Sources */,
 				048BCD471DE6CA8A00881AF7 /* HPHomePageViewModel.m in Sources */,
+				04800BFC1E1B6C7F00799DFB /* TipsModel.m in Sources */,
 				048BCD341DE6C91E00881AF7 /* HPHomePageViewController.m in Sources */,
 				047900891E14F63200F7CF29 /* UCFudaiModel.m in Sources */,
 				0479FF741E0CE47500F7CF29 /* APITESTViewModel.m in Sources */,
@@ -1764,6 +1803,7 @@
 				0453728F1DEC0DF200CF0734 /* UCEditAddressViewController.m in Sources */,
 				0479FEE61E0A702600F7CF29 /* AgreementViewController.m in Sources */,
 				047900901E15F1AD00F7CF29 /* MenuBtnView.m in Sources */,
+				04800BF91E1B659800799DFB /* UCChangeNicknameViewController.m in Sources */,
 				0479FF921E10AB8400F7CF29 /* UCBankcardListViewController.m in Sources */,
 				048BCE431DE98D5000881AF7 /* UCInformationViewModel.m in Sources */,
 				0479FEE01E0A702600F7CF29 /* RegisterViewController.m in Sources */,

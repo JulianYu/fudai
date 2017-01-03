@@ -19,6 +19,18 @@
     //    [self setNeedsStatusBarAppearanceUpdate];
     self.navigationBar.tintColor = [UIColor whiteColor]; //baritem 的颜色
 }
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    
+    if (self.viewControllers.count) {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    
+    [super pushViewController:viewController animated:animated];
+    
+}
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
 
 
 @end

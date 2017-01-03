@@ -8,6 +8,7 @@
 
 #import "IMLeftMenuViewController.h"
 #import "IMFriendListViewController.h"
+#import "IMAddFriendViewController.h"
 #import "IMLeftMenuCell.h"
 
 #import "SlideNavigationContorllerAnimatorFade.h"
@@ -64,22 +65,27 @@ static NSString *cellID = @"IMLeftMenuCell";
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    IMFriendListViewController *friendListVCtrl = [[IMFriendListViewController alloc] initWithNibName:@"IMFriendListViewController" bundle:nil];
-    [self.homeViewController.navigationController pushViewController:friendListVCtrl animated:NO];
+    NSInteger row = indexPath.row;
+    if (0 == row) {
+        IMFriendListViewController *friendListVCtrl = [[IMFriendListViewController alloc] initWithNibName:@"IMFriendListViewController" bundle:nil];
+        [self.homeViewController.navigationController pushViewController:friendListVCtrl animated:NO];
+    }else if (1 == row) {
+        IMAddFriendViewController *addFriendVCtrl = [[IMAddFriendViewController alloc] initWithNibName:@"IMAddFriendViewController" bundle:nil];
+        [self.homeViewController.navigationController pushViewController:addFriendVCtrl animated:NO];
+    }
 }
 
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 20)];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 60)];
     view.backgroundColor = [UIColor clearColor];
     return view;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 20;
+    return 60;
 }
 
 - (void)didReceiveMemoryWarning {

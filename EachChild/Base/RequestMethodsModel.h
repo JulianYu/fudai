@@ -14,8 +14,8 @@
 
 #ifndef kBaseUrl
 #if local
-//#define kBaseUrl @"http://192.168.1.111/fudai"
-#define kBaseUrl @"http://192.168.1.230/fudai/index.php"
+#define kBaseUrl @"http://192.168.1.115/fudai"
+//#define kBaseUrl @"http://192.168.1.230/fudai/index.php"
 #else
 #define kBaseUrl @""
 #endif
