@@ -79,6 +79,19 @@ NSString *const rongcloudUserRefreshMethod = @"rongcloudUserRefresh";
 /** 融云-获取token **/
 NSString *const getRongcloudTokenMethod = @"getRongcloudToken";
 
+/** 融云-获取好友列表 **/
+NSString *const friendsMethod = @"friends";
+/** 融云-获取好友请求列表 **/
+NSString *const wFriendMethod = @"wFriend";
+/** 融云-请求加好友 **/
+NSString *const friendUserIdMethod = @"friendUserId";
+/** 融云-同意加好友 **/
+NSString *const byFriendUserIdMethod = @"byFriendUserId";
+/** 融云-删除好友 **/
+NSString *const del_FriendMethod = @"del_Friend";
+/** 融云-搜索用户 **/
+NSString *const UserbySearchMethod = @"UserbySearch";
+
 
 
 

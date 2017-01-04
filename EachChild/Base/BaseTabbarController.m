@@ -40,9 +40,9 @@
 - (NSArray *)addControllers {
     NSMutableArray *viewCtrls = [NSMutableArray arrayWithCapacity:4];
     //1.首页
-    HPHomePageViewController *homeVC = [[HPHomePageViewController alloc] initWithNibName:@"HPHomePageViewController" bundle:nil];
-    BaseNavigationController *homeNav = [[BaseNavigationController alloc] initWithRootViewController:homeVC];
-//    BaseNavigationController *homeNav = [UIStoryboard storyboardWithName:@"HPHomePageStoryboard" bundle:nil].instantiateInitialViewController;
+//    HPHomePageViewController *homeVC = [[HPHomePageViewController alloc] initWithNibName:@"HPHomePageViewController" bundle:nil];
+//    BaseNavigationController *homeNav = [[BaseNavigationController alloc] initWithRootViewController:homeVC];
+    BaseNavigationController *homeNav = [UIStoryboard storyboardWithName:@"HPHomePageStoryboard" bundle:nil].instantiateInitialViewController;
     homeNav.tabBarItem = [self tabBarItemWithTitle:@"首页" imageName:@"tabbar_hp" selectedImageName:@"tabbar_hp_selected"];
     [viewCtrls addObject:homeNav];
     //2.交易
@@ -51,21 +51,20 @@
     stockNav.tabBarItem = [self tabBarItemWithTitle:@"市场" imageName:@"tabbar_fm" selectedImageName:@"tabbar_fm_selected"];
     [viewCtrls addObject:stockNav];
     //3.资讯
-//    IMInstantMessagingViewController *informationVC = [[IMInstantMessagingViewController alloc] initWithNibName:@"IMInstantMessagingViewController" bundle:nil];
-//    BaseNavigationController *infomationNav = [[BaseNavigationController alloc] initWithRootViewController:informationVC];
-    IMConversationListViewController *imVCtrl = [[IMConversationListViewController alloc] init];
-    IMLeftMenuViewController *leftMenu = [[IMLeftMenuViewController alloc] initWithNibName:@"IMLeftMenuViewController" bundle:nil];
-    leftMenu.homeViewController = imVCtrl;
-    IMNavigationController *imNav = [[IMNavigationController alloc] initWithRootViewController:imVCtrl];
+    UIStoryboard *imStoryboard = [UIStoryboard storyboardWithName:@"IMInstantMessagingStoryboard" bundle:nil];
+    IMNavigationController *imNav = [imStoryboard instantiateInitialViewController];//[[IMNavigationController alloc] initWithRootViewController:imVCtrl];
+//    IMConversationListViewController *imVCtrl = [[IMConversationListViewController alloc] init];
+    IMLeftMenuViewController *leftMenu = [imStoryboard instantiateViewControllerWithIdentifier:@"IMLeftMenuViewController"];//[[IMLeftMenuViewController alloc] initWithNibName:@"IMLeftMenuViewController" bundle:nil];
+    
     imNav.leftMenu = leftMenu;
     imNav.menuRevealAnimationDuration = .18f;
     // Creating a custom bar button for right menu
-    UIButton *button  = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+   /* UIButton *button  = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
     [button setImage:[UIImage imageNamed:@"menu-button"] forState:UIControlStateNormal];
     [button addTarget:imNav action:@selector(toggleLeftMenu) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
     
-    imNav.rightBarButtonItem = leftBarButtonItem;
+    imNav.rightBarButtonItem = leftBarButtonItem;*/
     
     imNav.tabBarItem = [self tabBarItemWithTitle:@"消息" imageName:@"tabbar_im" selectedImageName:@"tabbar_im_selected"];
     [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidClose object:nil queue:nil usingBlock:^(NSNotification *note) {

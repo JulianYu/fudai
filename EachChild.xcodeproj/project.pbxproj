@@ -66,13 +66,8 @@
 		047900FA1E16567C00F7CF29 /* SlideNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047900F21E16567C00F7CF29 /* SlideNavigationController.m */; };
 		047900FD1E165C8000F7CF29 /* IMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047900FC1E165C8000F7CF29 /* IMNavigationController.m */; };
 		047901011E1A05A800F7CF29 /* IMLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047900FF1E1A05A800F7CF29 /* IMLeftMenuViewController.m */; };
-		047901021E1A05A800F7CF29 /* IMLeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047901001E1A05A800F7CF29 /* IMLeftMenuViewController.xib */; };
 		047901061E1A306800F7CF29 /* IMFriendListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047901041E1A306800F7CF29 /* IMFriendListViewController.m */; };
-		047901071E1A306800F7CF29 /* IMFriendListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047901051E1A306800F7CF29 /* IMFriendListViewController.xib */; };
-		0479010E1E1A3ADC00F7CF29 /* IMLeftMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479010C1E1A3ADC00F7CF29 /* IMLeftMenuCell.m */; };
-		0479010F1E1A3ADC00F7CF29 /* IMLeftMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0479010D1E1A3ADC00F7CF29 /* IMLeftMenuCell.xib */; };
 		047901131E1B3C2D00F7CF29 /* IMAddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047901111E1B3C2D00F7CF29 /* IMAddFriendViewController.m */; };
-		047901141E1B3C2D00F7CF29 /* IMAddFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047901121E1B3C2D00F7CF29 /* IMAddFriendViewController.xib */; };
 		0479FEDE1E0A702600F7CF29 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479FECE1E0A702500F7CF29 /* LoginViewController.m */; };
 		0479FEDF1E0A702600F7CF29 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0479FECF1E0A702500F7CF29 /* LoginViewController.xib */; };
 		0479FEE01E0A702600F7CF29 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479FED11E0A702500F7CF29 /* RegisterViewController.m */; };
@@ -158,6 +153,11 @@
 		04800BFF1E1BA5E700799DFB /* uc_fudai_guadan_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04800BFD1E1BA5E700799DFB /* uc_fudai_guadan_add@2x.png */; };
 		04800C001E1BA5E700799DFB /* uc_fudai_guadan_minus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04800BFE1E1BA5E700799DFB /* uc_fudai_guadan_minus@2x.png */; };
 		04800C031E1BB0A200799DFB /* UCGuadanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04800C021E1BB0A200799DFB /* UCGuadanViewController.m */; };
+		04800C051E1C8ABE00799DFB /* IMInstantMessagingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04800C041E1C8ABE00799DFB /* IMInstantMessagingStoryboard.storyboard */; };
+		04800C071E1CA44700799DFB /* im_search_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04800C061E1CA44700799DFB /* im_search_icon@2x.png */; };
+		04800C091E1CC79E00799DFB /* im_left_menu_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04800C081E1CC79E00799DFB /* im_left_menu_bg.jpg */; };
+		04800C0B1E1CFC0F00799DFB /* im_friends_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04800C0A1E1CFC0F00799DFB /* im_friends_icon@2x.png */; };
+		04800C0D1E1CFD8D00799DFB /* im_add_friend_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04800C0C1E1CFD8D00799DFB /* im_add_friend_icon@2x.png */; };
 		048BCCBE1DE5A1C700881AF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCCBD1DE5A1C700881AF7 /* main.m */; };
 		048BCCC11DE5A1C700881AF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCCC01DE5A1C700881AF7 /* AppDelegate.m */; };
 		048BCCC91DE5A1C700881AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048BCCC81DE5A1C700881AF7 /* Assets.xcassets */; };
@@ -177,8 +177,6 @@
 		048BCD351DE6C91E00881AF7 /* HPHomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCD331DE6C91E00881AF7 /* HPHomePageViewController.xib */; };
 		048BCD391DE6C93C00881AF7 /* FMFudaiMarketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCD371DE6C93C00881AF7 /* FMFudaiMarketViewController.m */; };
 		048BCD3A1DE6C93C00881AF7 /* FMFudaiMarketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCD381DE6C93C00881AF7 /* FMFudaiMarketViewController.xib */; };
-		048BCD3E1DE6C9B400881AF7 /* IMInstantMessagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCD3C1DE6C9B400881AF7 /* IMInstantMessagingViewController.m */; };
-		048BCD3F1DE6C9B400881AF7 /* IMInstantMessagingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048BCD3D1DE6C9B400881AF7 /* IMInstantMessagingViewController.xib */; };
 		048BCD471DE6CA8A00881AF7 /* HPHomePageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCD461DE6CA8A00881AF7 /* HPHomePageViewModel.m */; };
 		048BCD4A1DE6CAAB00881AF7 /* FMFudaiMarketViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCD491DE6CAAB00881AF7 /* FMFudaiMarketViewModel.m */; };
 		048BCD4D1DE6CAC400881AF7 /* IMInstantMessagingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 048BCD4C1DE6CAC400881AF7 /* IMInstantMessagingViewModel.m */; };
@@ -353,16 +351,10 @@
 		047900FC1E165C8000F7CF29 /* IMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMNavigationController.m; sourceTree = "<group>"; };
 		047900FE1E1A05A800F7CF29 /* IMLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMLeftMenuViewController.h; sourceTree = "<group>"; };
 		047900FF1E1A05A800F7CF29 /* IMLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMLeftMenuViewController.m; sourceTree = "<group>"; };
-		047901001E1A05A800F7CF29 /* IMLeftMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMLeftMenuViewController.xib; sourceTree = "<group>"; };
 		047901031E1A306800F7CF29 /* IMFriendListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMFriendListViewController.h; sourceTree = "<group>"; };
 		047901041E1A306800F7CF29 /* IMFriendListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMFriendListViewController.m; sourceTree = "<group>"; };
-		047901051E1A306800F7CF29 /* IMFriendListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMFriendListViewController.xib; sourceTree = "<group>"; };
-		0479010B1E1A3ADC00F7CF29 /* IMLeftMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMLeftMenuCell.h; sourceTree = "<group>"; };
-		0479010C1E1A3ADC00F7CF29 /* IMLeftMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMLeftMenuCell.m; sourceTree = "<group>"; };
-		0479010D1E1A3ADC00F7CF29 /* IMLeftMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMLeftMenuCell.xib; sourceTree = "<group>"; };
 		047901101E1B3C2D00F7CF29 /* IMAddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMAddFriendViewController.h; sourceTree = "<group>"; };
 		047901111E1B3C2D00F7CF29 /* IMAddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMAddFriendViewController.m; sourceTree = "<group>"; };
-		047901121E1B3C2D00F7CF29 /* IMAddFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMAddFriendViewController.xib; sourceTree = "<group>"; };
 		0479FECD1E0A702500F7CF29 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		0479FECE1E0A702500F7CF29 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		0479FECF1E0A702500F7CF29 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -511,6 +503,11 @@
 		04800BFE1E1BA5E700799DFB /* uc_fudai_guadan_minus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uc_fudai_guadan_minus@2x.png"; sourceTree = "<group>"; };
 		04800C011E1BB0A200799DFB /* UCGuadanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCGuadanViewController.h; sourceTree = "<group>"; };
 		04800C021E1BB0A200799DFB /* UCGuadanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCGuadanViewController.m; sourceTree = "<group>"; };
+		04800C041E1C8ABE00799DFB /* IMInstantMessagingStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IMInstantMessagingStoryboard.storyboard; sourceTree = "<group>"; };
+		04800C061E1CA44700799DFB /* im_search_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "im_search_icon@2x.png"; sourceTree = "<group>"; };
+		04800C081E1CC79E00799DFB /* im_left_menu_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = im_left_menu_bg.jpg; sourceTree = "<group>"; };
+		04800C0A1E1CFC0F00799DFB /* im_friends_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "im_friends_icon@2x.png"; sourceTree = "<group>"; };
+		04800C0C1E1CFD8D00799DFB /* im_add_friend_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "im_add_friend_icon@2x.png"; sourceTree = "<group>"; };
 		048BCCB91DE5A1C700881AF7 /* EachChild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EachChild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048BCCBD1DE5A1C700881AF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		048BCCBF1DE5A1C700881AF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -547,9 +544,6 @@
 		048BCD361DE6C93C00881AF7 /* FMFudaiMarketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMFudaiMarketViewController.h; sourceTree = "<group>"; };
 		048BCD371DE6C93C00881AF7 /* FMFudaiMarketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMFudaiMarketViewController.m; sourceTree = "<group>"; };
 		048BCD381DE6C93C00881AF7 /* FMFudaiMarketViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMFudaiMarketViewController.xib; sourceTree = "<group>"; };
-		048BCD3B1DE6C9B400881AF7 /* IMInstantMessagingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMInstantMessagingViewController.h; sourceTree = "<group>"; };
-		048BCD3C1DE6C9B400881AF7 /* IMInstantMessagingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMInstantMessagingViewController.m; sourceTree = "<group>"; };
-		048BCD3D1DE6C9B400881AF7 /* IMInstantMessagingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMInstantMessagingViewController.xib; sourceTree = "<group>"; };
 		048BCD451DE6CA8A00881AF7 /* HPHomePageViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPHomePageViewModel.h; sourceTree = "<group>"; };
 		048BCD461DE6CA8A00881AF7 /* HPHomePageViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPHomePageViewModel.m; sourceTree = "<group>"; };
 		048BCD481DE6CAAB00881AF7 /* FMFudaiMarketViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMFudaiMarketViewModel.h; sourceTree = "<group>"; };
@@ -1157,9 +1151,7 @@
 		048BCD181DE6C57500881AF7 /* InstantMessaging */ = {
 			isa = PBXGroup;
 			children = (
-				048BCD3B1DE6C9B400881AF7 /* IMInstantMessagingViewController.h */,
-				048BCD3C1DE6C9B400881AF7 /* IMInstantMessagingViewController.m */,
-				048BCD3D1DE6C9B400881AF7 /* IMInstantMessagingViewController.xib */,
+				04800C041E1C8ABE00799DFB /* IMInstantMessagingStoryboard.storyboard */,
 				0479007D1E14BAE700F7CF29 /* IMConversationViewController.h */,
 				0479007E1E14BAE700F7CF29 /* IMConversationViewController.m */,
 				047900801E14BB2C00F7CF29 /* IMConversationListViewController.h */,
@@ -1168,16 +1160,10 @@
 				047900FC1E165C8000F7CF29 /* IMNavigationController.m */,
 				047900FE1E1A05A800F7CF29 /* IMLeftMenuViewController.h */,
 				047900FF1E1A05A800F7CF29 /* IMLeftMenuViewController.m */,
-				047901001E1A05A800F7CF29 /* IMLeftMenuViewController.xib */,
 				047901031E1A306800F7CF29 /* IMFriendListViewController.h */,
 				047901041E1A306800F7CF29 /* IMFriendListViewController.m */,
-				047901051E1A306800F7CF29 /* IMFriendListViewController.xib */,
 				047901101E1B3C2D00F7CF29 /* IMAddFriendViewController.h */,
 				047901111E1B3C2D00F7CF29 /* IMAddFriendViewController.m */,
-				047901121E1B3C2D00F7CF29 /* IMAddFriendViewController.xib */,
-				0479010B1E1A3ADC00F7CF29 /* IMLeftMenuCell.h */,
-				0479010C1E1A3ADC00F7CF29 /* IMLeftMenuCell.m */,
-				0479010D1E1A3ADC00F7CF29 /* IMLeftMenuCell.xib */,
 			);
 			path = InstantMessaging;
 			sourceTree = "<group>";
@@ -1273,6 +1259,10 @@
 		048BCD611DE6D30900881AF7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				04800C0C1E1CFD8D00799DFB /* im_add_friend_icon@2x.png */,
+				04800C0A1E1CFC0F00799DFB /* im_friends_icon@2x.png */,
+				04800C081E1CC79E00799DFB /* im_left_menu_bg.jpg */,
+				04800C061E1CA44700799DFB /* im_search_icon@2x.png */,
 				04800BFD1E1BA5E700799DFB /* uc_fudai_guadan_add@2x.png */,
 				04800BFE1E1BA5E700799DFB /* uc_fudai_guadan_minus@2x.png */,
 				04800BF41E1B542000799DFB /* user_default@2x.jpg */,
@@ -1583,6 +1573,7 @@
 				047900B01E160CAD00F7CF29 /* icon_homepage_lifeServiceCategory.png in Resources */,
 				0479FF991E10AF2700F7CF29 /* UCBankcardCell.xib in Resources */,
 				047900B51E160CAD00F7CF29 /* icon_homepage_map_old.png in Resources */,
+				04800C071E1CA44700799DFB /* im_search_icon@2x.png in Resources */,
 				048BCE571DE992AE00881AF7 /* UCInformationSignatureViewController.xib in Resources */,
 				047900B81E160CAD00F7CF29 /* icon_homepage_map.png in Resources */,
 				048BCDB91DE7D57400881AF7 /* uc_address@2x.png in Resources */,
@@ -1597,11 +1588,13 @@
 				045372921DEC163B00CF0734 /* UCPointsStoryboard.storyboard in Resources */,
 				048BCD351DE6C91E00881AF7 /* HPHomePageViewController.xib in Resources */,
 				048BCDBA1DE7D57400881AF7 /* uc_setting@2x.png in Resources */,
+				04800C091E1CC79E00799DFB /* im_left_menu_bg.jpg in Resources */,
 				048BCDB21DE7D38B00881AF7 /* uc_confirm_fudai@2x.png in Resources */,
 				048BCE2D1DE97DDA00881AF7 /* UCInformationViewController.xib in Resources */,
 				0479FF7E1E0D2CEC00F7CF29 /* hp_location_selection@2x.png in Resources */,
 				048BCD601DE6D2E700881AF7 /* tabbar_uc@2x.png in Resources */,
 				048BCD8E1DE6E5CE00881AF7 /* fm_fudai_cell@2x.jpg in Resources */,
+				04800C0D1E1CFD8D00799DFB /* im_add_friend_icon@2x.png in Resources */,
 				0479FFAF1E10F23100F7CF29 /* FMPayTypeViewController.xib in Resources */,
 				0479FEE31E0A702600F7CF29 /* ForgetPasswordViewController.xib in Resources */,
 				048BCDAA1DE7CE7300881AF7 /* uc_default_portrait@2x.png in Resources */,
@@ -1609,11 +1602,11 @@
 				047900961E16044000F7CF29 /* menuData.plist in Resources */,
 				0479FF4F1E0BB92000F7CF29 /* BankcardListEmptyCell.xib in Resources */,
 				048BCD821DE6DB4100881AF7 /* im_gallery03@2x.png in Resources */,
-				047901021E1A05A800F7CF29 /* IMLeftMenuViewController.xib in Resources */,
 				048BCDB81DE7D57400881AF7 /* uc_accumulate_points@2x.png in Resources */,
 				0479FFBD1E10F64500F7CF29 /* state_normal@2x.png in Resources */,
 				047900AB1E160CAD00F7CF29 /* icon_homepage_entertainmentCategory.png in Resources */,
 				0479004E1E1249F700F7CF29 /* trade.bundle in Resources */,
+				04800C051E1C8ABE00799DFB /* IMInstantMessagingStoryboard.storyboard in Resources */,
 				048BCE521DE9927800881AF7 /* UCInformationGenderViewController.xib in Resources */,
 				048BCDF31DE82B4500881AF7 /* uc_fudai_footer.png in Resources */,
 				048BCDA81DE7CAC000881AF7 /* uc_bg@2x.png in Resources */,
@@ -1623,17 +1616,13 @@
 				047900B71E160CAD00F7CF29 /* icon_homepage_map_selected.png in Resources */,
 				047900A91E160CAD00F7CF29 /* icon_homepage_beautyCategory.png in Resources */,
 				0479FF671E0CD19600F7CF29 /* register_disagree@2x.png in Resources */,
-				047901071E1A306800F7CF29 /* IMFriendListViewController.xib in Resources */,
 				048BCE381DE9815200881AF7 /* UCInformationSignCell.xib in Resources */,
-				048BCD3F1DE6C9B400881AF7 /* IMInstantMessagingViewController.xib in Resources */,
 				047900F91E16567C00F7CF29 /* menu-button@2x.png in Resources */,
-				047901141E1B3C2D00F7CF29 /* IMAddFriendViewController.xib in Resources */,
 				045372941DEC17D900CF0734 /* public_nav_back@2x.png in Resources */,
 				048BCCC91DE5A1C700881AF7 /* Assets.xcassets in Resources */,
 				047900F81E16567C00F7CF29 /* menu-button.png in Resources */,
 				048BCD3A1DE6C93C00881AF7 /* FMFudaiMarketViewController.xib in Resources */,
 				047900AD1E160CAD00F7CF29 /* icon_homepage_foottreatCategory.png in Resources */,
-				0479010F1E1A3ADC00F7CF29 /* IMLeftMenuCell.xib in Resources */,
 				0479FFB91E10F4E500F7CF29 /* FMPayTypeSummitCell.xib in Resources */,
 				048BCDAE1DE7D08600881AF7 /* uc_bankcard@2x.png in Resources */,
 				0479FEE11E0A702600F7CF29 /* RegisterViewController.xib in Resources */,
@@ -1659,6 +1648,7 @@
 				048BCE4D1DE9925C00881AF7 /* UCInformationNicknameViewController.xib in Resources */,
 				0479FFB41E10F4C900F7CF29 /* FMPayTypeCell.xib in Resources */,
 				048BCD5E1DE6D2E700881AF7 /* tabbar_im@2x.png in Resources */,
+				04800C0B1E1CFC0F00799DFB /* im_friends_icon@2x.png in Resources */,
 				047900AC1E160CAD00F7CF29 /* icon_homepage_foodCategory.png in Resources */,
 				0479FF5D1E0BCEEA00F7CF29 /* UserCenterStoryboard.storyboard in Resources */,
 				0479FF941E10AD8E00F7CF29 /* uc_bankcard_empty@2x.png in Resources */,
@@ -1736,7 +1726,6 @@
 				0479FF2D1E0BA14700F7CF29 /* RequestMethodsModel.m in Sources */,
 				0479FFC91E11FD4300F7CF29 /* BaseNavigationBar.m in Sources */,
 				048BCD4D1DE6CAC400881AF7 /* IMInstantMessagingViewModel.m in Sources */,
-				0479010E1E1A3ADC00F7CF29 /* IMLeftMenuCell.m in Sources */,
 				0479007F1E14BAE700F7CF29 /* IMConversationViewController.m in Sources */,
 				047901011E1A05A800F7CF29 /* IMLeftMenuViewController.m in Sources */,
 				048BCCF41DE6C37F00881AF7 /* BaseModel.m in Sources */,
@@ -1790,7 +1779,6 @@
 				048BCCEE1DE6C25E00881AF7 /* BaseViewController.m in Sources */,
 				0479FFA21E10BFD100F7CF29 /* UCBankListViewController.m in Sources */,
 				0479FFD21E12149500F7CF29 /* UCAddAddressViewModel.m in Sources */,
-				048BCD3E1DE6C9B400881AF7 /* IMInstantMessagingViewController.m in Sources */,
 				048BCD471DE6CA8A00881AF7 /* HPHomePageViewModel.m in Sources */,
 				04800BFC1E1B6C7F00799DFB /* TipsModel.m in Sources */,
 				048BCD341DE6C91E00881AF7 /* HPHomePageViewController.m in Sources */,

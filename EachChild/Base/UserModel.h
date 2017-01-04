@@ -20,6 +20,7 @@
 @property (nonatomic, strong) NSNumber *pay_password_stat;
 @property (nonatomic, strong) UserInfo *userInfo;
 @property (nonatomic, strong) RCTOKEN *token;
+@property (nonatomic, strong) NSMutableArray *friends;
 //@property (nonatomic, strong) USER *user;
 //@property (nonatomic, strong) UIImage *portrait;
 

@@ -7,11 +7,12 @@
 //
 
 #import "IMConversationListViewController.h"
+#import "IMConversationViewController.h"
 #import "IMNavigationController.h"
 
 @interface IMConversationListViewController ()<SlideNavigationControllerDelegate>
 
-@property (nonatomic, strong) SlideNavigationController *navigationCtrl;
+
 
 @end
 
@@ -20,32 +21,43 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.title = @"消息";
     //设置需要显示哪些类型的会话
     [self setDisplayConversationTypes:@[@(ConversationType_PRIVATE),
                                         @(ConversationType_APPSERVICE),
                                         @(ConversationType_SYSTEM)]];
     //设置需要将哪些类型的会话在会话列表中聚合显示
     [self setCollectionConversationType:@[@(ConversationType_SYSTEM)]];
-    if ([self.navigationController isKindOfClass:[SlideNavigationController class]]) {
-        self.navigationCtrl = (IMNavigationController *)self.navigationController;
-    }
+    [self setConversationAvatarStyle:RC_USER_AVATAR_CYCLE];//设置列表头像为圆形
 }
+
+- (void)onSelectedTableRow:(RCConversationModelType)conversationModelType conversationModel:(RCConversationModel *)model atIndexPath:(NSIndexPath *)indexPath {
+    if (conversationModelType == RC_CONVERSATION_MODEL_TYPE_COLLECTION) {//聚合会话（系统消息）
+        
+    }else if (conversationModelType == RC_CONVERSATION_MODEL_TYPE_NORMAL) {//普通会话
+        IMConversationViewController *conversationVC = [[IMConversationViewController alloc] init];
+        conversationVC.conversationType = model.conversationType;
+        conversationVC.targetId = model.targetId;
+        conversationVC.title = model.conversationTitle;
+        [self.navigationController pushViewController:conversationVC animated:YES];
+    }
+    
+}
+
+#pragma mark-private methods
 
 - (void)slideNavigationControllerDidChangedLocation:(CGFloat)newLocation withProgress:(CGFloat)progress {
     NSLog(@"new location %f", newLocation);
-//    __block IMNavigationController *nav = (IMNavigationController *)self.navigationController;
-//    self.tabBarController.view.transform = CGAffineTransformMakeTranslation(newLocation, 0);
-//    CGRect frame = self.tabBarController.tabBar.frame;
-//    frame.origin.x = newLocation;//[UIScreen mainScreen].bounds.size.width - nav.portraitSlideOffset;
-//    self.tabBarController.tabBar.frame = frame;
-//    [UIView animateWithDuration:nav.menuRevealAnimationDuration animations:^{
-//    }];
+
 }
 - (BOOL)slideNavigationControllerShouldDisplayLeftMenu {
-    
-    
-    
     return YES;
+}
+
+- (IBAction)leftItemAction:(UIBarButtonItem *)sender {
+    
+    IMNavigationController *nav = (IMNavigationController *)self.navigationController;
+    [nav toggleLeftMenu];
 }
 
 

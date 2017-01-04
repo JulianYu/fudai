@@ -6,8 +6,8 @@
 //  Copyright © 2017年 erongchuang. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "BaseTableViewController.h"
 
-@interface IMFriendListViewController : BaseViewController
+@interface IMFriendListViewController : BaseTableViewController
 
 @end

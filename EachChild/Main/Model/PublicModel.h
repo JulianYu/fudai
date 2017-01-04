@@ -13,7 +13,17 @@
 @property (nonatomic, strong) NSNumber *code;
 @property (nonatomic, copy) NSString *userId;
 @property (nonatomic, copy) NSString *token;
-
+@end
+@interface Friend : BaseModel
+@property (nonatomic, copy) NSString *head_ico;
+@property (nonatomic, copy) NSString *uid;
+@property (nonatomic, copy) NSString *nickname;
+@property (nonatomic, copy) NSString *point;
+@property (nonatomic, copy) NSString *username;
+@property (nonatomic, copy) NSString *exp;
+@property (nonatomic, copy) NSString *sex;
+@property (nonatomic, copy) NSString *balance;
+@property (nonatomic, copy) NSString *state;
 @end
 
 /** 用户信息 **/

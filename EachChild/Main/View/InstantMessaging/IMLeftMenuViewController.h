@@ -7,12 +7,9 @@
 //
 
 #import "BaseViewController.h"
+#import "IMConversationListViewController.h"
 
-@interface IMLeftMenuViewController : BaseViewController<UITableViewDelegate,UITableViewDataSource>
+@interface IMLeftMenuViewController : BaseViewController /*wUITableViewDelegate,UITableViewDataSource>*/
 
-@property (nonatomic, strong) IBOutlet UITableView *tableView;
-@property (nonatomic, assign) BOOL slideOutAnimationEnabled;
-
-@property (nonatomic, strong) UIViewController *homeViewController;
 
 @end

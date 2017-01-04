@@ -19,6 +19,6 @@
 - (void)loginWithCompletion:(void(^)(NSInteger status))completion;
 
 - (void)requestForRongCloudTokenWithCompletion:(void(^)(NSInteger status))completion;
-
+- (void)syncFriendList:(void(^)(NSMutableArray *friends,BOOL isSuccess))friendList;
 
 @end

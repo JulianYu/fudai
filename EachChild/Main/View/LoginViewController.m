@@ -78,12 +78,12 @@
         @strongify(self);
         [NSObject stopActivityIndicatorInView:self.view];
         if (1 ==status) {
-            if (![[UserModel shareInstance].pay_password_stat isEqualToNumber:@1]) {
-                PayPasswordViewController *vc = [[PayPasswordViewController alloc] initWithNibName:@"PayPasswordViewController" bundle:nil];
-                [self.navigationController pushViewController:vc animated:YES];
-            }else {
-                [self requestForRongCloudToken];
-            }
+//            if (![[UserModel shareInstance].pay_password_stat isEqualToNumber:@1]) {
+//                PayPasswordViewController *vc = [[PayPasswordViewController alloc] initWithNibName:@"PayPasswordViewController" bundle:nil];
+//                [self.navigationController pushViewController:vc animated:YES];
+//            }else {
+//            }
+            [self requestForRongCloudToken];
         }
     }];
 }
@@ -115,6 +115,21 @@
 - (void)connectingToRongCloudWithToken:(NSString *)token {
     [[RCIM sharedRCIM] connectWithToken:token success:^(NSString *userId) {
         NSLog(@"登陆成功。当前登录的用户ID：%@", userId);
+        [self syncFriendList:^(NSMutableArray *friends,BOOL isSuccess) {
+            
+            NSLog(@"%@",friends);
+            
+            if (isSuccess) {
+                
+                NSLog(@" success发送通知");
+                
+                [[NSNotificationCenter defaultCenter]postNotificationName:@"alreadyLogin" object:nil];//发送自定义通知（不是融云的），处理一些逻辑，比如什么各单位注意，我已登录，我已登录。
+                
+            }
+            
+        }];
+        UserInfo *user = [UserModel shareInstance].userInfo;
+        [RCIM sharedRCIM].currentUserInfo = [[RCUserInfo alloc] initWithUserId:userId name:user.true_name portrait:user.head_ico];
     } error:^(RCConnectErrorCode status) {
         NSLog(@"登陆的错误码为:%ld", status);
     } tokenIncorrect:^{
@@ -125,6 +140,10 @@
     }];
 }
 
-
+- (void)syncFriendList:(void(^)(NSMutableArray *friends,BOOL isSuccess))friendList {
+    [self.viewModel syncFriendList:^(NSMutableArray *friends, BOOL isSuccess) {
+        friendList(friends, isSuccess);
+    }];
+}
 
 @end

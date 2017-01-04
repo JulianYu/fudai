@@ -68,7 +68,7 @@
 }
 - (void)requestForRongCloudTokenWithCompletion:(void (^)(NSInteger))completion {
     
-    [self.httpManager POST:UcenterApi( getRongcloudTokenMethod ) parameters:@{@"nickname":[UserModel shareInstance].userInfo.true_name,@"head_ico":[UserModel shareInstance].userInfo.head_ico} success:^(NSURLSessionDataTask *task, NSDictionary *response, NSUInteger status, NSString *msg) {
+    [self.httpManager POST:UcenterApi( getRongcloudTokenMethod ) parameters:@{@"nickname":[UserModel shareInstance].userInfo.true_name?:@"nickname",@"head_ico":[UserModel shareInstance].userInfo.head_ico?:@"head_ico"} success:^(NSURLSessionDataTask *task, NSDictionary *response, NSUInteger status, NSString *msg) {
         RCTOKEN *token = [RCTOKEN mj_objectWithKeyValues:[response valueForKey:@"data"]];
         [UserModel shareInstance].token = token;
         completion(status);
@@ -78,6 +78,20 @@
     }];
 }
 
-
+- (void)syncFriendList:(void (^)(NSMutableArray *, BOOL))friendList {
+    [self.httpManager POST:UcenterApi(friendsMethod) parameters:nil success:^(NSURLSessionDataTask *task, NSDictionary *response, NSUInteger status, NSString *msg) {
+        if (1 == status) {
+            NSMutableArray *friendsArray = [Friend mj_objectArrayWithKeyValuesArray:[response valueForKey:@"data"]];
+            [UserModel shareInstance].friends = [friendsArray mutableCopy];
+           friendList(friendsArray,YES);
+        }else {
+            [NSObject showHudTipStr:msg];
+            friendList(nil,NO);
+        }
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        friendList(nil,NO);
+        [NSObject showHudTipError:error];
+    }];
+}
 
 @end

@@ -12,6 +12,9 @@
 @implementation RCTOKEN
 
 @end
+@implementation Friend
+
+@end
 
 @implementation UserInfo
 

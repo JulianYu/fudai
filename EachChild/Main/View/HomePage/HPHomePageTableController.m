@@ -27,7 +27,13 @@
     _slideView.pageControlAliment = SDCycleScrollViewPageContolAlimentCenter;
     _slideView.currentPageDotColor = [UIColor whiteColor];
     _slideView.autoScrollTimeInterval = 3.f;
+    UIBarButtonItem *testItem = [[UIBarButtonItem alloc] initWithTitle:@"TEST" style:UIBarButtonItemStyleDone target:self action:@selector(apiTestStoryboard)];
+    self.navigationItem.rightBarButtonItem = testItem;
     
+}
+- (void)apiTestStoryboard {
+    UIViewController *vc = [UIStoryboard storyboardWithName:@"APITestStoryboard" bundle:nil].instantiateInitialViewController;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
